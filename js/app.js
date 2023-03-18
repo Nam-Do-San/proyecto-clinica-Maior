@@ -1,7 +1,8 @@
+// portada principal
 var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 10,
+    spaceBetween: 50,
     centeredSlides: true,
-    // loop:true,
+    loop: true,
     // autoplay: {
     //     delay: 6000,
     //     disableOnInteraction: false,
@@ -16,31 +17,21 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-var swiper = new Swiper(".swiper-medico", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    loop: true,
+// equipo medico
+var swiper = new Swiper(".mySwiper-medico", {
+    spaceBetween: 0,
+    centeredSlides: true,
     // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
+    //   delay: 2500,
+    //   disableOnInteraction: false,
     // },
     pagination: {
-        el: ".swiper-team",
+        el: ".swiper-pagination",
         clickable: true,
     },
-    breakpoints: {
-        640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-        768: {
-            slidesPerView: 1,
-            spaceBetween: 40,
-        },
-        1024: {
-            slidesPerView: 1,
-            spaceBetween: 50,
-        },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });
 

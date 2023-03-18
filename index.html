@@ -18,17 +18,18 @@
 
 <body>
     <!-- header -->
-    <header class="fixed w-full z-50 bg-white">
+    <header class="fixed w-full z-50">
 
         <!-- promo -->
-        <div class=" border-b ">
+        <div class=" border-b bg-slate-50">
 
             <div class="container">
 
                 <div class="grid grid-cols-2  md:grid-cols-3">
 
-                    <div class="uppercase text-xs tracking-widest ">
-                        <p><span class='bx bx-time-five align-middle'></span> Lun - Sab: 9 am - 1 pm</p>
+                    <div class="justify-self-start flex  items-center">
+                        <i class='bx bx-time-five mx-2'></i>
+                        <P class="text-xs uppercase">Lun - Sab: 9 am - 1 pm</P>
                     </div>
 
                     <div class="justify-self-center  uppercase text-xs tracking-widest    my-auto  hidden">
@@ -36,14 +37,17 @@
                         </P>
                     </div>
 
-                    <div class="justify-self-end my-auto px-3">
+                    <div class="justify-self-end flex items-center">
                         <ul class="flex">
-                            <li class="ml-4"><a href="https://www.instagram.com/drjuliosucaperu/" target="_blank"><i
-                                        class='bx bxl-instagram align-middle'></i></a></li>
-                            <li class="ml-4"><a href="https://www.facebook.com/drjuliosuca/" target="_blank"><i
-                                        class='bx bxl-facebook   align-middle'></i></a></li>
-                            <li class="ml-4"><a href="https://www.tiktok.com/@drjuliosuca" target="_blank"><i
-                                        class='bx bxl-tiktok     align-middle'></i></a></li>
+                            <li class="mx-2">
+                                <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#" target="_blank"><i class='bx bxl-facebook  '></i></a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#" target="_blank"><i class='bx bxl-tiktok    '></i></a>
+                            </li>
                         </ul>
                     </div>
 
@@ -54,14 +58,14 @@
         </div>
 
         <!-- header center -->
-        <div>
+        <div class="bg-white">
             <div class="grid grid-cols-3">
 
                 <div>
 
                 </div>
 
-                <div class="flex justify-center p-5 ">
+                <div class="flex justify-center py-6">
                     <div class="w-32 mx-auto">
                         <a href="index.html"><img class="w-full" src="img/logo-m.svg" alt=""></a>
                     </div>
@@ -78,11 +82,56 @@
         </div>
 
         <!-- menu items -->
-        <nav class="mx-auto">
-            <ul class="flex justify-center uppercase font-semibold text-xs tracking-wider">
-                <li class="p-2"><a href="#">Medicina Estética</a></li>
-                <li class="p-2"><a href="#">Cirugía Plástica</a></li>
-                <li class="p-2"><a href="equipo.html">Equipo Medicina</a></li>
+        <nav class=" relative">
+            <ul class=" md:flex justify-center uppercase font-semibold text-xs tracking-wider w-1/2 md:w-full bg-white ">
+
+                <li class="p-2 border-b border-b-black">
+                    <a href="#">Medicina Estética</a>
+                    <ul>
+                        <li>
+                            <a href="#">Tratamiento Facial</a>
+                            <ul></ul>
+
+
+                        </li>
+                        <li>
+                            <a href="#">Tratamiento Laser</a>
+                            <ul>
+                                <li><a href="#">Depilación laser</a></li>
+                                <li><a href="#">Rejuvenecimiento facial</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li class="p-2 border-b border-b-black group/item">
+                    <a href="#">Cirugía Plástica</a>
+                    
+                    <ul class="hidden group-hover/item:block">
+                        <li class="px-5 py-2.5 group/subitem">
+                            <a href="#">Cirugía Facial</a>
+                            <ul class="bg-maior-secondary absolute top-0 right-0 w-1/2 invisible group-hover/subitem:visible">
+                                <li class="px-5 py-2"><a href="#">Rinoplastia</a></li>
+                                <li class="px-5 py-2"><a href="#">Blefaroplastia</a></li>
+                                <li class="px-5 py-2"><a href="#">Lifting Facial</a></li>
+                            </ul>
+                            
+                        </li>
+
+                        <li class="px-5 py-2.5 group/subitem">
+                            <a href="#">Cirugía Corporal</a>
+                            <ul class="bg-maior-secondary absolute top-0 right-0 w-1/2 invisible group-hover/subitem:visible">
+                                <li class="px-5 py-2"><a href="#">Liposucción</a></li>
+                                <li class="px-5 py-2"><a href="#">Abdominoplastia</a></li>
+                                <li class="px-5 py-2"><a href="#">Aumento de mamas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="p-2 border-b border-b-black">
+                    <a href="#">Equipo Medicina</a>
+                    
+                </li>
                 <li class="p-2"><a href="instalaciones.html">Instalaciones</a></li>
                 <li class="p-2"><a href="novedades.html">Novedades</a></li>
                 <li class="p-2"><a href="contacto.html">Contacto</a></li>
@@ -106,7 +155,7 @@
                         </picture>
 
                         <div class="absolute bottom-0 h-full w-full">
-                            
+
                             <div class="absolute container bottom-40 inset-x-0 lg:px-52">
 
                                 <div class="px-10 lg:px-20">
@@ -115,7 +164,9 @@
                                         <p>Expertos en Medicina Estética</p>
                                     </div>
 
-                                    <h1 class="text-maior-primary text-3xl  md:text-4xl font-Marcellus tracking-wider font-semibold">Medic Maior</h1>
+                                    <h1
+                                        class="text-maior-primary text-3xl  md:text-4xl font-Marcellus tracking-wider font-semibold">
+                                        Medic Maior</h1>
 
                                     <div class="text-maior-primary font-semibold font-Opensans ">
                                         <p>Expertos en Medicina Estética</p>
@@ -133,7 +184,7 @@
                         <img src="img/slider-1-2.jpg" class="h-full w-full object-cover" alt="">
 
                         <div class="absolute bottom-0 h-full w-full">
-                            
+
                             <div class="absolute container bottom-40 inset-x-0 lg:px-52">
 
                                 <div class="px-10 lg:px-20">
@@ -142,7 +193,9 @@
                                         <p>Expertos en Medicina Estética</p>
                                     </div>
 
-                                    <h1 class="text-maior-primary text-3xl  md:text-4xl font-Marcellus tracking-wider font-semibold">Depilación Láser</h1>
+                                    <h1
+                                        class="text-maior-primary text-3xl  md:text-4xl font-Marcellus tracking-wider font-semibold">
+                                        Depilación Láser</h1>
 
                                     <div class="text-maior-primary font-semibold font-Opensans ">
                                         <p>Expertos en Medicina Estética</p>
@@ -159,7 +212,7 @@
                         <img src="img/slider-2.jpg" class="h-full w-full object-cover" alt="">
 
                         <div class="absolute bottom-0 h-full w-full">
-                            
+
                             <div class="absolute container bottom-40 inset-x-0 lg:px-52">
 
                                 <div class="px-10 lg:px-20">
@@ -168,7 +221,9 @@
                                         <p>Expertos en Medicina Estética</p>
                                     </div>
 
-                                    <h1 class="text-maior-primary text-3xl  md:text-4xl font-Marcellus tracking-wider font-semibold">Rejuvenecimiento Facial & Corporal</h1>
+                                    <h1
+                                        class="text-maior-primary text-3xl  md:text-4xl font-Marcellus tracking-wider font-semibold">
+                                        Rejuvenecimiento Facial & Corporal</h1>
 
                                     <div class="text-maior-primary font-semibold font-Opensans ">
                                         <p>Expertos en Medicina Estética</p>
@@ -187,7 +242,7 @@
                         </picture>
 
                         <div class="absolute bottom-0 h-full w-full">
-                            
+
                             <div class="absolute container bottom-40 inset-x-0 lg:px-52">
 
                                 <div class="px-10 lg:px-20">
@@ -196,7 +251,9 @@
                                         <p>Expertos en Medicina Estética</p>
                                     </div>
 
-                                    <h1 class="text-maior-primary text-3xl  md:text-4xl font-Marcellus tracking-wider font-semibold">Limpieza Facial Profunda</h1>
+                                    <h1
+                                        class="text-maior-primary text-3xl  md:text-4xl font-Marcellus tracking-wider font-semibold">
+                                        Limpieza Facial Profunda</h1>
 
                                     <div class="text-maior-primary font-semibold font-Opensans ">
                                         <p>Expertos en Medicina Estética</p>
@@ -216,30 +273,33 @@
         </section>
 
         <!-- tratamiento y cirugía plástica -->
-        <section class="py-10 bg-gray-50">
+        <section class="py-10">
             <div class="container lg:px-20">
 
-                <div class="grid grid-cols-2 gap-10 p-5">
+                <div class="grid md:grid-cols-2 gap-10 p-5">
 
                     <div class="relative">
-                        <img src="img/no-plastico.jpg" class="object-cover w-full h-full " alt="">
+                        <img src="img/pantilla-img-size.webp" class="object-cover w-full h-full " alt="">
                         <div class="absolute bottom-0 right-0 w-4/5">
-                            <div class="bg-white p-5 text-center">
-                                <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">Tratamientos Estéticos</h2>
+                            <div class="bg-white p-4 text-center">
+                                <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">
+                                    Tratamientos Estéticos</h2>
+                                <p>Procedimientos no quirúrgicos</p>
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="relative">
-                        <img src="img/plastica-rinoplastia.jpg" class="object-cover w-full h-full " alt="">
-                        <div class="absolute bottom-0 right-0 w-4/5">
-                            <div class="bg-white p-5 text-center">
-                                <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">Cirugía Plástica & Reconstructiva</h2>
+                        <img src="img/pantilla-img-size.webp" class="object-cover w-full h-full " alt="">
+                        <div class="absolute bottom-0 right-0 w-11/12">
+                            <div class="bg-white p-4 text-center">
+                                <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">Cirugía
+                                    Plástica & Reconstructiva</h2>
+                                <p>Procedimiento quirúrgico</p>
                             </div>
                         </div>
                     </div>
                 </div>
-    
 
             </div>
         </section>
@@ -296,37 +356,40 @@
         </section> -->
 
         <!-- style to up -->
-        <section class="py-10 bg-gray-100">
+        <section class="py-10 bg-gray-50">
 
             <div class="container lg:px-20">
 
-                <div class="px-5">
-                    <h2 class="text-3xl font-bold -tracking-wide font-Opensans text-maior-primary"> Maior cuidado para ti piel
-                    </h2>
+
+                <div class="px-10 ">
+
+                    <span class="font-Opensans font-light text-maior-primary">Tratamientos por excelencia</span>
+                    <p class="text-3xl leading-8 font-bold -tracking-wider font-Opensans text-maior-primary">Mayor cuidado para tu piel</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center">
 
-                    <div class="p-5 mt-40">
+                    <div class="p-5 md:mt-20">
                         <div>
                             <img src="img/face-1.jpg" class="h-full w-full object-cover" alt="">
                         </div>
 
                         <div class="text-center py-5">
-                            <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">Tratamiento Facial</h2>
+                            <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">Tratamiento
+                                Facial</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni m</p>
                         </div>
 
                     </div>
 
-
-                    <div class="p-5 mt-20">
+                    <div class="p-5 md:mt-10">
                         <div>
                             <img src="img/corporal-2.jpg" class="h-full w-full object-cover" alt="">
                         </div>
 
                         <div class="text-center py-5">
-                            <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">Tratamiento Corporal</h2>
+                            <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">Tratamiento
+                                Corporal</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni m</p>
                         </div>
 
@@ -339,7 +402,8 @@
                         </div>
 
                         <div class="text-center pt-5">
-                            <h2 class="text-2xl font-bold -tracking-wide font-Opensans text-maior-primary">Tratamiento Láser</h2>
+                            <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">Tratamiento
+                                Láser</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni m</p>
                         </div>
 
@@ -356,18 +420,6 @@
 
         </section>
 
-
-        <!-- servicio principal 2 hydrafacial -->
-        <section>
-            <picture>
-                <img src="img/hidrafacial-secction.jpg" class="w-full h-full object-cover" alt="">
-            </picture>
-
-
-        </section>
-
-
-
         <!-- prueba 1 -->
         <section class="py-2.5">
             <div class="container lg:px-20">
@@ -378,13 +430,13 @@
 
                         <img src="img/pantilla-img-size.webp" alt="">
 
-                        <div class="h-full w-full bg-maior-primary/5 absolute -left-5 -bottom-5 -z-30">
+                        <div class="h-full w-full bg-maior-primary/5 absolute -right-5 -top-5 -z-30">
                         </div>
                     </div>
 
                     <div class="self-center w-3/4 text-center">
 
-                        <h2 class="text-maior-primary font-Marcellus text-3xl">Tonos perfectos</h2>
+                        <h2 class="text-3xl font-bold -tracking-wide font-Opensans text-maior-primary">Tonos perfectos</h2>
                         <p>Combine texto grande con una imagen para enfocar el producto,
                             la colección o la publicación de blog que haya elegido.</p>
 
@@ -427,12 +479,12 @@
         <section class="bg-maior-primary text-white">
             <div class="container lg:px-20">
 
-                <div>
-                    <p>Medic Maior</p>
-                    <h2 class="font-Marcellus text-3xl text-center">¿por qué somos tu mejor opción?</h2>
+                <div class="px-10 ">
+                    <span class="font-Opensans font-light">Medic Maior</span>
+                    <p class="text-3xl leading-8 font-bold -tracking-wider font-Opensans">¿por qué somos tu mejor opción?</p>
                 </div>
 
-                <div class="grid grid-cols-3 justify-items-center">
+                <div class="grid grid-cols-3 justify-items-center px-10">
 
                     <div class="text-center">
                         <i class='bx bx-certification'></i>
@@ -441,42 +493,42 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div class="text-center">
                         <i class='bx bx-certification'></i>
                         <div>
-                            <p><strong>equipo médico</strong> altamente cualificado</p>
+                            <p>contamos <strong>equipo médico</strong> altamente cualificado</p>
                         </div>
                     </div>
 
-                    <div>
+                    <div class="text-center">
                         <i class='bx bx-certification'></i>
                         <div>
                             <p><strong>innovación tecnológica</strong> constante</p>
                         </div>
                     </div>
 
-                    <div>
+                    <div class="text-center">
                         <i class='bx bx-certification'></i>
                         <div>
-                            <p><strong>el paciente</strong> siempre es primero</p>
+                            <p>para nosotros <strong>el paciente</strong> siempre es primero</p>
                         </div>
                     </div>
 
-                    <div>
+                    <div class="text-center">
                         <i class='bx bx-certification'></i>
                         <div>
-                            <p><strong>4.2 en valoraciones</strong> en google</p>
+                            <p>tenemos <strong>4.2 en valoraciones</strong> en google</p>
                         </div>
                     </div>
 
-                    <div>
+                    <div class="text-center">
                         <i class='bx bx-certification'></i>
                         <div>
                             <p><strong>más de 7 años </strong>como centro medico estético</p>
                         </div>
                     </div>
 
-                    <div>
+                    <div class="text-center">
                         <i class='bx bx-certification'></i>
                         <div>
                             <p><strong>16 profesionales</strong> médicos</p>
@@ -486,78 +538,117 @@
             </div>
         </section>
 
-
-
-
         <!-- equipo medico -->
-        <section>
+        <section class="bg-maior-secondary">
             <div class="container lg:px-20">
 
-                <div class="swiper swiper-medico">
+                <!-- Swiper -->
+                <div class="swiper mySwiper-medico">
                     <div class="swiper-wrapper">
 
-                        <div class="swiper-slide p-5">
+                        <div class="swiper-slide">
+                            <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center md:m-10">
 
-                            <div class="grid  md:grid-cols-2 justify-items-center">
-
-                                <div>
+                                <div class="m-5">
                                     <img src="img/pantilla-img-size.webp" alt="">
                                 </div>
 
-                                <div class="self-center w-3/4 text-center">
+                                <div class="self-center lg:w-1/2 text-center px-5">
+
+                                    <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">Dra. Melania Paredes</h2>
+                                    <p>CMP 222-222</p>
+                                    <h3>ESPECIALISTA EN MEDICINA ESTÉTICA</h3>
+
+                                    <p>Combine texto grande con una imagen para enfocar el producto,
+                                        la colección o la publicación de blog que haya elegido.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center md:m-10">
+
+                                <div class="m-5">
+                                    <img src="img/pantilla-img-size.webp" alt="">
+                                </div>
+
+                                <div class="self-center lg:w-1/2 text-center bg-white px-5">
 
                                     <h2 class="text-maior-primary font-Marcellus text-3xl">Dra. Melania Paredes</h2>
-                                    <h3>Especialista en Medicina Estética</h3>
-                                    <p>La Dra. Melania Paredes, cuenta con más de 15 años en la medicina Estética</p>
-                                    <p>Cuenta con una gran formación academia, en el país de España</p>
+                                    <p>CMP 333-333</p>
+                                    <h3>ESPECIALISTA EN MEDICINA ESTÉTICA</h3>
+
+                                    <p>Combine texto grande con una imagen para enfocar el producto,
+                                        la colección o la publicación de blog que haya elegido.</p>
 
                                 </div>
                             </div>
-
                         </div>
+                        <div class="swiper-slide">
+                            <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center md:m-10">
 
-                        <div class="swiper-slide p-5">
-
-                            <div class="grid  md:grid-cols-2 justify-items-center">
-
-                                <div>
+                                <div class="m-5">
                                     <img src="img/pantilla-img-size.webp" alt="">
                                 </div>
 
-                                <div class="self-center w-3/4 text-center">
+                                <div class="self-center lg:w-1/2 text-center bg-white px-5">
 
-                                    <h2 class="text-maior-primary font-Marcellus text-3xl">Dr. Julio Suca</h2>
-                                    <h3>Especialista en Medicina Estética</h3>
-                                    <p>La Dra. Melania Paredes, cuenta con más de 15 años en la medicina Estética</p>
-                                    <p>Cuenta con una gran formación academia, en el país de España</p>
+                                    <h2 class="text-maior-primary font-Marcellus text-3xl">Dra. Melania Paredes</h2>
+                                    <p>CMP 444-444</p>
+                                    <h3>ESPECIALISTA EN MEDICINA ESTÉTICA</h3>
+
+                                    <p>Combine texto grande con una imagen para enfocar el producto,
+                                        la colección o la publicación de blog que haya elegido.</p>
 
                                 </div>
                             </div>
-
                         </div>
+                        <div class="swiper-slide">
+                            <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center md:m-10">
 
-                        <div class="swiper-slide p-5">
-                            <div class="grid  md:grid-cols-2 justify-items-center">
-                                <div>
+                                <div class="m-5">
                                     <img src="img/pantilla-img-size.webp" alt="">
                                 </div>
 
-                                <div class="self-center w-3/4 text-center">
-                                    <h2 class="text-maior-primary font-Marcellus text-3xl">Dr. Alexander Flores</h2>
-                                    <h3>Especialista en Medicina Estética</h3>
-                                    <p>La Dra. Melania Paredes, cuenta con más de 15 años en la medicina Estética</p>
-                                    <p>Cuenta con una gran formación academia, en el país de España</p>
+                                <div class="self-center lg:w-1/2 text-center bg-white px-5">
+
+                                    <h2 class="text-maior-primary font-Marcellus text-3xl">Dra. Melania Paredes</h2>
+                                    <p>CMP 555-555</p>
+                                    <h3>ESPECIALISTA EN MEDICINA ESTÉTICA</h3>
+
+                                    <p>Combine texto grande con una imagen para enfocar el producto,
+                                        la colección o la publicación de blog que haya elegido.</p>
+
                                 </div>
                             </div>
                         </div>
 
+                        <div class="swiper-slide">
+                            <div class="grid  grid-cols-1  md:grid-cols-2 items-center justify-items-center md:m-10">
+
+                                <div class="m-5">
+                                    <img src="img/pantilla-img-size.webp" class="w-full h-full object-cover" alt="">
+                                </div>
+
+                                <div class="self-center lg:w-1/2 text-center bg-white px-5">
+
+                                    <h2 class="text-maior-primary font-Marcellus text-3xl">Dra. Melania Paredes</h2>
+                                    <p>CMP 111-111</p>
+                                    <h3>ESPECIALISTA EN MEDICINA ESTÉTICA</h3>
+
+                                    <p>Combine texto grande con una imagen para enfocar el producto,
+                                        la colección o la publicación de blog que haya elegido.</p>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="swiper-team"></div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                    <div class="swiper-pagination"></div>
                 </div>
-
-
-
-
 
             </div>
         </section>
@@ -569,8 +660,8 @@
                 <!-- title seccion -->
                 <div class="px-10 ">
 
-                    <span>testimonios</span>
-                    <p class="text-maior-primary text-4xl font-semibold font-Marcellus">nuestros pacientes hablan por
+                    <span class="font-Opensans font-light">testimonios</span>
+                    <p class="text-3xl leading-8 font-bold -tracking-wider font-Opensans text-maior-primary">nuestros pacientes hablan por
                         nosotros</p>
                 </div>
 
@@ -701,6 +792,46 @@
         </section> -->
 
     </main>
+
+    <footer>
+        <div class="container px-20 text-maior-primary">
+
+            <div class="grid  md:grid-cols-3 justify-center border-b border-b-maior-primary">
+
+                <div class="justify-self-center flex items-center my-4">
+                    <i class='bx bxl-whatsapp mx-2'></i>
+                    <p>+51 952 515 441</p>
+                </div>
+
+                <div class="justify-self-center flex  items-center my-4">
+                    <i class='bx bx-map mx-2'></i>
+                    <P>Av. Trinidad & Moran</P>
+                </div>
+                <!-- redes -->
+                <div class="justify-self-center flex items-center">
+                    <ul class="flex">
+                        <li class="mx-2">
+                            <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        </li>
+                        <li class="mx-2">
+                            <a href="#" target="_blank"><i class='bx bxl-facebook  '></i></a>
+                        </li>
+                        <li class="mx-2">
+                            <a href="#" target="_blank"><i class='bx bxl-tiktok    '></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div>
+                <p>Diseño y desarrollo</p>
+            </div>
+
+        </div>
+
+
+    </footer>
 
 
     <!-- scrips js -->
