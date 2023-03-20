@@ -82,107 +82,139 @@
         </div>
 
         <!-- menu items -->
-        <nav class="bg-white">
-            <ul class="container relative  md:flex justify-evenly uppercase font-semibold text-xs tracking-wider w-1/2 md:w-full bg-gray-100 ">
+        <nav class="bg-white relative h-screen lg:h-auto">
+            <ul class="container lg:flex justify-evenly uppercase font-semibold text-xs md:tracking-wider md:w-full">
 
-                <li class="p-2 border-b border-b-black">
-                    <a href="#">Medicina Estética</a>
-                    <ul class="bg-white md:flex absolute gap-5 mt-2 w-full p-5 left-0  justify-evenly">
-                        <li><a href="#">Tratamiento Facial</a>
-                            <ul>
-                                <li><a href="#">Hydrafacial</a></li>
-                            </ul>
-
-                        </li>
-
-                        <li><a href="#">Tratamiento Corporal</a>
-                            <ul class="text-green-500">
-                                <li><a href="#">Depilación</a>
-                                    <ul class="text-maior-primary font-normal">
-                                        <li><a href="#">Depilación Facial & Corporal</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Uñas</a>
-                                    <ul class="text-maior-primary font-normal">
-                                        <li><a href="#">Onicomicosis (Hongos de uñas)</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Reducción de medidas</a>
-                                    <ul class="text-maior-primary font-normal">
-                                        <li><a href="#">Ultracavitación</a></li>
-                                        <li><a href="#">Carboxiterapia</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Flacidez</a>
-                                    <ul class="text-maior-primary font-normal">
-                                        <li><a href="#">Radiofrecuencia</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Rejuvenecimiento</a>
-                                    <ul class="text-maior-primary font-normal">
-                                        <li><a href="#">Rejuvenecimiento de manos, cuello y escote</a></li>
-                                        <li><a href="#">Rejuvenecimiento de mamas y glúteos</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Postquirúrgicos</a>
-                                    <ul class="text-maior-primary font-normal">
-                                        <li><a href="#">Ultracavitación</a></li>
-                                        <li><a href="#">Masajes Terapeúticos</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Estrías</a>
-                                    <ul class="text-maior-primary font-normal">
-                                        <li><a href="#">Estrías</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            
-                        </li>
-
-                        <li><a href="#">Tratamiento Laser</a>
-                            <ul>
-                                <li><a href="#">Depilación laser</a></li>
-                                <li><a href="#">Rejuvenecimiento facial</a></li>
-                            </ul>
-                        </li>
-
-                        <li><img src="img/laser-3.jpg" class="w-80"  alt=""></li>
-                        
-                    </ul>
+                <!-- medicina estética y laser -->
+                <li class="px-2.5 py-3.5 lg:p-2 group/item">
+                    <a href="#">Medicina Estética y láser</a>
                     
+                    <ul class="bg-gray-50 lg:flex justify-center  absolute 
+                    w-1/2 right-0 top-0 p-2.5
+                    
+                    h-full
+                    overflow-y-auto
+
+                    lg:h-auto
+                    lg:top-auto
+                    lg:mt-2 lg:w-full lg:left-0  
+                    invisible group-hover/item:visible">
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/face-1.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Tratamiento Facial</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/corporal-2.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Tratamiento  Corporal</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/laser-3.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Tratamiento Laser</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Dr. Julio Suca</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
                 </li>
-                <li class="p-2 border-b border-b-black group/item">
+
+                <!-- cirugía plástica -->
+                <li class="px-2.5 py-3.5 lg:p-2 group/item">
                     <a href="#">Cirugía Plástica</a>
+
+                    <ul class="bg-gray-50 lg:flex justify-center  absolute 
+                    w-1/2 right-0 top-0 p-2.5
                     
-                    <ul class="hidden group-hover/item:block">
-                        <li class="px-5 py-2.5 group/subitem">
-                            <a href="#">Cirugía Facial</a>
-                            <ul class="bg-maior-secondary absolute top-0 right-0 w-1/2 invisible group-hover/subitem:visible">
-                                <li class="px-5 py-2"><a href="#">Rinoplastia</a></li>
-                                <li class="px-5 py-2"><a href="#">Blefaroplastia</a></li>
-                                <li class="px-5 py-2"><a href="#">Lifting Facial</a></li>
-                            </ul>
-                            
+                    h-full
+                    overflow-y-auto
+
+                    lg:h-auto
+                    lg:top-auto
+                    lg:mt-2 lg:w-full lg:left-0  
+                    invisible group-hover/item:visible">
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Cirugía Facial</p>
+                                    </div>
+                                </div>
+                            </a>
                         </li>
 
-                        <li class="px-5 py-2.5 group/subitem">
-                            <a href="#">Cirugía Corporal</a>
-                            <ul class="bg-maior-secondary absolute top-0 right-0 w-1/2 invisible group-hover/subitem:visible">
-                                <li class="px-5 py-2"><a href="#">Liposucción</a></li>
-                                <li class="px-5 py-2"><a href="#">Abdominoplastia</a></li>
-                                <li class="px-5 py-2"><a href="#">Aumento de mamas</a></li>
-                            </ul>
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Cirugía Corporal</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Cirugía Reconstructiva</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Dr. Julio Suca</p>
+                                    </div>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </li>
-                <li class="p-2 border-b border-b-black">
-                    <a href="#">Equipo Medicina</a>
-                    
+                <li class="px-2.5 py-3.5 lg:p-2">
+                    <a href="#">Equipo medico</a>
+
                 </li>
-                <li class="p-2"><a href="instalaciones.html">Nosotros</a></li>
-                <li class="p-2"><a href="instalaciones.html">Instalaciones</a></li>
-                <li class="p-2"><a href="novedades.html">Novedades</a></li>
-                <li class="p-2"><a href="contacto.html">Contacto</a></li>
+
+                <li class="px-2.5 py-3.5 lg:p-2"><a href="#">tecnología</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2"><a href="instalaciones.html">Nosotros</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2"><a href="instalaciones.html">Instalaciones</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2 opacity-20"><a href="novedades.html">Novedades</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2"><a href="contacto.html">Contacto</a></li>
             </ul>
 
         </nav>
@@ -411,7 +443,8 @@
                 <div class="px-10 ">
 
                     <span class="font-Opensans font-light text-maior-primary">Tratamientos por excelencia</span>
-                    <p class="text-3xl leading-8 font-bold -tracking-wider font-Opensans text-maior-primary">Mayor cuidado para tu piel</p>
+                    <p class="text-3xl leading-8 font-bold -tracking-wider font-Opensans text-maior-primary">Mayor
+                        cuidado para tu piel</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center">
@@ -483,7 +516,8 @@
 
                     <div class="self-center w-3/4 text-center">
 
-                        <h2 class="text-3xl font-bold -tracking-wide font-Opensans text-maior-primary">Tonos perfectos</h2>
+                        <h2 class="text-3xl font-bold -tracking-wide font-Opensans text-maior-primary">Tonos perfectos
+                        </h2>
                         <p>Combine texto grande con una imagen para enfocar el producto,
                             la colección o la publicación de blog que haya elegido.</p>
 
@@ -528,7 +562,8 @@
 
                 <div class="px-10 ">
                     <span class="font-Opensans font-light">Medic Maior</span>
-                    <p class="text-3xl leading-8 font-bold -tracking-wider font-Opensans">¿por qué somos tu mejor opción?</p>
+                    <p class="text-3xl leading-8 font-bold -tracking-wider font-Opensans">¿por qué somos tu mejor
+                        opción?</p>
                 </div>
 
                 <div class="grid grid-cols-3 justify-items-center px-10">
@@ -602,7 +637,8 @@
 
                                 <div class="self-center lg:w-1/2 text-center px-5">
 
-                                    <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">Dra. Melania Paredes</h2>
+                                    <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">Dra.
+                                        Melania Paredes</h2>
                                     <p>CMP 222-222</p>
                                     <h3>ESPECIALISTA EN MEDICINA ESTÉTICA</h3>
 
@@ -708,7 +744,8 @@
                 <div class="px-10 ">
 
                     <span class="font-Opensans font-light">testimonios</span>
-                    <p class="text-3xl leading-8 font-bold -tracking-wider font-Opensans text-maior-primary">nuestros pacientes hablan por
+                    <p class="text-3xl leading-8 font-bold -tracking-wider font-Opensans text-maior-primary">nuestros
+                        pacientes hablan por
                         nosotros</p>
                 </div>
 
