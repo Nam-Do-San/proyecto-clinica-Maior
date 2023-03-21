@@ -18,10 +18,10 @@
 
 <body>
     <!-- header -->
-    <header class="fixed w-full z-50">
+    <header class="fixed w-full z-50 hover:bg-white" id="header">
 
         <!-- promo -->
-        <div class=" border-b bg-slate-50">
+        <div class=" border-b bg-slate-50" id="sale">
 
             <div class="container">
 
@@ -32,8 +32,8 @@
                         <P class="text-xs uppercase">Lun - Sab: 9 am - 1 pm</P>
                     </div>
 
-                    <div class="justify-self-center  uppercase text-xs tracking-widest    my-auto  hidden">
-                        <P>Dia de la mujer<span class='bx bxs-heart text-red-500 align-middle'></span>
+                    <div class="justify-self-center  uppercase text-xs tracking-widest    my-auto  hidden md:block">
+                        <P>Dia de la mujer <span class='bx bxs-heart text-red-500'></span>
                         </P>
                     </div>
 
@@ -58,16 +58,24 @@
         </div>
 
         <!-- header center -->
-        <div class="bg-white">
+        <div class="bg-white lg:bg-inherit">
             <div class="grid grid-cols-3">
 
-                <div>
-
+                <!-- btn open nav -->
+                <div class="my-auto justify-self-start px-3 text-white" id="btn-menu">
+                    <button class=" text-maior-primary lg:hidden" id="open">
+                        <i class='bx bx-menu text-3xl'></i>
+                    </button>
+                    <button class=" text-maior-primary hidden" id="close">
+                        <i class='bx bx-x text-3xl'></i>
+                    </button>
                 </div>
 
                 <div class="flex justify-center py-6">
                     <div class="w-32 mx-auto">
-                        <a href="index.html"><img class="w-full" src="img/logo-m.svg" alt=""></a>
+                        <a href="index.html">
+                            <img class="w-full" src="img/logo-m.svg" alt="">
+                        </a>
                     </div>
 
                 </div>
@@ -82,11 +90,11 @@
         </div>
 
         <!-- menu items -->
-        <nav class="bg-white relative h-screen lg:h-auto">
+        <nav class=" relative h-screen lg:h-auto text-maior-primary  hidden lg:block " id="menu-nav">
             <ul class="container lg:flex justify-evenly uppercase font-semibold text-xs md:tracking-wider md:w-full">
 
                 <!-- medicina estética y laser -->
-                <li class="px-2.5 py-3.5 lg:p-2 group/item">
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary group/item">
                     <a href="#">Medicina Estética y láser</a>
                     
                     <ul class="bg-gray-50 lg:flex justify-center  absolute 
@@ -102,8 +110,8 @@
                         <li class="md:p-8">
                             <a href="#">
                                 <div>
-                                    <img src="img/face-1.jpg" class="object-cover w-full h-full" alt="">
-                                    <div class="py-2.5">
+                                    <img src="img/nav-facial.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5 text-maior-primary">
                                         <p>Tratamiento Facial</p>
                                     </div>
                                 </div>
@@ -113,7 +121,7 @@
                         <li class="md:p-8">
                             <a href="#">
                                 <div>
-                                    <img src="img/corporal-2.jpg" class="object-cover w-full h-full" alt="">
+                                    <img src="img/nav-corporal.jpg" class="object-cover w-full h-full" alt="">
                                     <div class="py-2.5">
                                         <p>Tratamiento  Corporal</p>
                                     </div>
@@ -124,7 +132,7 @@
                         <li class="md:p-8">
                             <a href="#">
                                 <div>
-                                    <img src="img/laser-3.jpg" class="object-cover w-full h-full" alt="">
+                                    <img src="img/nav-laser.jpg" class="object-cover w-full h-full" alt="">
                                     <div class="py-2.5">
                                         <p>Tratamiento Laser</p>
                                     </div>
@@ -135,9 +143,9 @@
                         <li class="md:p-8">
                             <a href="#">
                                 <div>
-                                    <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <img src="img/nav-depilacion.jpg" class="object-cover w-full h-full" alt="">
                                     <div class="py-2.5">
-                                        <p>Dr. Julio Suca</p>
+                                        <p>Depilación Láser</p>
                                     </div>
                                 </div>
                             </a>
@@ -147,12 +155,13 @@
                 </li>
 
                 <!-- cirugía plástica -->
-                <li class="px-2.5 py-3.5 lg:p-2 group/item">
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary group/item">
                     <a href="#">Cirugía Plástica</a>
 
                     <ul class="bg-gray-50 lg:flex justify-center  absolute 
-                    w-1/2 right-0 top-0 p-2.5
                     
+
+                    w-1/2 right-0 top-0 p-2.5
                     h-full
                     overflow-y-auto
 
@@ -205,16 +214,16 @@
                         </li>
                     </ul>
                 </li>
-                <li class="px-2.5 py-3.5 lg:p-2">
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary">
                     <a href="#">Equipo medico</a>
 
                 </li>
 
-                <li class="px-2.5 py-3.5 lg:p-2"><a href="#">tecnología</a></li>
-                <li class="px-2.5 py-3.5 lg:p-2"><a href="instalaciones.html">Nosotros</a></li>
-                <li class="px-2.5 py-3.5 lg:p-2"><a href="instalaciones.html">Instalaciones</a></li>
-                <li class="px-2.5 py-3.5 lg:p-2 opacity-20"><a href="novedades.html">Novedades</a></li>
-                <li class="px-2.5 py-3.5 lg:p-2"><a href="contacto.html">Contacto</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a href="#">tecnología</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a href="instalaciones.html">Nosotros</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a href="instalaciones.html">Instalaciones</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2 opacity-50"><a href="novedades.html">Novedades</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a href="contacto.html">Contacto</a></li>
             </ul>
 
         </nav>
