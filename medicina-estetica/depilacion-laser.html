@@ -15,32 +15,220 @@
 
 <body>
 
-    <!-- fake just make -->
-    <div class="fixed w-full z-50 bg-white text-maior-primary">
-        <div class="text-center border-b py-1">
-            <span>Lorem ipsum fake fake fake fake fake feik</span>
-        </div>
+    <!-- header -->
+    <header class="fixed w-full z-50 hover:bg-white" id="header">
 
-        <div class="flex justify-center p-5 ">
-            <div class="w-32 mx-auto">
-                <a href="index.html"><img class="w-full" src="../img/logo-m.svg" alt=""></a>
+        <!-- promo -->
+        <div class=" border-b bg-slate-50" id="sale">
+
+            <div class="container">
+
+                <div class="grid grid-cols-2  md:grid-cols-3">
+
+                    <div class="justify-self-start flex  items-center">
+                        <i class='bx bx-time-five mx-2'></i>
+                        <P class="text-xs uppercase">Lun - Sab: 9 am - 1 pm</P>
+                    </div>
+
+                    <div class="justify-self-center  uppercase text-xs tracking-widest    my-auto  hidden md:block">
+                        <P>Dia de la mujer <span class='bx bxs-heart text-red-500'></span>
+                        </P>
+                    </div>
+
+                    <div class="justify-self-end flex items-center">
+                        <ul class="flex">
+                            <li class="mx-2">
+                                <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#" target="_blank"><i class='bx bxl-facebook  '></i></a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#" target="_blank"><i class='bx bxl-tiktok    '></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
 
-        <nav class="mx-auto">
-            <ul class="flex justify-center uppercase font-semibold text-xs tracking-wider">
-                <li class="p-2"><a href="#">Medicina Estética</a></li>
-                <li class="p-2"><a href="#">Cirugía Plástica</a></li>
-                <li class="p-2"><a href="equipo.html">Equipo Medicina</a></li>
-                <li class="p-2"><a href="instalaciones.html">Instalaciones</a></li>
-                <li class="p-2"><a href="novedades.html">Novedades</a></li>
-                <li class="p-2"><a href="contacto.html">Contacto</a></li>
+        <!-- header center -->
+        <div class="bg-white lg:bg-inherit">
+            <div class="grid grid-cols-3">
+
+                <!-- btn open nav -->
+                <div class="my-auto justify-self-start px-3 text-white" id="btn-menu">
+                    <button class=" text-maior-primary lg:hidden" id="open">
+                        <i class='bx bx-menu text-3xl'></i>
+                    </button>
+                    <button class=" text-maior-primary hidden" id="close">
+                        <i class='bx bx-x text-3xl'></i>
+                    </button>
+                </div>
+
+                <div class="flex justify-center py-6">
+                    <div class="w-32 mx-auto">
+                        <a href="../index.html">
+                            <img class="w-full" src="../img/logo-m.svg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- menu items -->
+        <nav class=" relative h-screen lg:h-auto text-maior-primary  hidden lg:block " id="menu-nav">
+            <ul class="container lg:flex justify-evenly uppercase font-semibold text-xs md:tracking-wider md:w-full">
+
+                <!-- medicina estética y laser -->
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary group/item">
+                    <a href="#">Medicina Estética y láser</a>
+
+                    <ul class="bg-gray-50 lg:flex justify-center  absolute 
+                    w-1/2 right-0 top-0 p-2.5
+                    
+                    h-full
+                    overflow-y-auto
+
+                    lg:h-auto
+                    lg:top-auto
+                    lg:mt-2 lg:w-full lg:left-0  
+                    invisible group-hover/item:visible">
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="../img/nav-facial.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5 text-maior-primary">
+                                        <p>Tratamiento Facial</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="../img/nav-corporal.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Tratamiento Corporal</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="../img/nav-laser.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Tratamiento Laser</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="../img/nav-depilacion.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Depilación Láser</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <!-- cirugía plástica -->
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary group/item">
+                    <a href="#">Cirugía Plástica</a>
+
+                    <ul class="bg-gray-50 lg:flex justify-center  absolute 
+                    
+
+                    w-1/2 right-0 top-0 p-2.5
+                    h-full
+                    overflow-y-auto
+
+                    lg:h-auto
+                    lg:top-auto
+                    lg:mt-2 lg:w-full lg:left-0  
+                    invisible group-hover/item:visible">
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="../img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Cirugía Facial</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="../img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Cirugía Corporal</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="../img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Cirugía Reconstructiva</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="../img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Dr. Julio Suca</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary">
+                    <a href="#">Equipo medico</a>
+
+                </li>
+
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a href="#">tecnología</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a href="instalaciones.html">Nosotros</a>
+                </li>
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a
+                        href="instalaciones.html">Instalaciones</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2 opacity-50"><a href="novedades.html">Novedades</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a href="contacto.html">Contacto</a></li>
             </ul>
 
         </nav>
 
-    </div>
+    </header>
 
     <main>
         <!-- picture -->
@@ -59,7 +247,8 @@
                             <p>Medicina Estética</p>
                         </div>
 
-                        <h1 class="text-maior-primary text-3xl lg:text-4xl font-semibold font-Marcellus tracking-wider">Depilación láser</h1>
+                        <h1 class="text-maior-primary text-3xl lg:text-4xl font-semibold font-Marcellus tracking-wider">
+                            Depilación láser</h1>
 
                         <div class="text-maior-primary font-semibold font-Opensans -tracking-wide">
                             <p>Tratamiento Facial & Corporal</p>
@@ -71,12 +260,15 @@
 
         <!-- posibles palabras clave -->
         <div class="relative lg:-top-40">
-            
+
             <div class="grid  grid-cols-1 lg:grid-cols-2">
-                
-                <div class="bg-maior-secondary h-1/3 lg:self-end lg:order-last flex justify-center items-center pb-1 lg:ml-3">
+
+                <div
+                    class="bg-maior-secondary h-1/3 lg:self-end lg:order-last flex justify-center items-center pb-1 lg:ml-3">
                     <div class="p-3 bg-maior-secondary text-white text-center">
-                        <p class="leading-3"><span class="font-semibold font-Opensans">Tu consulta es </span> <span class="font-Betterlett  text-3xl">gratuita</span>, al tomar el tratamiento se te hara el renvalsó</p>
+                        <p class="leading-3"><span class="font-semibold font-Opensans">Tu consulta es </span> <span
+                                class="font-Betterlett  text-3xl">gratuita</span>, al tomar el tratamiento se te hara el
+                            renvalsó</p>
                     </div>
                 </div>
 
@@ -93,10 +285,10 @@
                                 <path d="M9 12l2 2l4 -4"></path>
                             </svg>
                             <p class="pl-1 md:pl-6">
-                                vitaminas faciales
+                                resultados permanentes
                             </p>
                         </li>
-    
+
                         <li class="flex items-center px-10 py-1.5">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-discount-check"
                                 width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
@@ -108,10 +300,10 @@
                                 <path d="M9 12l2 2l4 -4"></path>
                             </svg>
                             <p class="pl-1 md:pl-6">
-                                hidratación y nutrición
+                                efectiva y seguro
                             </p>
                         </li>
-    
+
                         <li class="flex items-center px-10 py-1.5">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-discount-check"
                                 width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
@@ -123,10 +315,10 @@
                                 <path d="M9 12l2 2l4 -4"></path>
                             </svg>
                             <p class="pl-1 md:pl-6">
-                                Cuidado de Piel
+                                indoloro
                             </p>
                         </li>
-    
+
                         <li class="flex items-center px-10 py-1.5">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-discount-check"
                                 width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
@@ -138,7 +330,7 @@
                                 <path d="M9 12l2 2l4 -4"></path>
                             </svg>
                             <p class="pl-1 md:pl-6">
-                                Sin cirugía
+                                elimina los vellos
                             </p>
                         </li>
                     </ul>
@@ -151,31 +343,57 @@
         <section class="text-maior-primary">
             <div class="container lg:px-52">
 
-                <div class="grid   md:grid-cols-2">
+                <div class="grid md:grid-cols-2">
 
                     <div class="px-10  md:pl-20">
 
                         <div>
-                            <h2 class="font-bold text-3xl py-4">¿Qué es la toxina botulínica facial*?</h2>
+                            <span class="font-Opensans font-light">En que consiste</span>
+                            <h2 class="font-bold text-3xl pb-4 leading-7 font-Opensans -tracking-wider">¿Cómo funciona la depilación láser?</h2>
                         </div>
 
                         <div class="font-medium font-Opensans">
-                            <p>Mesoterapia facial es un tratamiento por excelencia para cuidar la piel y
-                                lucirla
-                                hidratada, tonificada y luminosa. Es un tratamiento de rejuvenecimiento facial
-                                mínimamente invasivo que consiste en pequeñas infiltraciones de un cóctel de ácido
-                                hialurónico, minerales, oligoelementos, aminoácidos esenciales y las vitaminas (A, B1,
-                                B2, B3, B5, B6, C, D y E).</p>
-                            <p>Con el paso de la edad y bajo la influencia de distintos factores externos como la
-                                exposición solar, la polución, los malos hábitos de vida o exposición al frío, la piel
-                                reduce los niveles de ácido hialurónico, vitaminas y minerales que le proporcionan un
-                                aspecto saludable. Lo que produce la aparición de los signos de envejecimiento
-                                prematuros y da un aspecto más apagado y cansado.</p>
-                            <p>La mesoterapia facial de vitaminas consigue realizar una hidratación y nutrición
-                                profunda, lo que ayuda a recuperar el aspecto de la piel más rejuvenecida, luminosa y
-                                tersa. La calidad de cutis se mejora prácticamente de forma inmediata, en un tratamiento
-                                ambulatorio y sin la necesidad de cuidados posteriores específicos.</p>
+                            <p>
+                                La fotodepilación es una técnica que tiene múltiples ventajas por su comodidad e incluso
+                                ahorro económico en comparación con sistemas convencionales. Es especialmente indicado
+                                para pacientes que, por sus hábitos de vida, requieran una depilación duradera, casi
+                                permanente: deportistas (nadadores, culturistas o ciclistas), modelos, actores y
+                                actrices, etc. Asimismo, es muy apropiado para tratar patologías como hirsutismo,
+                                hipertricosis o pseudofoliculitis.
+                            </p>
+
+                            <p>
+                                La fotodepilación láser es una técnica que permite eliminar el vello de todas las partes
+                                del cuerpo, las sesiones se hacen con intervalos mensuales, el vello crece menos y más
+                                débil. En la mayoría de los pacientes tras pocas sesiones (8 – 10) la depilación es
+                                efectiva al 100 % y de larga duración.
+                            </p>
+
+
                         </div>
+
+                        
+                        <div>
+                            <span class="font-Opensans font-normal">consideración</span>
+                            <h2 class="font-bold text-3xl pb-4 leading-7 font-Opensans -tracking-wider">¿Cómo me debo de preparar?</h2>
+                        </div>
+
+                        <div class="font-medium font-Opensans">
+                            <p>
+                                De 2 a 3 días antes del tratamiento debe rasurar o usar crema depilatoria en el área a
+                                tratar. No se permite depilarse con cera u otro sistema que arranque el vello de raíz,
+                                durante las 4 o 6 semanas anteriores, ni durante el tratamiento, puesto que el láser
+                                necesita el pelo para ser dirigido hacia él.
+                            </p>
+
+                            <p>
+                                Después del tratamiento se puede continuar sus actividades regulares inmediatamente,
+                                sólo se requiere aplicar en las zonas tratadas las cremas específicas que se indique
+                                para cada caso, además de proteger la piel a la exposición solar de manera apropiada
+                                para reducir el riesgo de hiperpigmentaciones.
+                            </p>
+                        </div>
+
                     </div>
 
 
@@ -183,100 +401,115 @@
                     <div class="px-10 md:pr-10  md:pl-16">
 
                         <div>
-                            <h3 class="uppercase text-center">información del tratamiento</h3>
-                        </div>
-
-                        <div class="flex justify-between items-center py-5 border-b-2 border-maior-secondary">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-hour-2"
-                                width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                                <path d="M12 12l3 -2"></path>
-                                <path d="M12 7v5"></path>
-                            </svg>
-                            <div class="text-right">
-                                <p>Duración del tratamiento</p>
-                                <p><strong>20 - 30 min</strong></p>
+                            <div>
+                                <h3 class="uppercase text-center">información del tratamiento</h3>
+                            </div>
+    
+                            <div class="flex justify-between items-center py-5 border-b-2 border-maior-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-hour-2"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                                    <path d="M12 12l3 -2"></path>
+                                    <path d="M12 7v5"></path>
+                                </svg>
+                                <div class="text-right">
+                                    <p>Duración del tratamiento</p>
+                                    <p><strong>20 - 30 min</strong></p>
+                                </div>
+                            </div>
+    
+                            <div class="flex justify-between items-center py-5 border-b-2 border-maior-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vaccine"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M17 3l4 4"></path>
+                                    <path d="M19 5l-4.5 4.5"></path>
+                                    <path d="M11.5 6.5l6 6"></path>
+                                    <path d="M16.5 11.5l-6.5 6.5h-4v-4l6.5 -6.5"></path>
+                                    <path d="M7.5 12.5l1.5 1.5"></path>
+                                    <path d="M10.5 9.5l1.5 1.5"></path>
+                                    <path d="M3 21l3 -3"></path>
+                                </svg>
+                                <div class="text-right">
+                                    <p>Duración del tratamiento</p>
+                                    <p><strong>20 - 30 min</strong></p>
+                                </div>
+                            </div>
+    
+                            <div class="flex justify-between items-center py-5 border-b-2 border-maior-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clipboard-heart"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2">
+                                    </path>
+                                    <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z">
+                                    </path>
+                                    <path
+                                        d="M11.993 16.75l2.747 -2.815a1.9 1.9 0 0 0 0 -2.632a1.775 1.775 0 0 0 -2.56 0l-.183 .188l-.183 -.189a1.775 1.775 0 0 0 -2.56 0a1.899 1.899 0 0 0 0 2.632l2.738 2.825z">
+                                    </path>
+                                </svg>
+                                <div class="text-right">
+                                    <p>Duración del tratamiento</p>
+                                    <p><strong>20 - 30 min</strong></p>
+                                </div>
+                            </div>
+    
+                            <div class="flex justify-between items-center py-5 border-b-2 border-maior-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-run" width="24"
+                                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M13 4m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                    <path d="M4 17l5 1l.75 -1.5"></path>
+                                    <path d="M15 21l0 -4l-4 -3l1 -6"></path>
+                                    <path d="M7 12l0 -3l5 -1l3 3l3 1"></path>
+                                </svg>
+                                <div class="text-right">
+                                    <p>Duración del tratamiento</p>
+                                    <p><strong>20 - 30 min</strong></p>
+                                </div>
+                            </div>
+    
+                            <div class="flex justify-between items-center py-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-stars"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M17.8 19.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z">
+                                    </path>
+                                    <path
+                                        d="M6.2 19.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z">
+                                    </path>
+                                    <path
+                                        d="M12 9.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z">
+                                    </path>
+                                </svg>
+                                <div class="text-right">
+                                    <p>Duración del tratamiento</p>
+                                    <p><strong>20 - 30 min</strong></p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="flex justify-between items-center py-5 border-b-2 border-maior-secondary">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vaccine"
-                                width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M17 3l4 4"></path>
-                                <path d="M19 5l-4.5 4.5"></path>
-                                <path d="M11.5 6.5l6 6"></path>
-                                <path d="M16.5 11.5l-6.5 6.5h-4v-4l6.5 -6.5"></path>
-                                <path d="M7.5 12.5l1.5 1.5"></path>
-                                <path d="M10.5 9.5l1.5 1.5"></path>
-                                <path d="M3 21l3 -3"></path>
-                            </svg>
-                            <div class="text-right">
-                                <p>Duración del tratamiento</p>
-                                <p><strong>20 - 30 min</strong></p>
+                        <!-- beneficios -->
+                        <div>
+                            <div>
+                                <h3 class="uppercase text-center">beneficios de la depilación laser</h3>
                             </div>
-                        </div>
 
-                        <div class="flex justify-between items-center py-5 border-b-2 border-maior-secondary">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clipboard-heart"
-                                width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                    d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2">
-                                </path>
-                                <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z">
-                                </path>
-                                <path
-                                    d="M11.993 16.75l2.747 -2.815a1.9 1.9 0 0 0 0 -2.632a1.775 1.775 0 0 0 -2.56 0l-.183 .188l-.183 -.189a1.775 1.775 0 0 0 -2.56 0a1.899 1.899 0 0 0 0 2.632l2.738 2.825z">
-                                </path>
-                            </svg>
-                            <div class="text-right">
-                                <p>Duración del tratamiento</p>
-                                <p><strong>20 - 30 min</strong></p>
-                            </div>
+                            <ul>
+                                <li>
+                                    <i></i>
+                                    <p></p>
+                                </li>
+                            </ul>
                         </div>
-
-                        <div class="flex justify-between items-center py-5 border-b-2 border-maior-secondary">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-run" width="24"
-                                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M13 4m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                <path d="M4 17l5 1l.75 -1.5"></path>
-                                <path d="M15 21l0 -4l-4 -3l1 -6"></path>
-                                <path d="M7 12l0 -3l5 -1l3 3l3 1"></path>
-                            </svg>
-                            <div class="text-right">
-                                <p>Duración del tratamiento</p>
-                                <p><strong>20 - 30 min</strong></p>
-                            </div>
-                        </div>
-
-                        <div class="flex justify-between items-center py-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-stars"
-                                width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                    d="M17.8 19.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z">
-                                </path>
-                                <path
-                                    d="M6.2 19.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z">
-                                </path>
-                                <path
-                                    d="M12 9.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z">
-                                </path>
-                            </svg>
-                            <div class="text-right">
-                                <p>Duración del tratamiento</p>
-                                <p><strong>20 - 30 min</strong></p>
-                            </div>
-                        </div>
-
                     </div>
 
                 </div>
@@ -296,7 +529,8 @@
                     <div
                         class="accordion-content overflow-hidden mx-5 lg:mx-20 border-b border-maior-primary text-maior-primary">
                         <div class="faq p-5 flex justify-between items-center">
-                            <h2 class="text-xl font-bold -tracking-wide leading-5">¿Es doloroso el tratamiento de Mesoterapia?
+                            <h2 class="text-xl font-bold -tracking-wide leading-5">¿Es doloroso el tratamiento de
+                                Mesoterapia?
                             </h2>
                             <i class='bx bx-plus'></i>
                         </div>
@@ -314,7 +548,8 @@
                     <div
                         class="accordion-content overflow-hidden mx-5 lg:mx-20 border-b border-maior-primary text-maior-primary">
                         <div class="faq p-5 flex justify-between items-center">
-                            <h2 class="text-xl font-bold -tracking-wide leading-5">¿Es doloroso el tratamiento de Mesoterapia?
+                            <h2 class="text-xl font-bold -tracking-wide leading-5">¿Es doloroso el tratamiento de
+                                Mesoterapia?
                             </h2>
                             <i class='bx bx-plus'></i>
                         </div>
@@ -332,7 +567,8 @@
                     <div
                         class="accordion-content overflow-hidden mx-5 lg:mx-20 border-b border-maior-primary text-maior-primary">
                         <div class="faq p-5 flex justify-between items-center">
-                            <h2 class="text-xl font-bold -tracking-wide leading-5">¿Es doloroso el tratamiento de Mesoterapia?
+                            <h2 class="text-xl font-bold -tracking-wide leading-5">¿Es doloroso el tratamiento de
+                                Mesoterapia?
                             </h2>
                             <i class='bx bx-plus'></i>
                         </div>
@@ -368,6 +604,18 @@
 
         </section>
 
+        <!-- otros tratamientos -->
+        <section>
+            <div class="container lg:px-52">
+
+                <div>
+                    <span class="font-Opensans font-light">más tratamientos</span>
+                    <h2 class="font-bold text-3xl pb-4 leading-7 font-Opensans -tracking-wider">conoce otros tratamientos</h2>
+                </div>
+
+            </div>
+
+        </section>
     </main>
 
     <footer>
@@ -412,6 +660,7 @@
 
 
     <!-- scrip -->
+    <script src="../js/app.js"></script>
     <script src="../js/accordion.js"></script>
 
 </body </html>
