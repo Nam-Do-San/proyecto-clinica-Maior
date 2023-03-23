@@ -727,6 +727,11 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -735,11 +740,6 @@ video {
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.my-20{
-  margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 
 .mb-24{
@@ -1272,6 +1272,16 @@ video {
   line-height: 1rem;
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1298,6 +1308,10 @@ video {
 
 .lowercase{
   text-transform: lowercase;
+}
+
+.capitalize{
+  text-transform: capitalize;
 }
 
 .leading-3{
@@ -1422,17 +1436,16 @@ video {
     left: 0px;
   }
 
+  .md\:-bottom-5{
+    bottom: -1.25rem;
+  }
+
   .md\:order-last{
     order: 9999;
   }
 
   .md\:m-10{
     margin: 2.5rem;
-  }
-
-  .md\:my-14{
-    margin-top: 3.5rem;
-    margin-bottom: 3.5rem;
   }
 
   .md\:my-10{
@@ -1529,6 +1542,11 @@ video {
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:tracking-wider{
