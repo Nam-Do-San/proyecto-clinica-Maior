@@ -79,6 +79,7 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".mySwiper-medico", {
     spaceBetween: 0,
     centeredSlides: true,
+    loop:true,
     // autoplay: {
     //   delay: 2500,
     //   disableOnInteraction: false,
@@ -98,11 +99,11 @@ var swiper = new Swiper(".mySwiper-medico", {
 var swiper = new Swiper(".swiper-testimonio", {
     slidesPerView: 1,
     spaceBetween: 10,
-    loop: true,
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    loop:true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -118,7 +119,7 @@ var swiper = new Swiper(".swiper-testimonio", {
         },
         1024: {
             slidesPerView: 3,
-            spaceBetween: 0,
+            spaceBetween: 25,
         },
     },
 });
