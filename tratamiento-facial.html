@@ -17,10 +17,10 @@
 <body>
 
     <!-- header -->
-    <header class="fixed w-full z-50">
+    <header class="fixed w-full z-50 hover:bg-white shadow-md" id="header">
 
         <!-- promo -->
-        <div class=" border-b bg-slate-50">
+        <div class=" border-b bg-slate-50" id="sale">
 
             <div class="container">
 
@@ -32,7 +32,7 @@
                     </div>
 
                     <div class="justify-self-center  uppercase text-xs tracking-widest    my-auto  hidden md:block">
-                        <P>Dia de la mujer<span class='bx bxs-heart text-red-500 align-middle'></span>
+                        <P>Dia de la mujer <span class='bx bxs-heart text-red-500'></span>
                         </P>
                     </div>
 
@@ -57,16 +57,24 @@
         </div>
 
         <!-- header center -->
-        <div class="bg-white">
+        <div class="bg-white lg:bg-inherit">
             <div class="grid grid-cols-3">
 
-                <div>
-
+                <!-- btn open nav -->
+                <div class="my-auto justify-self-start px-3 text-white" id="btn-menu">
+                    <button class=" text-maior-primary lg:hidden" id="open">
+                        <i class='bx bx-menu text-3xl'></i>
+                    </button>
+                    <button class=" text-maior-primary hidden" id="close">
+                        <i class='bx bx-x text-3xl'></i>
+                    </button>
                 </div>
 
                 <div class="flex justify-center py-6">
                     <div class="w-32 mx-auto">
-                        <a href="index.html"><img class="w-full" src="img/logo-m.svg" alt=""></a>
+                        <a href="index.html">
+                            <img class="w-full" src="img/logo-m.svg" alt="">
+                        </a>
                     </div>
 
                 </div>
@@ -81,186 +89,182 @@
         </div>
 
         <!-- menu items -->
-        <nav class="">
-            <ul
-                class="lg:px-40 relative  h-screen md:h-auto  md:flex justify-evenly uppercase font-semibold text-xs md:w-full bg-white">
+        <nav class=" relative h-screen lg:h-auto text-maior-primary  hidden lg:block " id="menu-nav">
+            <ul class="container lg:flex justify-evenly uppercase font-semibold text-xs md:tracking-wider md:w-full">
 
                 <!-- medicina estética y laser -->
-                <li class="px-2.5 py-3.5 md:p-2 group/item">
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary group/item">
                     <a href="#">Medicina Estética y láser</a>
 
-                    <ul
-                        class="bg-white md:flex absolute  right-0 top-0   md:mt-8   w-1/2  md:w-full md:left-0  justify-evenly invisible group-hover/item:visible overflow-y-auto h-full md:h-auto lg:px-40">
-                        <li><a href="index.html">
-                                <div class="p-2.5 lg:w-60">
-                                    <img src="img/face-1.jpg" class="w-full h-full object-cover" alt="">
-                                    <div class="pt-4">
+                    <ul class="bg-gray-50 lg:flex justify-center  absolute 
+                    w-1/2 right-0 top-0 p-2.5
+                    
+                    h-full
+                    overflow-y-auto
+
+                    lg:h-auto
+                    lg:top-auto
+                    lg:mt-2 lg:w-full lg:left-0  
+                    invisible group-hover/item:visible">
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-facial.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5 text-maior-primary">
                                         <p>Tratamiento Facial</p>
                                     </div>
                                 </div>
                             </a>
                         </li>
 
-                        <li><a href="#">
-                                <div class="p-2.5 lg:w-60">
-                                    <img src="img/corporal-2.jpg" class="w-full h-full object-cover" alt="">
-                                    <div class="pt-4">
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-corporal.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
                                         <p>Tratamiento Corporal</p>
                                     </div>
                                 </div>
                             </a>
                         </li>
 
-                        <li><a href="#">
-                                <div class="p-2.5 lg:w-60">
-                                    <img src="img/laser-3.jpg" class="w-full h-full object-cover" alt="">
-                                    <div class="pt-4">
-                                        <p>tratamiento laser</p>
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-laser.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Tratamiento Laser</p>
                                     </div>
                                 </div>
                             </a>
                         </li>
 
-                        <li><a href="#">
-                                <div class="p-2.5 lg:w-60">
-                                    <img src="img/laser-3.jpg" class="object-cover w-full h-full" alt="">
-                                    <div class="pt-4 mb-24 md:mb-0">
-                                        <p>Dra. Melania</p>
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-depilacion.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Depilación Láser</p>
                                     </div>
                                 </div>
                             </a>
                         </li>
                     </ul>
+
                 </li>
 
                 <!-- cirugía plástica -->
-                <li class="px-2.5 py-3.5 md:p-2 group/item">
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary group/item">
                     <a href="#">Cirugía Plástica</a>
 
-                    <ul
-                        class="bg-white md:flex absolute  right-0 top-0   md:mt-8   w-1/2  md:w-full md:p-5 md:left-0  justify-evenly invisible group-hover/item:visible overflow-y-auto h-full md:h-auto">
+                    <ul class="bg-gray-50 lg:flex justify-center  absolute 
+                    
 
-                        <li><a href="#">
-                                <div class="p-2.5 lg:w-60">
-                                    <img src="img/face-1.jpg" alt="">
-                                    <div class="pt-4">
+                    w-1/2 right-0 top-0 p-2.5
+                    h-full
+                    overflow-y-auto
+
+                    lg:h-auto
+                    lg:top-auto
+                    lg:mt-2 lg:w-full lg:left-0  
+                    invisible group-hover/item:visible">
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
                                         <p>Cirugía Facial</p>
                                     </div>
                                 </div>
                             </a>
                         </li>
 
-                        <li><a href="#">
-                                <div class="p-2.5 lg:w-60">
-                                    <img src="img/corporal-2.jpg" alt="">
-                                    <div class="pt-4">
-                                        <p>cirugía Corporal</p>
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Cirugía Corporal</p>
                                     </div>
                                 </div>
                             </a>
                         </li>
 
-
-                        <li>
+                        <li class="md:p-8">
                             <a href="#">
-                                <div class="p-2.5 lg:w-60">
-                                    <img src="img/corporal-2.jpg" alt="">
-                                    <div class="pt-4">
+                                <div>
+                                    <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
                                         <p>Cirugía Reconstructiva</p>
                                     </div>
                                 </div>
                             </a>
-
                         </li>
 
-                        <div class="">
-                            <a href="">
-                                <div class="p-2.5 lg:w-60">
-                                    <img src="img/verticale.webp" alt="">
-                                    <div class="pt-4 mb-24">
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
                                         <p>Dr. Julio Suca</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </ul>
-                </li>
-
-                <!-- equipo medico -->
-                <li class="px-2.5 py-3.5 md:p-2 group/item">
-                    <a href="#">Equipo Medicina</a>
-
-                    <ul class="md:flex absolute top-0 right-0 w-3/5 hidden">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <img src="img/nav-img.webp" alt="">
-                                    <div>
-                                        <p>Dra. Melania</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <img src="img/nav-img.webp" alt="">
-                                    <div>
-                                        <p>Dr. Julio Suca</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <img src="img/nav-img.webp" alt="">
-                                    <div>
-                                        <p>Dr. NO NAME </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <img src="img/nav-img.webp" alt="">
-                                    <div>
-                                        <p>Dr. NO NAME </p>
                                     </div>
                                 </div>
                             </a>
                         </li>
                     </ul>
                 </li>
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary">
+                    <a href="#">Equipo medico</a>
 
-                <!-- nosotros -->
-                <li class="px-2.5 py-3.5 md:p-2"><a href="instalaciones.html">Nosotros</a></li>
+                </li>
 
-                <li class="px-2.5 py-3.5 md:p-2"><a href="instalaciones.html">Instalaciones</a></li>
-                <li class="px-2.5 py-3.5 md:p-2 opacity-25"><a href="novedades.html">Novedades</a></li>
-                <li class="px-2.5 py-3.5 md:p-2"><a href="contacto.html">Contacto</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a href="#">tecnología</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a href="instalaciones.html">Nosotros</a>
+                </li>
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a
+                        href="instalaciones.html">Instalaciones</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2 opacity-50"><a href="novedades.html">Novedades</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a href="contacto.html">Contacto</a></li>
             </ul>
 
         </nav>
 
     </header>
 
+
     <main>
 
-        <section class="h-screen relative">
+        <section class=" relative md:h-screen/65  bg-gray-50">
             <picture>
                 <source media="(min-width:1024px)" srcset="img/hidrafacial-secction.jpg">
                 <img src="img/hydrafacial-movil.jpg" class="object-cover w-full h-full" alt="">
             </picture>
 
-            <div class="absolute container inset-x-0 bottom-0  md:flex items-center justify-between w-full h-full">
 
-                <div>
+            <div class="absolute bottom-0 h-full w-full bg-gradient-to-t from-white">
+
+                <div class="absolute container lg:px-52 inset-x-0 bottom-1/3">
+
+                    <div class="px-10 lg:px-20">
+                        <div class="text-maior-primary font-medium font-Opensans -tracking-wide">
+                            <p>Medicina Estética</p>
+                        </div>
+
+                        <h1 class="text-maior-primary text-3xl lg:text-4xl font-semibold font-Marcellus tracking-wider">
+                            Tratamientos Faciales</h1>
+
+                        <div class="text-maior-primary font-semibold font-Opensans -tracking-wide">
+                            <p>Tratamiento Facial & Corporal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class=" md:absolute container inset-x-0 bottom-0  md:flex items-center justify-between w-full h-full">
+
+                <div class="px-10">
                     <ul>
+                        <h2>Rejuvenecimiento</h2>
                         <li class="py-2"><a
                                 class="bg-white uppercase font-semibold p-1 text-sm tracking-wide font-Opensans"
                                 href="#">Rejuvenecimiento Facial</a></li>
@@ -295,24 +299,182 @@
                                 <p>Remodelación</p>
                             </a></li>
                     </ul>
+
                 </div>
 
-                <div>
+                <div class="px-10">
                     <ul>
-                        <li><a href="#">Rejuvenecimiento Facial</a></li>
-                        <li><a href="#">Rejuvenecimiento Facial</a></li>
-                        <li><a href="#">Rejuvenecimiento Facial</a></li>
-                        <li><a href="#">Rejuvenecimiento Facial</a></li>
-                        <li><a href="#">Rejuvenecimiento Facial</a></li>
+                        <h2 class="text-maior-primary  font-Opensans font-semibold mb-3 text-center">Tratamientos para Acne</h2>
+                        <li class="py-2"><a
+                            class="flex bg-white rounded-full text-sm font-semibold font-Opensans text-maior-primary h-8 items-center justify-center hover:bg-maior-primary hover:text-white"
+                            href="#">
+                            <p>Acné activo</p>
+                        </a></li>
+                        <li class="py-2"><a
+                            class="flex bg-white rounded-full text-sm font-semibold font-Opensans text-maior-primary h-8 items-center justify-center hover:bg-maior-primary hover:text-white"
+                            href="#">
+                            <p>Secuelas de acné</p>
+                        </a></li>
+                    </ul>
+                </div>
+
+                <div class="px-10">
+                    <ul>
+                        <h2 class="text-maior-primary  font-Opensans font-semibold mb-3 text-center">Tratamientos de Rejuvenecimiento</h2>
+                        <li class="py-2"><a
+                            class="flex bg-white rounded-full text-sm font-semibold font-Opensans text-maior-primary h-8 items-center justify-center hover:bg-maior-primary hover:text-white"
+                            href="#">
+                            <p>Toxina botulínica</p>
+                        </a></li>
+                        <li class="py-2"><a
+                            class="flex bg-white rounded-full text-sm font-semibold font-Opensans text-maior-primary h-8 items-center justify-center hover:bg-maior-primary hover:text-white"
+                            href="#">
+                            <p>Plasma rico</p>
+                        </a></li>
+                    </ul>
+                </div>
+
+            </div> -->
+
+        </section>
+
+        <section>
+            <div class="container">
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4">
+
+                    <div class="px-10">
+                        <ul>
+                            <h2 class="text-maior-primary  font-Opensans font-semibold my-3 text-center">Tratamientos de
+                                Rejuvenecimiento</h2>
+                                
+                            <li class="py-2">
+                                <a class="btn-tratamiento"
+                                    href="#">
+                                    <p>Láser de erbio YAG Fotona</p>
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a class="btn-tratamiento"
+                                    href="#">
+                                    <p>Toxina botulínica</p>
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a class="btn-tratamiento"
+                                    href="#">
+                                    <p>Implantes Faciales</p>
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a class="btn-tratamiento"
+                                    href="#">
+                                    <p>Plasma rico en Plaquetas (PRP)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="px-10">
+                        <ul>
+                            <h2 class="text-maior-primary  font-Opensans font-semibold my-3 text-center">Tratamientos para Acné</h2>
+                            <li class="py-2">
+                                <a class="btn-tratamiento"
+                                    href="#">
+                                    <p>Toxina botulínica</p>
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a class="btn-tratamiento"
+                                    href="#">
+                                    <p>Plasma rico</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="px-10">
+                        <ul>
+                            <h2 class="text-maior-primary  font-Opensans font-semibold my-3 text-center">Tratamientos de Hidratación</h2>
+                            <li class="py-2">
+                                <a class="btn-tratamiento"
+                                    href="#">
+                                    <p>Hydrafacial MD</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="px-10">
+                        <ul>
+                            <h2 class="text-maior-primary  font-Opensans font-semibold my-3 text-center">Tratamientos de
+                                Rejuvenecimiento</h2>
+                            <li class="py-2">
+                                <a class="btn-tratamiento"
+                                    href="#">
+                                    <p>Toxina botulínica</p>
+                                </a>
+                            </li>
+                            <li class="py-2">
+                                <a class="btn-tratamiento"
+                                    href="#">
+                                    <p>Plasma rico</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+    
+    <footer>
+        <div class="container lg:px-20 text-maior-primary">
+
+            <div class="grid  md:grid-cols-3 justify-center border-b border-b-maior-primary">
+
+                <div class="justify-self-start flex items-center my-4">
+                    <i class='bx bxl-whatsapp mx-2'></i>
+                    <p>+51 918 796 056</p>
+                </div>
+
+                <div class="justify-self-center flex  items-center my-4">
+                    <i class='bx bx-map mx-2'></i>
+                    <P>Av. Trinidad & Moran</P>
+                </div>
+                <!-- redes -->
+                <div class="justify-self-center md:justify-self-end  flex items-center">
+                    <ul class="flex">
+                        <li class="mx-2">
+                            <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        </li>
+                        <li class="mx-2">
+                            <a href="#" target="_blank"><i class='bx bxl-facebook  '></i></a>
+                        </li>
+                        <li class="mx-2">
+                            <a href="#" target="_blank"><i class='bx bxl-tiktok    '></i></a>
+                        </li>
                     </ul>
                 </div>
 
             </div>
 
-        </section>
+            <div class="py-3 text-center text-sm">
+                <a href="">Diseño y desarrollo <strong>nbiq</strong></a>
+            </div>
 
-    </main>
+        </div>
 
+
+    </footer>
+
+    <!-- scrip -->
+    <script src="js/app.js"></script>
 </body>
 
 </html>
