@@ -57,33 +57,33 @@ btn_menu.addEventListener('click', function (params) {
 
 
 // portada principal
-var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 10,
-    centeredSlides: true,
-    loop: true,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+// var swiper = new Swiper(".swiper-index", {
+//     spaceBetween: 10,
+//     centeredSlides: true,
+//     loop: true,
+//     autoplay: {
+//         delay: 5000,
+//         disableOnInteraction: false,
+//     },
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//     },
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+// });
 
 // equipo medico
 var swiper = new Swiper(".mySwiper-medico", {
     spaceBetween: 0,
     centeredSlides: true,
     loop:true,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
