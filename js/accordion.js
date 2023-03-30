@@ -1,5 +1,5 @@
 // new accordio
-
+// preguntas frecuentes
 const accordionContent = document.querySelectorAll(".accordion-content");
 
 accordionContent.forEach((item, index) => {
@@ -29,4 +29,24 @@ function removeOpen(index1){
             item2.querySelector("i").classList.replace("bx-minus", "bx-plus");
         }
     })
+}
+
+
+
+
+// Get the modal by id
+var modal = document.getElementById("modal");
+
+// Get the modal image tag
+var modalImg = document.getElementById("modal-img");
+
+// this function is called when a small image is clicked
+function showModal(src) {
+    modal.classList.remove('invisible');
+    modalImg.src = src;
+}
+
+// this function is called when the close button is clicked
+function closeModal() {
+    modal.classList.add('invisible');
 }

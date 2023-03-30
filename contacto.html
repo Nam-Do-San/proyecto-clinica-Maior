@@ -17,8 +17,8 @@
 
 <body>
 
-       <!-- header -->
-       <header class="fixed w-full z-50 hover:bg-white" id="header">
+    <!-- header -->
+    <header class="fixed w-full z-50 hover:bg-white" id="header">
 
         <!-- promo -->
         <div class=" border-b bg-slate-50" id="sale">
@@ -234,7 +234,100 @@
 
     <main>
 
-        <section class=" relative md:h-screen/65  bg-gray-50">
+        <section class="lg:h-screen relative">
+            <picture>
+                <source media="(min-width:1024px)" srcset="img/prueba-bg-contacto.jpg">
+                <img src="img/cuadro-para-maior-movil-degradado.jpg" alt="torso de mujer" class="object-cover h-full w-full">
+            </picture>
+
+            <div class="lg:absolute lg:px-24 container inset-x-0 top-1/3">
+                
+                <div class="px-10 lg:w-1/2 text-maior-primary">
+
+                    <div class="mb-10 ">
+                        <!-- <span class="font-Opensans font-light">información de contacto</span> -->
+                        <p class="title-section-big">Contactamos</p>
+                    </div>
+
+                    <div class="pb-5 border-b border-b-maior-gray">
+
+                        <div class="flex items-center text-sm  font-bold  font-Opensans">
+                            <i class='bx bx-calendar text-xl mr-3'></i>
+                            <p>Nuestro horario de atención</p>
+                        </div>
+
+                        <div class="ml-8 flex justify-between">
+                            <div>
+                                <p>Lunes - Viernes </p>
+                            </div>
+                            <div class="flex items-center">
+
+                                <p>9:30 am - 7:00 pm</p>
+                            </div>
+                        </div>
+                        <div class="ml-8 flex justify-between">
+                            <div>
+                                <p>Sábados</p>
+                            </div>
+                            <div class="flex items-center">
+
+                                <p>9:30 am - 2:00 pm</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-5 border-b border-b-maior-gray">
+                        <div class="flex items-center text-sm  font-bold  font-Opensans">
+                            <i class='bx bx-map text-xl mr-3'></i>
+                            <p>Ubicación</p>
+                        </div>
+                        <div class="ml-8">
+                            <p>Urb. León XIII i-3 Av. Trinidad y Moran, Cayma, Arequipa</p>
+                        </div>
+                    </div>
+
+                    <div class="py-5 border-b border-b-maior-gray">
+                        <div class="flex items-center text-sm  font-bold  font-Opensans">
+                            <i class='bx bx-phone-call text-xl mr-3'></i>
+                            <p>Teléfono fijo</p>
+                        </div>
+
+                        <div class="ml-8">
+                            <p>918 796 056</p>
+                        </div>
+                    </div>
+
+                    <div class="py-5 border-b border-b-maior-gray">
+                        <div class="flex items-center text-sm  font-bold  font-Opensans">
+                            <i class='bx bxl-whatsapp text-xl mr-3'></i>
+                            <p>WhatsApp</p>
+                        </div>
+
+                        <div class="ml-8">
+                            <p>918 796 056</p>
+                        </div>
+                    </div>
+
+                    <div class="py-5">
+                        <div class="flex items-center text-sm  font-bold  font-Opensans">
+                            <i class='bx bx-envelope text-xl mr-3'></i>
+                            <p>Gmail</p>
+                        </div>
+
+                        <div class="ml-8">
+                            <p>clinicamaioresticalaser@gmail.com</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+        </section>
+
+
+        <!-- <section class=" relative md:h-screen/65  bg-gray-50">
             <picture>
                 <source media="(min-width:820px)" srcset="img/slider-maior.jpg">
                 <img src="img/hydrafacial-movil.jpg" class="object-cover w-full h-full" alt="">
@@ -260,13 +353,21 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
 
         <!-- información de contacto -->
-        <section class="pt-5">
+        <!-- <section class="pt-5">
             <div class="container lg:px-20">
 
                 <div class="grid md:grid-cols-2  items-center gap-y-5">
+
+                    <div class="md:order-last relative">
+
+                        <img src="img/cuadro-para-maior.jpg" class="object-cover w-full h-full" alt="">
+
+                        <div class="h-full w-1/2 absolute bg-gradient-to-r from-white bottom-0">
+                        </div>
+                    </div>
 
                     <div class="px-10 md:pr-0 lg:pr-10   text-maior-primary">
 
@@ -287,7 +388,7 @@
                                     <p>Lunes - Viernes </p>
                                 </div>
                                 <div class="flex items-center">
-                                
+
                                     <p>9:30 am - 6:30 pm</p>
                                 </div>
                             </div>
@@ -296,7 +397,7 @@
                                     <p>Sábados</p>
                                 </div>
                                 <div class="flex items-center">
-                                
+
                                     <p>9:30 am - 1:30 pm</p>
                                 </div>
                             </div>
@@ -314,7 +415,7 @@
 
                         <div class="py-5 border-b border-b-maior-secondary">
                             <div class="flex items-center text-sm  font-bold  font-Opensans">
-                                <i class='bx bxl-whatsapp text-xl mr-3' ></i>
+                                <i class='bx bxl-whatsapp text-xl mr-3'></i>
                                 <p>WhatsApp</p>
                             </div>
 
@@ -325,7 +426,7 @@
 
                         <div class="py-5">
                             <div class="flex items-center text-sm  font-bold  font-Opensans">
-                                <i class='bx bx-envelope text-xl mr-3' ></i>
+                                <i class='bx bx-envelope text-xl mr-3'></i>
                                 <p>Gmail</p>
                             </div>
 
@@ -336,16 +437,91 @@
 
                     </div>
 
-                    <div class="m-5 relative h-full">
+                </div>
 
-                        <img src="img/hydra-light.jpg" class="object-cover w-full h-full" alt="">
-                        <div class="h-full w-full bg-gray-100 absolute -right-5  -bottom-5  md:-bottom-5 -z-30"></div>
+            </div>
+        </section> -->
+
+        <!-- section  -->
+        <!-- <section class="h-screen"> 
+            <div class="grid grid-cols-2 items-center">
+
+                <div class="px-10 md:pr-0 lg:pr-10   text-maior-primary">
+
+                    <div class="pb-5 border-b border-b-maior-secondary">
+
+                        <div class="pb-5 ">
+                            <span class="font-Opensans font-light">Medic Maior</span>
+                            <p class="title-section">información de contacto</p>
+                        </div>
+
+                        <div class="flex items-center text-sm  font-bold  font-Opensans">
+                            <i class='bx bx-calendar text-xl mr-3'></i>
+                            <p>Nuestro horario de atención</p>
+                        </div>
+
+                        <div class="ml-8 flex justify-between">
+                            <div>
+                                <p>Lunes - Viernes </p>
+                            </div>
+                            <div class="flex items-center">
+
+                                <p>9:30 am - 6:30 pm</p>
+                            </div>
+                        </div>
+                        <div class="ml-8 flex justify-between">
+                            <div>
+                                <p>Sábados</p>
+                            </div>
+                            <div class="flex items-center">
+
+                                <p>9:30 am - 1:30 pm</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-5 border-b border-b-maior-secondary">
+                        <div class="flex items-center text-sm  font-bold  font-Opensans">
+                            <i class='bx bx-map text-xl mr-3'></i>
+                            <p>Ubicación de nuestra Clínica Maior</p>
+                        </div>
+                        <div class="ml-8">
+                            <p>Urb. León XIII i-3 Av. Trinidad y Moran, Cayma, Arequipa</p>
+                        </div>
+                    </div>
+
+                    <div class="py-5 border-b border-b-maior-secondary">
+                        <div class="flex items-center text-sm  font-bold  font-Opensans">
+                            <i class='bx bxl-whatsapp text-xl mr-3'></i>
+                            <p>WhatsApp</p>
+                        </div>
+
+                        <div class="ml-8">
+                            <p>918 796 056</p>
+                        </div>
+                    </div>
+
+                    <div class="py-5">
+                        <div class="flex items-center text-sm  font-bold  font-Opensans">
+                            <i class='bx bx-envelope text-xl mr-3'></i>
+                            <p>Gmail</p>
+                        </div>
+
+                        <div class="ml-8">
+                            <p>clinicamaioresticalaser@gmail.com</p>
+                        </div>
                     </div>
 
                 </div>
 
+                <div>
+                    <img src="img/cuadro-para-maior.jpg" class="w-full h-full object-cover" alt="">
+                </div>
+
             </div>
-        </section>
+
+        </section> -->
+
 
         <section class="py-5">
             <div class="container lg:px-20 overflow-hidden">
@@ -356,7 +532,10 @@
                 </div>
 
                 <div class="">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15310.50652375506!2d-71.548917!3d-16.3929714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdd4c9448c6318311!2sMedic%20Majoor!5e0!3m2!1ses-419!2spe!4v1660235211981!5m2!1ses-419!2spe" class="w-full h-screen/65" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15310.50652375506!2d-71.548917!3d-16.3929714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdd4c9448c6318311!2sMedic%20Majoor!5e0!3m2!1ses-419!2spe!4v1660235211981!5m2!1ses-419!2spe"
+                        class="w-full h-screen/65" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>

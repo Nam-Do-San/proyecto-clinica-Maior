@@ -61,3 +61,14 @@ var swiper = new Swiper(".swiper-laser", {
         dynamicBullets:true,
     },
 });
+
+
+// 
+var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
