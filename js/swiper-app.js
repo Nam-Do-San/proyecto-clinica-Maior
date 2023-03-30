@@ -3,7 +3,7 @@
 var swiper = new Swiper(".swiper-index", {
     spaceBetween: 10,
     centeredSlides: true,
-    effect:"fade",
+    effect: "fade",
     loop: true,
     autoplay: {
         delay: 5000,
@@ -12,7 +12,7 @@ var swiper = new Swiper(".swiper-index", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-        dynamicBullets:true,
+        dynamicBullets: true,
     },
     navigation: {
         nextEl: ".swiper-button-next",
@@ -37,7 +37,7 @@ var swiper = new Swiper(".swiper-main", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-        dynamicBullets:true,
+        dynamicBullets: true,
     },
 });
 
@@ -58,7 +58,7 @@ var swiper = new Swiper(".swiper-laser", {
     pagination: {
         el: ".swiper-pagination",
         clickable: false,
-        dynamicBullets:true,
+        dynamicBullets: true,
     },
 });
 
@@ -68,7 +68,7 @@ var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 3,
     spaceBetween: 0,
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
-  });
+});

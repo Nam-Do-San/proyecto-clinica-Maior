@@ -6,7 +6,7 @@ let sale = document.getElementById('sale');
 // scroll var 
 const scroll_down = document.getElementById('scroll-down');
 
-window.addEventListener( 'scroll' , function (params) {
+window.addEventListener('scroll', function (params) {
     // if (prevY > window.scrollY){
     //     console.log('subiendo');
     //     // sale.classList.remove('hidden');
@@ -21,9 +21,9 @@ window.addEventListener( 'scroll' , function (params) {
     // si scroll < 100 - mostrar sale
     if (window.scrollY < 100) {
         sale.classList.remove('hidden');
-        header.classList.remove('md:bg-white'); 
+        header.classList.remove('md:bg-white');
     }
-    else{
+    else {
         sale.classList.add('hidden');
         header.classList.add('md:bg-white');
     }
@@ -79,10 +79,10 @@ btn_menu.addEventListener('click', function (params) {
 var swiper = new Swiper(".mySwiper-medico", {
     spaceBetween: 0,
     centeredSlides: true,
-    loop:true,
+    loop: true,
     autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
+        delay: 2500,
+        disableOnInteraction: false,
     },
     pagination: {
         el: ".swiper-pagination",
@@ -99,7 +99,7 @@ var swiper = new Swiper(".mySwiper-medico", {
 var swiper = new Swiper(".swiper-testimonio", {
     slidesPerView: 1,
     spaceBetween: 10,
-    loop:true,
+    loop: true,
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
