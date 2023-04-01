@@ -11,23 +11,18 @@
 
 <body>
 
+    <div class="content-after-and-before">
 
+        <div class='container'>
+            <div class='img background-img' id="oneimg"></div>
+            <div class='img foreground-img' id="twoimg"></div>
+            <input type="range" min="0" max="100" value="50" class="slider" name='slider' id="slider">
+            <div class='slider-button' id="slider-b"></div>
+        </div>
 
-
-
-
-    <div class='container'>
-        <div class='img background-img' id="oneimg"></div>
-        <div class='img foreground-img' id="twoimg"></div>
-        <input type="range" min="0" max="100" value="50" class="slider" name='slider' id="slider">
-        <div class='slider-button'></div>
     </div>
 
-    <section> 
 
-        <h2>hola</h2>
-        
-    </section>
 
 
 
@@ -36,7 +31,7 @@
         let slider = document.getElementById('slider');
         let imgone = document.getElementById('oneimg');
         let imgtwo = document.getElementById('twoimg');
-        const btn_be = document.getElementsByClassName('slider-button');
+        let btn_be = document.getElementById('slider-b');
 
         // function moveDivisor() {
         //     imgone.style.left = slider.value + "%";
@@ -51,7 +46,8 @@
             imgtwo.style.width = slider.value + "%";
             // Update the position of the slider button
 
-            ('.btn_be').style = sliderPos.value + "%";
+            btn_be.css('left', `calc( (${value} +%)  - 18px)`)
+            // btn_be.style.left = slider.value + "%";
         });
 
     </script>
@@ -59,13 +55,13 @@
 
 
 
-    
-<!-- <div class="cuadro-img">
+
+    <!-- <div class="cuadro-img">
 
 </div> -->
 
     <!-- <input type="range" min="0" max="100" value="50" step="1.2s" class="slidermy" name='slider' id="ranger"> -->
-<!-- 
+    <!-- 
     <script>
 
         var range = document.getElementById('ranger');
