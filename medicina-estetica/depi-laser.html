@@ -21,7 +21,7 @@
 <body>
 
     <!-- header -->
-    <header class="fixed w-full z-50 hover:bg-white" id="header">
+    <header class="fixed top-0 w-full z-50 bg-white shadow-sm" id="header">
 
         <!-- promo -->
         <div class=" border-b bg-gray-50" id="sale">
@@ -246,51 +246,127 @@
 
     <!-- contenido principal -->
     <main>
-        <!-- primero vista -->
-        <div class="h-screen/75 relative">
 
+        <div class="container-general w-full block mt-28">
 
-            <div class=" absolute bottom-5 flex justify-around w-full h-full">
+            <!-- slider-after-before -->
+            <div class="w-full relative overflow-hidden" id="before-after-slider">
 
-                <div class="bg-white">
-                    Antes
-
-                    <div class="absolute  top-0 left-0 h-full w-full" id="img-before">
-
-                        <picture>
-                            <source media="(min-width:1024px)" srcset="../img/hidrafacial-secction.jpg">
-                            <img src="../img/bg-services/size-after-and-before.jpg" class="w-full h-full object-cover"
-                                alt="">
-                        </picture>
-
-                    </div>
-
-
-
+                <!-- before -->
+                <div class="absolute h-full w-1/2  top-0 z-10" id="before-image">
+                    <img src="../img/bg-services/microblading-ojo-antes.jpg"
+                        class="w-full h-full block object-cover object-left" alt="">
                 </div>
 
-                <div class="bg-white group/item2 z-20">
-                    Después
+                <!-- after -->
+                <div class="block" id="after-image">
+                    <img src="../img/bg-services/microblading-ojo-desp.jpg" class="w-full block" alt="">
+                </div>
 
-                    <div class="absolute  top-0 left-0 h-full w-full saturate-0 invisible group-hover/item2:visible" id="img-before">
+                <div class="absolute flex items-center text-white  z-10 top-0 left-1/2 bg-white w-1.5 h-full touch-pan-y
 
-                        <picture>
-                            <source media="(min-width:1024px)" srcset="../img/hidrafacial-secction.jpg">
-                            <img src="../img/bg-services/size-after-and-before.jpg" class="w-full h-full object-cover"
-                                alt="">
-                        </picture>
+                after:w-6 after:h-6 after:bg-white after:absolute after:-left-2 after:rounded-full after:content-['♥'] after:text-red-500 after:flex
+                after:items-center after:justify-center after:hover:scale-150 
 
-                    </div>
-
-
-
+                " id="resizer">
                 </div>
 
             </div>
 
-            <!-- <input type="range" min="0" max="100" value="50" class="absolute h-full w-full appearance-none bg-inherit " name='slider' id="slider"> -->
-
         </div>
+
+
+        <script>
+            const slider = document.getElementById('before-after-slider');
+            const before = document.getElementById('before-image');
+            const beforeImage = before.getElementsByTagName('img')[0];
+            const resizer = document.getElementById('resizer');
+
+            let active = false;
+
+            //Sort overflow out for Overlay Image
+            document.addEventListener("DOMContentLoaded", function () {
+                let width = slider.offsetWidth;
+                console.log(width);
+                beforeImage.style.width = width + 'px';
+            });
+
+            //Adjust width of image on resize 
+            window.addEventListener('resize', function () {
+                let width = slider.offsetWidth;
+                console.log(width);
+                beforeImage.style.width = width + 'px';
+            })
+
+            resizer.addEventListener('mousedown', function () {
+                active = true;
+                resizer.classList.add('resize');
+
+            });
+
+            document.body.addEventListener('mouseup', function () {
+                active = false;
+                resizer.classList.remove('resize');
+            });
+
+            document.body.addEventListener('mouseleave', function () {
+                active = false;
+                resizer.classList.remove('resize');
+            });
+
+            document.body.addEventListener('mousemove', function (e) {
+                if (!active) return;
+                let x = e.pageX;
+                x -= slider.getBoundingClientRect().left;
+                slideIt(x);
+                pauseEvent(e);
+            });
+
+            resizer.addEventListener('touchstart', function () {
+                active = true;
+                resizer.classList.add('resize');
+            });
+
+            document.body.addEventListener('touchend', function () {
+                active = false;
+                resizer.classList.remove('resize');
+            });
+
+            document.body.addEventListener('touchcancel', function () {
+                active = false;
+                resizer.classList.remove('resize');
+            });
+
+            //calculation for dragging on touch devices
+            document.body.addEventListener('touchmove', function (e) {
+                if (!active) return;
+                let x;
+
+                let i;
+                for (i = 0; i < e.changedTouches.length; i++) {
+                    x = e.changedTouches[i].pageX;
+                }
+
+                x -= slider.getBoundingClientRect().left;
+                slideIt(x);
+                pauseEvent(e);
+            });
+
+            function slideIt(x) {
+                let transform = Math.max(0, (Math.min(x, slider.offsetWidth)));
+                before.style.width = transform + "px";
+                resizer.style.left = transform - 0 + "px";
+            }
+
+            //stop divs being selected.
+            function pauseEvent(e) {
+                if (e.stopPropagation) e.stopPropagation();
+                if (e.preventDefault) e.preventDefault();
+                e.cancelBubble = true;
+                e.returnValue = false;
+                return false;
+            }
+        </script>
 
 
 
@@ -446,18 +522,6 @@
 
             </div>
         </section>
-
-
-
-        <script>
-            let divisor = document.getElementById('slider');
-            let img_sature = document.getElementById('img-before');
-
-            divisor.addEventListener('input', function () {
-                console.log(divisor.value);
-                img_sature.style.width = slider.value + "%";
-            })
-        </script>
 
         <!-- información del procedimiento -->
         <div class="py-10">
