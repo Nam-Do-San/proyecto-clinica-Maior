@@ -16,17 +16,17 @@
     <!-- swiper -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- box icons -->
-    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 
 <body>
 
-    <!-- header lof-->
-    <header class="fixed w-full z-50 bg-white" id="header">
+    <!-- header -->
+    <header class="fixed top-0 w-full z-50 bg-white shadow-sm" id="header">
 
         <!-- promo -->
-        <div class=" border-b bg-slate-50" id="sale">
+        <div class=" border-b bg-gray-50" id="sale">
 
             <div class="container">
 
@@ -63,7 +63,7 @@
         </div>
 
         <!-- header center -->
-        <div class="container  bg-white lg:flex justify-between items-center">
+        <div class="bg-white lg:bg-inherit">
             <div class="grid grid-cols-3">
 
                 <!-- btn open nav -->
@@ -76,10 +76,13 @@
                     </button>
                 </div>
 
-                <div class="w-28 lg:w-36 py-5  lg:py-10 mx-auto">
-                    <a href="index.html">
-                        <img class="w-full" src="img/maior-1.svg" alt="">
-                    </a>
+                <div class="flex justify-center py-6">
+                    <div class="w-32 mx-auto">
+                        <a href="index.html">
+                            <img class="w-full" src="img/maior-1.svg" alt="">
+                        </a>
+                    </div>
+
                 </div>
 
                 <div>
@@ -88,156 +91,161 @@
 
             </div>
 
-            <!-- menu items -->
-            <nav class=" relative h-screen lg:h-auto text-maior-primary  hidden lg:block " id="menu-nav">
-                <ul
-                    class="container lg:flex justify-evenly uppercase font-semibold text-sm md:tracking-wider md:w-full">
-
-                    <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a
-                            href="instalaciones.html">Nosotros</a>
-                    </li>
-
-                    <!-- medicina estética y laser -->
-                    <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary group/item">
-                        <a href="#">Depilación Láser</a>
-
-                        <ul class="bg-gray-50 lg:flex justify-center  absolute 
-                            w-1/2 right-0 top-0 p-2.5
-                            
-                            h-full
-                            overflow-y-auto
-        
-                            lg:h-auto
-                            lg:top-auto
-                            lg:mt-2 lg:w-full lg:left-0  
-                            invisible group-hover/item:visible">
-
-                            <li class="md:p-8">
-                                <a href="#">
-                                    <div>
-                                        <img src="img/nav-facial.jpg" class="object-cover w-full h-full" alt="">
-                                        <div class="py-2.5 text-maior-primary">
-                                            <p>Tratamiento Facial</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="md:p-8">
-                                <a href="#">
-                                    <div>
-                                        <img src="img/nav-corporal.jpg" class="object-cover w-full h-full" alt="">
-                                        <div class="py-2.5">
-                                            <p>Tratamiento Corporal</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="md:p-8">
-                                <a href="#">
-                                    <div>
-                                        <img src="img/nav-laser.jpg" class="object-cover w-full h-full" alt="">
-                                        <div class="py-2.5">
-                                            <p>Tratamiento Laser</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="md:p-8">
-                                <a href="#">
-                                    <div>
-                                        <img src="img/nav-depilacion.jpg" class="object-cover w-full h-full" alt="">
-                                        <div class="py-2.5">
-                                            <p>Depilación Láser</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary">
-                        <a href="#">Tratamientos Faciales</a>
-
-                    </li>
-
-                    <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary">
-                        <a href="#">Tratamientos Corporales</a>
-
-                    </li>
-
-                    <!-- cirugía plástica -->
-                    <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary group/item">
-                        <a href="#">Cirugía Plástica</a>
-
-                        <ul class="bg-gray-50 lg:flex justify-center  absolute 
-                            
-                            w-1/2 right-0 top-0 p-2.5
-                            h-full
-                            overflow-y-auto
-        
-                            lg:h-auto
-                            lg:top-auto
-                            lg:mt-2 lg:w-full lg:left-0  
-                            invisible group-hover/item:visible">
-                            <li class="md:p-8">
-                                <a href="#">
-                                    <div>
-                                        <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
-                                        <div class="py-2.5">
-                                            <p>Cirugía Facial</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="md:p-8">
-                                <a href="#">
-                                    <div>
-                                        <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
-                                        <div class="py-2.5">
-                                            <p>Cirugía Corporal</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="md:p-8">
-                                <a href="#">
-                                    <div>
-                                        <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
-                                        <div class="py-2.5">
-                                            <p>Cirugía Reconstructiva</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="md:p-8">
-                                <a href="#">
-                                    <div>
-                                        <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
-                                        <div class="py-2.5">
-                                            <p>Dr. Julio Suca</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-
-            </nav>
 
         </div>
 
-    </header>
+        <!-- menu items -->
+        <nav class=" relative h-screen lg:h-auto text-maior-primary  hidden lg:block " id="menu-nav">
+            <ul class="container lg:flex justify-evenly uppercase font-semibold text-xs md:tracking-wider md:w-full">
 
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary">
+                    <a href="#">Depilación Láser</a>
+                </li>
+
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary">
+                    <a href="#">Faciales</a>
+                </li>
+
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary">
+                    <a href="#">Corporales</a>
+                </li>
+
+                <!-- medicina estética y laser -->
+                <!-- <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary group/item">
+                    <a href="#">Medicina Estética</a>
+
+                    <ul class="bg-gray-50 lg:flex justify-center  absolute 
+                        w-1/2 right-0 top-0 p-2.5
+                        
+                        h-full
+                        overflow-y-auto
+    
+                        lg:h-auto
+                        lg:top-auto
+                        lg:mt-2 lg:w-full lg:left-0  
+                        invisible group-hover/item:visible">
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-facial.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5 text-maior-primary">
+                                        <p>Tratamiento Facial</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-corporal.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Tratamiento Corporal</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-laser.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Tratamiento Laser</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-depilacion.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Depilación Láser</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li> -->
+
+                <!-- cirugía plástica -->
+                <!-- <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary group/item">
+                    <a href="#">Cirugía Plástica</a>
+
+                    <ul class="bg-gray-50 lg:flex justify-center  absolute 
+                        
+    
+                        w-1/2 right-0 top-0 p-2.5
+                        h-full
+                        overflow-y-auto
+    
+                        lg:h-auto
+                        lg:top-auto
+                        lg:mt-2 lg:w-full lg:left-0  
+                        invisible group-hover/item:visible">
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="../img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Cirugía Facial</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="../img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Cirugía Corporal</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="../img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Cirugía Reconstructiva</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="../img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Dr. Julio Suca</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li> -->
+
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary">
+                    <a href="#">Staff medico</a>
+                </li>
+
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a href="instalaciones.html">Nosotros</a>
+                </li>
+
+                <li class="px-2.5 py-3.5 lg:p-2 opacity-50"><a href="novedades.html">Novedades</a></li>
+                <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a href="#">Contacto</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
 
     <main>
         <!-- swiper - main -->
@@ -369,100 +377,109 @@
 
         </section>
 
-        <div class="bg-maior-primary h-screen/10 flex items-center">
+        <div class="bg-maior-primary lg:h-screen/10 flex items-center">
 
-            <div class="grid grid-cols-3 ">
-                <div>
-                    <h2>ddd</h2>
-                </div>
+            <div class="container lg:px-36">
 
-                <div class="text-white">
-                    <div class="text-center">
+                <div class="grid lg:grid-cols-3 justify-items-center ">
+
+                    <div class="text-center items-center lg:order-last  lg:justify-self-end py-6 self-center">
+                        <a class="btn-a-line-white" href="#">Programa tu cita aquí <span
+                                class='bx bxs-heart text-red-500 hover:animate-ping'></span></a>
+                    </div>
+
+                    <div class="text-white text-center px-5 md:px-0">
                         <p>Nos especializamos en brindarte soluciones estéticas y paramédicas con el compromiso de
                             otorgar seguridad a todos nuestros pacientes.</p>
                     </div>
+
+                    <div class="relative  text-white lg:order-first lg:justify-self-start pb-8 lg:pb-0">
+                        <p class="font-bold text-lg text-left pt-2">Ser unica te hace <span
+                                class="font-Betterlett font-normal text-5xl">perfecta</span></p>
+                    </div>
+
                 </div>
 
-                <div>
-                    fdf
-                </div>
             </div>
         </div>
 
         <!-- nuestros servicios -->
-        <section class="">
+        <section class="py-10">
 
-            <div class="container">
+            <div class="container lg:px-36">
 
-
-                <div class="p-10 ">
+                <div class="px-10 lg:px-0 ">
                     <!-- 
                     <span class="font-Opensans font-light text-maior-primary">Tratamientos por excelencia</span> -->
-                    <p class="title-section-big">nuestros servicios</p>
+                    <p class="title-section-big pb-10">nuestros servicios</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-x-10 gap-y-5">
+
+                        <div class=" ">
+                            <div>
+                                <img src="img/face-1.jpg" class="h-full w-full object-cover" alt="">
+                            </div>
+
+                            <div class="text-center py-5">
+                                <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">
+                                    Tratamiento
+                                    Facial</h2>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni m</p> -->
+                            </div>
+
+                        </div>
+
+                        <div class="">
+                            <div>
+                                <img src="img/corporal-2.jpg" class="h-full w-full object-cover" alt="">
+                            </div>
+
+                            <div class="text-center py-5">
+                                <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">
+                                    Tratamiento
+                                    Corporal</h2>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni m</p> -->
+                            </div>
+                        </div>
+
+
+                        <div class="">
+                            <div>
+                                <img src="img/laser-3.jpg" class="h-full w-full object-cover" alt="">
+                            </div>
+
+                            <div class="text-center pt-5">
+                                <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">
+                                    Tratamiento
+                                    Láser</h2>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni m</p> -->
+                            </div>
+
+                        </div>
+
+                        <div class="">
+                            <div>
+                                <img src="img/laser-3.jpg" class="h-full w-full object-cover" alt="">
+                            </div>
+
+                            <div class="text-center pt-5">
+                                <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">Depilación
+                                    Láser</h2>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni m</p> -->
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-4">
-
-                    <div class="p-5 ">
-                        <div>
-                            <img src="img/face-1.jpg" class="h-full w-full object-cover" alt="">
-                        </div>
-
-                        <div class="text-center py-5">
-                            <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">Tratamiento
-                                Facial</h2>
-                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni m</p> -->
-                        </div>
-
-                    </div>
-
-                    <div class="p-5 ">
-                        <div>
-                            <img src="img/corporal-2.jpg" class="h-full w-full object-cover" alt="">
-                        </div>
-
-                        <div class="text-center py-5">
-                            <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">Tratamiento
-                                Corporal</h2>
-                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni m</p> -->
-                        </div>
-                    </div>
-
-
-                    <div class="p-5 ">
-                        <div>
-                            <img src="img/laser-3.jpg" class="h-full w-full object-cover" alt="">
-                        </div>
-
-                        <div class="text-center pt-5">
-                            <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">Tratamiento
-                                Láser</h2>
-                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni m</p> -->
-                        </div>
-
-                    </div>
-
-                    <div class="p-5">
-                        <div>
-                            <img src="img/laser-3.jpg" class="h-full w-full object-cover" alt="">
-                        </div>
-
-                        <div class="text-center pt-5">
-                            <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">Depilación
-                                Láser</h2>
-                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus magni m</p> -->
-                        </div>
-
-                    </div>
-                </div>
             </div>
 
         </section>
 
-
         <!-- nosotros -->
         <section class="py-10">
-            <div class="container ">
+            <div class="container lg:px-36 ">
 
                 <div class="grid md:grid-cols-2 justify-items-end ">
 
@@ -476,7 +493,8 @@
 
                     <div class="self-end px-5">
 
-                        <div class="title-section text-center py-10 ">
+                        <div
+                            class="font-Opensans text-maior-primary font-bold -tracking-wide text-xl leading-7 md:text-3xl md:leading-8 py-10 text-center">
                             <p>Nos especializamos en brindarte las mejores soluciones estéticas seguras con resultados
                                 reales</p>
                         </div>
@@ -510,40 +528,43 @@
         <!-- after and before -->
         <div class="relative py-10">
 
-            <div class="bg-maior-secondary w-full h-3/5 absolute top-0 -z-10">
+            <div class="bg-gray-50 w-full h-1/2 absolute bottom-0 -z-10">
             </div>
 
-            <div class="container lg:px-24">
-                <div class="pb-10 px-10">
-                    <h2 class="title-section-big text-white">Resultados reales</h2>
+            <div class="container lg:px-36">
+
+                <div class="px-10 lg:p-0">
+                    <h2 class="title-section-big pb-10">Resultados reales</h2>
+
+
                 </div>
 
-            </div>
+                <div class=" flex justify-center items-center">
+                    <!-- slider 1 -->
+                    <div class="container-geral w-full  block">
 
-            <div class=" flex justify-center items-center">
+                        <!-- slider-after-before -->
+                        <div class="w-full relative overflow-hidden" id="before-after-slider">
 
-                <!-- slider 1 -->
-                <div class="container-geral md:w-3/4 block">
+                            <!-- before -->
+                            <div class="absolute h-full w-1/2  top-0 z-10" id="before-image">
+                                <img src="img/index-after.jpg" class="w-full h-full block object-cover object-left"
+                                    alt="">
+                            </div>
 
-                    <!-- slider-after-before -->
-                    <div class="w-full relative overflow-hidden" id="before-after-slider">
+                            <!-- after -->
+                            <div class="block" id="after-image">
+                                <img src="img/index-before.jpg" class="w-full block" alt="">
+                            </div>
 
-                        <!-- before -->
-                        <div class="absolute h-full w-1/2  top-0 z-10" id="before-image">
-                            <img src="img/index-after.jpg" class="w-full h-full block object-cover object-left" alt="">
-                        </div>
+                            <div class="absolute flex items-center text-white  z-10 top-0 left-1/2 bg-white w-1.5 h-full touch-pan-y
+    
+                    after:w-6 after:h-6 after:bg-white after:absolute after:-left-2 after:rounded-full after:content-['♥'] after:text-red-500 after:flex
+                    after:items-center after:justify-center after:hover:scale-150 
+    
+                    " id="resizer">
+                            </div>
 
-                        <!-- after -->
-                        <div class="block" id="after-image">
-                            <img src="img/index-before.jpg" class="w-full block" alt="">
-                        </div>
-
-                        <div class="absolute flex items-center text-white  z-10 top-0 left-1/2 bg-white w-1.5 h-full touch-pan-y
-
-                after:w-6 after:h-6 after:bg-white after:absolute after:-left-2 after:rounded-full after:content-['♥'] after:text-red-500 after:flex
-                after:items-center after:justify-center after:hover:scale-150 
-
-                " id="resizer">
                         </div>
 
                     </div>
@@ -551,10 +572,6 @@
                 </div>
 
             </div>
-
-            <!-- slider 2 -->
-
-
 
         </div>
 
@@ -651,7 +668,7 @@
         </script>
 
         <!-- depilación laser  -->
-        <section class="h-screen relative py-5">
+        <!-- <section class="h-screen relative py-5">
             <div class="swiper swiper-laser h-full w-full">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -694,14 +711,14 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
-        </section>
+        </section> -->
 
         <!-- hydrafacial -->
-        <section class="h-screen relative py-5">
+        <!-- <section class="h-screen relative py-5">
             <div class="swiper swiper-laser h-full w-full">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -744,97 +761,98 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="bg-gray-50 py-10">
-            <div class="container lg:px-20">
+        <section class="py-10">
+            <div class="container lg:px-36">
 
-                <div class="px-10 ">
+                <div class="px-10 lg:p-0">
 
-                    <span class="font-Opensans font-normal text-maior-primary">Lorem ipsum dolor sit amet</span>
-                    <h3 class="title-section">Tratamientos más solicitados</h3>
-                </div>
+                    <h3 class="title-section pb-10">Tratamientos más solicitados</h3>
 
-                <div class="grid md:grid-cols-3">
+                    <div class="grid md:grid-cols-3 gap-10">
 
-                    <div>
+                        <div>
 
-                        <div class="m-5">
-                            <img src="img/hydra-light.jpg" alt="">
+                            <div class="">
+                                <img src="img/hydra-light.jpg" alt="">
+                            </div>
+
+                            <div class="py-5">
+                                <h2 class="text-maior-primary font-Opensans font-semibold">Tratamiento para el acne
+                                </h2>
+
+                                <div class="flex justify-between pt-5">
+
+                                    <a class="bg-maior-blue text-maior-primary font-semibold py-2 px-3 rounded-full hover:bg-maior-primary hover:text-white"
+                                        href="#">Programar cita</a>
+
+                                    <a class="bg-maior-blue text-maior-primary font-semibold py-2 px-3 rounded-full hover:bg-maior-primary hover:text-white"
+                                        href="#">más información</a>
+
+                                </div>
+                            </div>
+
                         </div>
 
-                        <div class="px-5">
-                            <h2 class="text-maior-primary font-Opensans font-semibold">Tratamiento para el acne </h2>
+                        <div>
+                            <div class="">
+                                <img src="img/hydra-light.jpg" alt="">
+                            </div>
 
-                            <div class="flex justify-between pt-5">
+                            <div class="px-5">
+                                <h2 class="text-maior-primary font-Opensans font-semibold">tratamiento para eliminar
+                                    cicatrices</h2>
 
-                                <a class="bg-maior-blue text-maior-primary font-semibold py-2 px-3 rounded-full hover:bg-maior-primary hover:text-white"
-                                    href="#">Programar cita</a>
+                                <div class="flex justify-between pt-5">
 
-                                <a class="bg-maior-blue text-maior-primary font-semibold py-2 px-3 rounded-full hover:bg-maior-primary hover:text-white"
-                                    href="#">más información</a>
+                                    <a class="bg-maior-blue text-maior-primary font-semibold py-2 px-3 rounded-full hover:bg-maior-primary hover:text-white"
+                                        href="#">Programar cita</a>
 
+                                    <a class="bg-maior-blue text-maior-primary font-semibold py-2 px-3 rounded-full hover:bg-maior-primary hover:text-white"
+                                        href="#">más información</a>
+
+                                </div>
                             </div>
                         </div>
 
-                    </div>
+                        <div>
+                            <div class="">
+                                <img src="img/hydra-light.jpg" alt="">
+                            </div>
 
-                    <div>
-                        <div class="m-5">
-                            <img src="img/hydra-light.jpg" alt="">
-                        </div>
+                            <div class="px-5">
+                                <h2 class="text-maior-primary font-Opensans font-semibold">tratamiento para arrugas</h2>
 
-                        <div class="px-5">
-                            <h2 class="text-maior-primary font-Opensans font-semibold">tratamiento para eliminar
-                                cicatrices</h2>
+                                <div class="flex justify-between pt-5">
 
-                            <div class="flex justify-between pt-5">
+                                    <a class="bg-maior-blue text-maior-primary font-semibold py-2 px-3 rounded-full hover:bg-maior-primary hover:text-white"
+                                        href="#">Programar cita</a>
 
-                                <a class="bg-maior-blue text-maior-primary font-semibold py-2 px-3 rounded-full hover:bg-maior-primary hover:text-white"
-                                    href="#">Programar cita</a>
+                                    <a class="bg-maior-blue text-maior-primary font-semibold py-2 px-3 rounded-full hover:bg-maior-primary hover:text-white"
+                                        href="#">más información</a>
 
-                                <a class="bg-maior-blue text-maior-primary font-semibold py-2 px-3 rounded-full hover:bg-maior-primary hover:text-white"
-                                    href="#">más información</a>
-
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div>
-                        <div class="m-5">
-                            <img src="img/hydra-light.jpg" alt="">
-                        </div>
-
-                        <div class="px-5">
-                            <h2 class="text-maior-primary font-Opensans font-semibold">tratamiento para arrugas</h2>
-
-                            <div class="flex justify-between pt-5">
-
-                                <a class="bg-maior-blue text-maior-primary font-semibold py-2 px-3 rounded-full hover:bg-maior-primary hover:text-white"
-                                    href="#">Programar cita</a>
-
-                                <a class="bg-maior-blue text-maior-primary font-semibold py-2 px-3 rounded-full hover:bg-maior-primary hover:text-white"
-                                    href="#">más información</a>
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
             </div>
         </section>
 
         <!-- porque elegirnos -->
-        <section class="bg-maior-blue text-maior-primary pb-10 my-10">
-            <div class="container lg:px-20">
+        <section class="bg-maior-blue text-maior-primary py-10">
+            <div class="container lg:px-36">
 
-                <div class="p-10 ">
-                    <span class="font-Opensans font-light">Medic Maior</span>
-                    <p class="title-section">¿por qué somos tu mejor
+                <div class="px-10 lg:px-0 ">
+
+                    <p class="title-section pb-10">¿por qué somos tu mejor
                         opción?</p>
                 </div>
 
@@ -1020,12 +1038,12 @@
 
         <!-- testimonios google -->
         <section class="py-10 bg-gray-50">
-            <div class="container">
+            <div class="container lg:px-36">
                 <!-- title seccion -->
-                <div class="p-10 ">
+                <div class="px-10 lg:px-0 ">
 
                     <span class="font-Opensans font-light">Testimonios</span>
-                    <p class="title-section">Nuestros
+                    <p class="title-section pb-10">Nuestros
                         pacientes hablan por
                         nosotros</p>
                 </div>
@@ -1272,7 +1290,7 @@
     </div> -->
 
     <section class="py-10">
-        <div class="container">
+        <div class="container lg:px-36">
 
             <div class="grid lg:grid-cols-3 items-center justify-items-center">
 
@@ -1300,7 +1318,7 @@
 
 
     <footer>
-        <div class="container text-maior-primary">
+        <div class="container lg:px-36  text-maior-primary">
 
 
             <div class="flex justify-center py-6">

@@ -10,7 +10,224 @@
 
 </head>
 <body>
-    
+
+       <!-- header lof-->
+       <header class="fixed w-full z-50 bg-white" id="header">
+
+        <!-- promo -->
+        <div class=" border-b bg-slate-50" id="sale">
+
+            <div class="container">
+
+                <div class="grid grid-cols-2  md:grid-cols-3">
+
+                    <div class="justify-self-start flex  items-center">
+                        <i class='bx bx-time-five mx-2'></i>
+                        <P class="text-xs uppercase">Lun - Sab: 9 am - 1 pm</P>
+                    </div>
+
+                    <div class="justify-self-center  uppercase text-xs tracking-widest    my-auto  hidden md:block">
+                        <P>Dia de la mujer <span class='bx bxs-heart text-red-500'></span>
+                        </P>
+                    </div>
+
+                    <div class="justify-self-end flex items-center">
+                        <ul class="flex">
+                            <li class="mx-2">
+                                <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#" target="_blank"><i class='bx bxl-facebook  '></i></a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#" target="_blank"><i class='bx bxl-tiktok    '></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- header center -->
+        <div class="container  bg-white lg:flex justify-between items-center">
+            <div class="grid grid-cols-3">
+
+                <!-- btn open nav -->
+                <div class="my-auto justify-self-start px-3 text-white" id="btn-menu">
+                    <button class=" text-maior-primary lg:hidden" id="open">
+                        <i class='bx bx-menu text-3xl'></i>
+                    </button>
+                    <button class=" text-maior-primary hidden" id="close">
+                        <i class='bx bx-x text-3xl'></i>
+                    </button>
+                </div>
+
+                <div class="w-28 lg:w-36 py-5  lg:py-10 mx-auto">
+                    <a href="index.html">
+                        <img class="w-full" src="../img/maior-1.svg" alt="">
+                    </a>
+                </div>
+
+                <div>
+
+                </div>
+
+            </div>
+
+            <!-- menu items -->
+            <nav class=" relative h-screen lg:h-auto text-maior-primary  hidden lg:block " id="menu-nav">
+                <ul
+                    class="container lg:flex justify-evenly uppercase font-semibold text-sm md:tracking-wider md:w-full">
+
+                    <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a
+                            href="instalaciones.html">Nosotros</a>
+                    </li>
+
+                    <!-- medicina estética y laser -->
+                    <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary group/item">
+                        <a href="#">Depilación Láser</a>
+
+                        <ul class="bg-gray-50 lg:flex justify-center  absolute 
+                            w-1/2 right-0 top-0 p-2.5
+                            
+                            h-full
+                            overflow-y-auto
+        
+                            lg:h-auto
+                            lg:top-auto
+                            lg:mt-2 lg:w-full lg:left-0  
+                            invisible group-hover/item:visible">
+
+                            <li class="md:p-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="img/nav-facial.jpg" class="object-cover w-full h-full" alt="">
+                                        <div class="py-2.5 text-maior-primary">
+                                            <p>Tratamiento Facial</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="md:p-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="img/nav-corporal.jpg" class="object-cover w-full h-full" alt="">
+                                        <div class="py-2.5">
+                                            <p>Tratamiento Corporal</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="md:p-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="img/nav-laser.jpg" class="object-cover w-full h-full" alt="">
+                                        <div class="py-2.5">
+                                            <p>Tratamiento Laser</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="md:p-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="img/nav-depilacion.jpg" class="object-cover w-full h-full" alt="">
+                                        <div class="py-2.5">
+                                            <p>Depilación Láser</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary">
+                        <a href="#">Faciales</a>
+
+                    </li>
+
+                    <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary">
+                        <a href="#">Corporales</a>
+
+                    </li>
+
+                    <!-- cirugía plástica -->
+                    <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary group/item">
+                        <a href="#">Staff Medico</a>
+
+                        <ul class="bg-gray-50 lg:flex justify-center  absolute 
+                            
+                            w-1/2 right-0 top-0 p-2.5
+                            h-full
+                            overflow-y-auto
+        
+                            lg:h-auto
+                            lg:top-auto
+                            lg:mt-2 lg:w-full lg:left-0  
+                            invisible group-hover/item:visible">
+                            <li class="md:p-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                        <div class="py-2.5">
+                                            <p>Cirugía Facial</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="md:p-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                        <div class="py-2.5">
+                                            <p>Cirugía Corporal</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="md:p-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                        <div class="py-2.5">
+                                            <p>Cirugía Reconstructiva</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="md:p-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="img/nav-img.webp" class="object-cover w-full h-full" alt="">
+                                        <div class="py-2.5">
+                                            <p>Dr. Julio Suca</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary"><a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
     <main>
 
         <div class="container-general w-full block">
