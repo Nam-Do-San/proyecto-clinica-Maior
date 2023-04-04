@@ -16,7 +16,7 @@
     <!-- swiper -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
 
 </head>
 
@@ -76,7 +76,7 @@
                     </button>
                 </div>
 
-                <div class="w-32 lg:w-36 py-6 mx-auto">
+                <div class="w-28 lg:w-36 py-5  lg:py-10 mx-auto">
                     <a href="index.html">
                         <img class="w-full" src="img/maior-1.svg" alt="">
                     </a>
@@ -474,29 +474,29 @@
                         </div>
                     </div>
 
-                    <div class="self-end">
+                    <div class="self-end px-5">
 
-                        <div class="title-section text-center py-10">
+                        <div class="title-section text-center py-10 ">
                             <p>Nos especializamos en brindarte las mejores soluciones estéticas seguras con resultados
                                 reales</p>
                         </div>
 
-                        <ul class="grid grid-cols-2 md:grid-cols-4">
+                        <ul class="grid grid-cols-2 md:grid-cols-4 gap-5">
 
                             <div>
-                                <img src="img/cert-1.png" class=" w-28" alt="">
+                                <img src="img/cert-1.png" class="mx-auto w-28" alt="">
                             </div>
 
                             <div>
-                                <img src="img/cert-2.png" class=" w-28" alt="">
+                                <img src="img/cert-2.png" class="mx-auto w-28" alt="">
                             </div>
 
                             <div>
-                                <img src="img/cert-3.png" class=" w-28" alt="">
+                                <img src="img/cert-3.png" class="mx-auto w-28" alt="">
                             </div>
 
                             <div>
-                                <img src="img/cert-4.png" class=" w-28" alt="">
+                                <img src="img/cert-4.png" class="mx-auto w-28" alt="">
                             </div>
 
                         </ul>
@@ -507,88 +507,148 @@
             </div>
         </section>
 
-        <!-- antes y después -->
-        <div class="flex justify-center items-center">
+        <!-- after and before -->
+        <div class="relative py-10">
 
-            <div class="w-[720px] h-[500px] relative">
+            <div class="bg-maior-secondary w-full h-3/5 absolute top-0 -z-10">
+            </div>
 
-                <div class="absolute h-full w-full bg-no-repeat bg-left"
-                    style="background-image: url(img/bg-services/size-after-and-before.jpg);" id="img-after">
-
+            <div class="container lg:px-24">
+                <div class="pb-10 px-10">
+                    <h2 class="title-section-big text-white">Resultados reales</h2>
                 </div>
-
-                <div class="absolute  h-full w-1/2 bg-no-repeat saturate-0  bg-left"
-                    style="background-image: url(img/bg-services/size-after-and-before.jpg);" id="img-before">
-
-                </div>
-
-                <input type="range" min="0" max="100" value="50"
-                    class="absolute h-full w-full appearance-none bg-inherit " name='slider' id="slider">
-
-                <script>
-                    let divisor = document.getElementById('slider');
-                    let img_sature = document.getElementById('img-before');
-
-                    divisor.addEventListener('input', function () {
-                        console.log(divisor.value);
-                        img_sature.style.width = slider.value + "%";
-                    })
-                </script>
 
             </div>
 
-        </div>
+            <div class=" flex justify-center items-center">
 
-        <!-- after and before -->
-        <div class="h-screen/65 bg-maior-secondary flex justify-center items-center">
+                <!-- slider 1 -->
+                <div class="container-geral md:w-3/4 block">
 
-            <div class="w-[900px] h-screen/50 relative">
+                    <!-- slider-after-before -->
+                    <div class="w-full relative overflow-hidden" id="before-after-slider">
 
-                <div class="w-full h-full bg-slate-600">
+                        <!-- before -->
+                        <div class="absolute h-full w-1/2  top-0 z-10" id="before-image">
+                            <img src="img/index-after.jpg" class="w-full h-full block object-cover object-left" alt="">
+                        </div>
 
-                    <picture>
+                        <!-- after -->
+                        <div class="block" id="after-image">
+                            <img src="img/index-before.jpg" class="w-full block" alt="">
+                        </div>
 
-                        <source media="(min-width:1024px)" srcset="img/hidrafacial-secction.jpg">
-                        <img src="img/pantilla-img-size.webp" class="object-cover w-full h-full" alt="">
+                        <div class="absolute flex items-center text-white  z-10 top-0 left-1/2 bg-white w-1.5 h-full touch-pan-y
 
-                    </picture>
+                after:w-6 after:h-6 after:bg-white after:absolute after:-left-2 after:rounded-full after:content-['♥'] after:text-red-500 after:flex
+                after:items-center after:justify-center after:hover:scale-150 
 
-                </div>
+                " id="resizer">
+                        </div>
 
-                <div class="h-full w-1/2 bg-inherit absolute top-0" id="img-black">
-                    
-                    <div class="absolute w-full h-full saturate-0">
-                        <picture>
-
-                            <source media="(min-width:1024px)" srcset="img/hidrafacial-secction.jpg">
-                            <img src="img/pantilla-img-size.webp" class="object-cover w-full h-full" alt="">
-
-                        </picture>
                     </div>
 
-
                 </div>
 
-                <input type="range" min="0" max="100" value="50"
-                    class="absolute bottom-0 w-full h-full " name='slider' id="slider2">
-
-                <script>
-                    let divisor2 = document.getElementById('slider2');
-                    let img_black = document.getElementById('img-black');
-
-                    divisor2.addEventListener('input', function () {
-                        console.log(divisor2.value);
-                        img_black.style.width = slider2.value + "%";
-                    })
-                </script>
-                
-
             </div>
+
+            <!-- slider 2 -->
+
+
+
         </div>
 
+        <script>
+            const slider = document.getElementById('before-after-slider');
+            const before = document.getElementById('before-image');
+            const beforeImage = before.getElementsByTagName('img')[0];
+            const resizer = document.getElementById('resizer');
 
+            let active = false;
 
+            //Sort overflow out for Overlay Image
+            document.addEventListener("DOMContentLoaded", function () {
+                let width = slider.offsetWidth;
+                console.log(width);
+                beforeImage.style.width = width + 'px';
+            });
 
+            //Adjust width of image on resize 
+            window.addEventListener('resize', function () {
+                let width = slider.offsetWidth;
+                console.log(width);
+                beforeImage.style.width = width + 'px';
+            })
+
+            resizer.addEventListener('mousedown', function () {
+                active = true;
+                resizer.classList.add('resize');
+
+            });
+
+            document.body.addEventListener('mouseup', function () {
+                active = false;
+                resizer.classList.remove('resize');
+            });
+
+            document.body.addEventListener('mouseleave', function () {
+                active = false;
+                resizer.classList.remove('resize');
+            });
+
+            document.body.addEventListener('mousemove', function (e) {
+                if (!active) return;
+                let x = e.pageX;
+                x -= slider.getBoundingClientRect().left;
+                slideIt(x);
+                pauseEvent(e);
+            });
+
+            resizer.addEventListener('touchstart', function () {
+                active = true;
+                resizer.classList.add('resize');
+            });
+
+            document.body.addEventListener('touchend', function () {
+                active = false;
+                resizer.classList.remove('resize');
+            });
+
+            document.body.addEventListener('touchcancel', function () {
+                active = false;
+                resizer.classList.remove('resize');
+            });
+
+            //calculation for dragging on touch devices
+            document.body.addEventListener('touchmove', function (e) {
+                if (!active) return;
+                let x;
+
+                let i;
+                for (i = 0; i < e.changedTouches.length; i++) {
+                    x = e.changedTouches[i].pageX;
+                }
+
+                x -= slider.getBoundingClientRect().left;
+                slideIt(x);
+                pauseEvent(e);
+            });
+
+            function slideIt(x) {
+                let transform = Math.max(0, (Math.min(x, slider.offsetWidth)));
+                before.style.width = transform + "px";
+                resizer.style.left = transform - 0 + "px";
+            }
+
+            //stop divs being selected.
+            function pauseEvent(e) {
+                if (e.stopPropagation) e.stopPropagation();
+                if (e.preventDefault) e.preventDefault();
+                e.cancelBubble = true;
+                e.returnValue = false;
+                return false;
+            }
+        </script>
 
         <!-- depilación laser  -->
         <section class="h-screen relative py-5">

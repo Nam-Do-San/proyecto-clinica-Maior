@@ -1,3 +1,11 @@
+// page index 
+
+// resultados reales
+
+
+
+
+
 //
 var swiper = new Swiper(".swiper-por-one", {
     slidesPerView: 1,
