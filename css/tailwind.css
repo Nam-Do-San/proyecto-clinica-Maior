@@ -428,7 +428,7 @@ video {
 @font-face {
   font-family: 'Betterlett';
 
-  src: url(/public/font/Betterlett.otf);
+  src: url(../public/font/Betterlett.woff);
 }
 
 *, ::before, ::after{
