@@ -1605,7 +1605,7 @@ video {
 @font-face {
   font-family: 'HijrnotesPERSONALUSEONLY';
 
-  src: url(/public/fonts/original_Hijrnotes_PERSONAL_USE_ONLY.woff);
+  src: url(../fonts/original_Hijrnotes_PERSONAL_USE_ONLY.woff);
 
   font-weight: normal;
 }
