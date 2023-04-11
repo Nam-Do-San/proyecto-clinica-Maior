@@ -426,7 +426,7 @@ video {
 @font-face {
   font-family: "Betterlett";
 
-  src: url("../font/Betterlett.woff") format("woff");
+  src: url("/public/fonts/Betterlett.woff") format("woff");
 
   font-weight: normal;
 
