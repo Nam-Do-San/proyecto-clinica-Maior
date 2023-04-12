@@ -255,121 +255,22 @@
 
                 <!-- before -->
                 <div class="absolute h-full w-1/2  top-0 z-10" id="before-image">
-                    <img src="img/bg-services/microblading-ojo-antes.jpg"
-                        class="w-full h-full block object-cover object-left" alt="">
+                    <img src="img/zonas-depilacion/bg-after.jpg" class="w-full h-full block object-cover object-left"
+                        alt="">
                 </div>
 
                 <!-- after -->
                 <div class="block" id="after-image">
-                    <img src="img/bg-services/microblading-ojo-desp.jpg" class="w-full block" alt="">
+                    <img src="img/zonas-depilacion/bg-before.jpg" class="w-full block" alt="">
                 </div>
 
-                <div class="absolute flex items-center text-white  z-10 top-0 left-1/2 bg-white w-1.5 h-full touch-pan-y
-
-                after:w-6 after:h-6 after:bg-white after:absolute after:-left-2 after:rounded-full after:content-['♥'] after:text-red-500 after:flex
-                after:items-center after:justify-center after:hover:scale-150 
-
-                " id="resizer">
+                <div class="resizer-after absolute flex items-center text-white  z-10 top-0 left-1/2 bg-white w-1.5 h-full touch-pan-y"
+                    id="resizer">
                 </div>
 
             </div>
 
         </div>
-
-        <!-- script slider after and before transport - 
-            element.setCapture() x Element.setPointerCapture()
-        -->
-        <script>
-            const slider = document.getElementById('before-after-slider');
-            const before = document.getElementById('before-image');
-            const beforeImage = before.getElementsByTagName('img')[0];
-            const resizer = document.getElementById('resizer');
-
-            let active = false;
-
-            //Sort overflow out for Overlay Image
-            document.addEventListener("DOMContentLoaded", function () {
-                let width = slider.offsetWidth;
-                console.log(width);
-                beforeImage.style.width = width + 'px';
-            });
-
-            //Adjust width of image on resize 
-            window.addEventListener('resize', function () {
-                let width = slider.offsetWidth;
-                console.log(width);
-                beforeImage.style.width = width + 'px';
-            })
-
-            resizer.addEventListener('mousedown', function () {
-                active = true;
-                resizer.classList.add('resize');
-
-            });
-
-            document.body.addEventListener('mouseup', function () {
-                active = false;
-                resizer.classList.remove('resize');
-            });
-
-            document.body.addEventListener('mouseleave', function () {
-                active = false;
-                resizer.classList.remove('resize');
-            });
-
-            document.body.addEventListener('mousemove', function (e) {
-                if (!active) return;
-                let x = e.pageX;
-                x -= slider.getBoundingClientRect().left;
-                slideIt(x);
-                pauseEvent(e);
-            });
-
-            resizer.addEventListener('touchstart', function () {
-                active = true;
-                resizer.classList.add('resize');
-            });
-
-            document.body.addEventListener('touchend', function () {
-                active = false;
-                resizer.classList.remove('resize');
-            });
-
-            document.body.addEventListener('touchcancel', function () {
-                active = false;
-                resizer.classList.remove('resize');
-            });
-
-            //calculation for dragging on touch devices
-            document.body.addEventListener('touchmove', function (e) {
-                if (!active) return;
-                let x;
-
-                let i;
-                for (i = 0; i < e.changedTouches.length; i++) {
-                    x = e.changedTouches[i].pageX;
-                }
-
-                x -= slider.getBoundingClientRect().left;
-                slideIt(x);
-                pauseEvent(e);
-            });
-
-            function slideIt(x) {
-                let transform = Math.max(0, (Math.min(x, slider.offsetWidth)));
-                before.style.width = transform + "px";
-                resizer.style.left = transform - 0 + "px";
-            }
-
-            //stop divs being selected.
-            function pauseEvent(e) {
-                if (e.stopPropagation) e.stopPropagation();
-                if (e.preventDefault) e.preventDefault();
-                e.cancelBubble = true;
-                e.returnValue = false;
-                return false;
-            }
-        </script>
 
         <!-- introducción del tratamiento -->
         <section class="overflow-hidden">
@@ -381,7 +282,7 @@
 
                         <article class=" ">
 
-                            <p class="font-medium">
+                            <p class="font-semibold">
                                 La depilación láser de diodo es considerada una de las técnicas más avanzadas y
                                 efectivas para la eliminación del vello no deseado en diversas áreas del cuerpo, y
                                 ofrece excelentes beneficios.
@@ -409,15 +310,14 @@
 
                             <div class=" text-center">
 
-                                <div class="mb-20">
+                                <div class="mb-5">
                                     <p class="text-xl font-bold  font-Opensans">El éxito y la felicidad empieza contigo,
                                     </p>
-                                    <span
-                                        class="font-HijrnotesPERSONALUSEONLY  text-5xl text-maior-secondary absolute right-10">¡hazlo
+                                    <span class="font-aesthetic">¡hazlo
                                         por ti!</span>
                                 </div>
 
-                                <a class="btn-more-info" href="">Programar cita</a>
+                                <a class="btn-assessment" href="">Programar evaluación</a>
 
                             </div>
 
@@ -574,159 +474,17 @@
 
         </div>
 
-        <!-- slider con rotación de img -->
-        <!-- <div>
-
-            <div class="container lg:px-24">
-
-                <div class="px-10">
-                    <h2 class="title-section pb-10">Liberate de los vellos</h2>
-                </div>
-
-                <div>
-
-                    <div class="swiper swiper-por-5">
-                        <div class="swiper-wrapper pb-14">
-
-                            <div class="swiper-slide relative overflow-hidden">
-
-                                <img src="../img/nav-facial.jpg"
-                                    class="w-full h-full object-cover  hover:scale-110 duration-1000 ease-out" alt="">
-
-                                <div class="w-full h-1/4  bg-gradient-to-t from-white absolute bottom-0 ">
-                                    <div class="absolute bottom-5 left-5">
-                                        <h2 class="text-maior-primary font-medium text-lg ">Bikini tradicional</h2>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="swiper-slide relative overflow-hidden">
-
-                                <img src="../img/nav-corporal.jpg"
-                                    class="w-full h-full object-cover  hover:scale-110 duration-1000 ease-out" alt="">
-
-                                <div class="w-full h-1/4  bg-gradient-to-t from-white absolute bottom-0 ">
-                                    <div class="absolute bottom-5 left-5">
-                                        <h2 class="text-maior-primary font-medium text-lg ">Bikini tradicional</h2>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="swiper-slide relative overflow-hidden">
-
-                                <img src="../img/nav-laser.jpg"
-                                    class="w-full h-full object-cover  hover:scale-110 duration-1000 ease-out" alt="">
-
-                                <div class="w-full h-1/4  bg-gradient-to-t from-white absolute bottom-0 ">
-                                    <div class="absolute bottom-5 left-5">
-                                        <h2 class="text-maior-primary font-medium text-lg ">Bikini tradicional</h2>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="swiper-slide relative overflow-hidden">
-
-                                <img src="../img/nav-depilacion.jpg"
-                                    class="w-full h-full object-cover  hover:scale-110 duration-1000 ease-out" alt="">
-
-                                <div class="w-full h-1/4  bg-gradient-to-t from-white absolute bottom-0 ">
-                                    <div class="absolute bottom-5 left-5">
-                                        <h2 class="text-maior-primary font-medium text-lg ">Bikini tradicional</h2>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="swiper-slide relative overflow-hidden">
-
-                                <img src="../img/nav-corporal.jpg"
-                                    class="w-full h-full object-cover  hover:scale-110 duration-1000 ease-out" alt="">
-
-                                <div class="w-full h-1/4  bg-gradient-to-t from-white absolute bottom-0 ">
-                                    <div class="absolute bottom-5 left-5">
-                                        <h2 class="text-maior-primary font-medium text-lg ">Bikini tradicional</h2>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="swiper-slide relative overflow-hidden">
-
-                                <img src="../img/nav-laser.jpg"
-                                    class="w-full h-full object-cover  hover:scale-110 duration-1000 ease-out" alt="">
-
-                                <div class="w-full h-1/4  bg-gradient-to-t from-white absolute bottom-0 ">
-                                    <div class="absolute bottom-5 left-5">
-                                        <h2 class="text-maior-primary font-medium text-lg ">Bikini tradicional</h2>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="swiper-slide relative overflow-hidden">
-
-                                <img src="../img/nav-depilacion.jpg"
-                                    class="w-full h-full object-cover  hover:scale-110 duration-1000 ease-out" alt="">
-
-                                <div class="w-full h-1/4  bg-gradient-to-t from-white absolute bottom-0 ">
-                                    <div class="absolute bottom-5 left-5">
-                                        <h2 class="text-maior-primary font-medium text-lg ">Bikini tradicional</h2>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="swiper-slide relative overflow-hidden">
-
-                                <img src="../img/nav-depilacion.jpg"
-                                    class="w-full h-full object-cover  hover:scale-110 duration-1000 ease-out" alt="">
-
-                                <div class="w-full h-1/4  bg-gradient-to-t from-white absolute bottom-0 ">
-                                    <div class="absolute bottom-5 left-5">
-                                        <h2 class="text-maior-primary font-medium text-lg ">Bikini tradicional</h2>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="swiper-slide relative overflow-hidden">
-
-                                <img src="../img/nav-depilacion.jpg"
-                                    class="w-full h-full object-cover  hover:scale-110 duration-1000 ease-out" alt="">
-
-                                <div class="w-full h-1/4  bg-gradient-to-t from-white absolute bottom-0 ">
-                                    <div class="absolute bottom-5 left-5">
-                                        <h2 class="text-maior-primary font-medium text-lg ">Bikini tradicional</h2>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div> -->
-
         <div class="py-10 bg-gray-50">
             <div class="container lg:px-24">
 
                 <div class="px-10">
-                    <!-- 
-                <span class="font-Opensans font-light text-maior-primary">Tratamientos por excelencia</span> -->
+
                     <h2 class="title-section pb-10">Liberate de los vellos</h2>
                 </div>
 
-                <div class="">
+                <div class="text-maior-primary">
 
-                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10 px-5">
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5 lg:gap-10 px-5">
 
                         <div>
                             <div class="swiper swiper-por-one">
@@ -741,12 +499,13 @@
                                         <div
                                             class="p-5 w-full bg-gradient-to-t from-white group-hover/agenda:h-full hover:bg-white/50 absolute bottom-0 text-center flex flex-col justify-center duration-1000">
 
-                                            <h2 class=" text-maior-primary text-lg font-semibold">Entrecejo
+                                            <h2 class="font-bold leading-5 font-Opensans">Entrecejo
                                             </h2>
 
-                                            <div class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
+                                            <div
+                                                class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
 
-                                                <a class="bg-maior-primary text-white py-1.5 text-center font-medium text-sm rounded-md  hover:bg-maior-secondary block"
+                                                <a class="btn-assessment text-sm block"
                                                     href="#">Programar evaluación</a>
                                             </div>
                                         </div>
@@ -762,12 +521,13 @@
                                         <div
                                             class="p-5 w-full bg-gradient-to-t from-white group-hover/agenda:h-full hover:bg-white/50 absolute bottom-0 text-center flex flex-col justify-center duration-1000">
 
-                                            <h2 class=" text-maior-primary text-lg font-semibold">Patillas
+                                            <h2 class="font-bold font-Opensans leading-5">Patillas
                                             </h2>
 
-                                            <div class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
+                                            <div
+                                                class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
 
-                                                <a class="bg-maior-primary text-white py-1.5 text-center font-medium text-sm rounded-md  hover:bg-maior-secondary block"
+                                                <a class="btn-assessment text-sm block"
                                                     href="#">Programar evaluación</a>
                                             </div>
                                         </div>
@@ -783,12 +543,13 @@
                                         <div
                                             class="p-5 w-full bg-gradient-to-t from-white group-hover/agenda:h-full hover:bg-white/50 absolute bottom-0 text-center flex flex-col justify-center duration-1000">
 
-                                            <h2 class=" text-maior-primary text-lg font-semibold">Bozo
+                                            <h2 class="font-bold font-Opensans leading-5">Bozo
                                             </h2>
 
-                                            <div class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
+                                            <div
+                                                class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
 
-                                                <a class="bg-maior-primary text-white py-1.5 text-center font-medium text-sm rounded-md  hover:bg-maior-secondary block"
+                                                <a class="btn-assessment text-sm block"
                                                     href="#">Programar evaluación</a>
                                             </div>
                                         </div>
@@ -813,9 +574,11 @@
                                         <div
                                             class="p-5 w-full  bg-gradient-to-t from-white group-hover/agenda:h-full hover:bg-white/50 absolute bottom-0 text-center flex flex-col justify-center duration-1000">
 
-                                            <h2 class=" text-maior-primary text-lg font-semibold">Bikini tradicional</h2>
+                                            <h2 class="font-bold font-Opensans leading-5 capitalize">Bikini
+                                                tradicional</h2>
 
-                                            <div class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
+                                            <div
+                                                class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
 
                                                 <a class="bg-maior-primary text-white py-1.5 text-center font-medium text-sm rounded-md  hover:bg-maior-secondary block"
                                                     href="#">Programar evaluación</a>
@@ -833,9 +596,11 @@
                                         <div
                                             class="p-5 w-full  bg-gradient-to-t from-white group-hover/agenda:h-full hover:bg-white/50 absolute bottom-0 text-center flex flex-col justify-center duration-1000">
 
-                                            <h2 class=" text-maior-primary text-lg font-semibold">Bikini americano</h2>
+                                            <h2 class="font-bold font-Opensans leading-5 capitalize">Bikini
+                                                americano</h2>
 
-                                            <div class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
+                                            <div
+                                                class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
 
                                                 <a class="bg-maior-primary text-white py-1.5 text-center font-medium text-sm rounded-md  hover:bg-maior-secondary block"
                                                     href="#">Programar evaluación</a>
@@ -853,9 +618,11 @@
                                         <div
                                             class="p-5 w-full  bg-gradient-to-t from-white group-hover/agenda:h-full hover:bg-white/50 absolute bottom-0 text-center flex flex-col justify-center duration-1000">
 
-                                            <h2 class=" text-maior-primary text-lg font-semibold">Bikini Brasilero</h2>
+                                            <h2 class="font-bold font-Opensans leading-5 capitalize">Bikini
+                                                Brasilero</h2>
 
-                                            <div class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
+                                            <div
+                                                class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
 
                                                 <a class="bg-maior-primary text-white py-1.5 text-center font-medium text-sm rounded-md  hover:bg-maior-secondary block"
                                                     href="#">Programar evaluación</a>
@@ -881,9 +648,10 @@
                                         <div
                                             class="p-5 w-full bg-gradient-to-t from-white group-hover/agenda:h-full hover:bg-white/50 absolute bottom-0 text-center flex flex-col justify-center duration-1000">
 
-                                            <h2 class=" text-maior-primary text-lg font-semibold">Pierna inferior</h2>
+                                            <h2 class="font-bold font-Opensans leading-5 capitalize">Pierna inferior</h2>
 
-                                            <div class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
+                                            <div
+                                                class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
 
                                                 <a class="bg-maior-primary text-white py-1.5 text-center font-medium text-sm rounded-md  hover:bg-maior-secondary block"
                                                     href="#">Programar evaluación</a>
@@ -901,9 +669,10 @@
                                         <div
                                             class="p-5 w-full bg-gradient-to-t from-white group-hover/agenda:h-full hover:bg-white/50 absolute bottom-0 text-center flex flex-col justify-center duration-1000">
 
-                                            <h2 class=" text-maior-primary text-lg font-semibold">Pierna Superior</h2>
+                                            <h2 class="font-bold font-Opensans leading-5 capitalize">Pierna Superior</h2>
 
-                                            <div class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
+                                            <div
+                                                class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
 
                                                 <a class="bg-maior-primary text-white py-1.5 text-center font-medium text-sm rounded-md  hover:bg-maior-secondary block"
                                                     href="#">Programar evaluación</a>
@@ -921,9 +690,10 @@
                                         <div
                                             class="p-5 w-full bg-gradient-to-t from-white group-hover/agenda:h-full hover:bg-white/50 absolute bottom-0 text-center flex flex-col justify-center duration-1000">
 
-                                            <h2 class=" text-maior-primary text-lg font-semibold">Pierna Completa</h2>
+                                            <h2 class="font-bold font-Opensans leading-5 capitalize">Pierna Completa</h2>
 
-                                            <div class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
+                                            <div
+                                                class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
 
                                                 <a class="bg-maior-primary text-white py-1.5 text-center font-medium text-sm rounded-md  hover:bg-maior-secondary block"
                                                     href="#">Programar evaluación</a>
@@ -936,7 +706,7 @@
                                 <!-- <div class="swiper-pagination"></div> -->
                             </div>
                         </div>
-                        
+
                         <div>
                             <div class="swiper swiper-por-one">
                                 <div class="swiper-wrapper">
@@ -950,9 +720,10 @@
                                         <div
                                             class="p-5 w-full  bg-gradient-to-t from-white group-hover/agenda:h-full hover:bg-white/50 absolute bottom-0 text-center flex flex-col justify-center duration-1000">
 
-                                            <h2 class=" text-maior-primary text-lg font-semibold">Rostro completo</h2>
+                                            <h2 class="font-bold font-Opensans leading-5 capitalize">Rostro completo</h2>
 
-                                            <div class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
+                                            <div
+                                                class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
 
                                                 <a class="bg-maior-primary text-white py-1.5 text-center font-medium text-sm rounded-md  hover:bg-maior-secondary block"
                                                     href="#">Programar evaluación</a>
@@ -970,9 +741,11 @@
                                         <div
                                             class="p-5 w-full  bg-gradient-to-t from-white group-hover/agenda:h-full hover:bg-white/50 absolute bottom-0 text-center flex flex-col justify-center duration-1000">
 
-                                            <h2 class=" text-maior-primary text-lg font-semibold">Perfilado de barba</h2>
+                                            <h2 class="font-bold font-Opensans leading-5 capitalize">Perfilado de barba
+                                            </h2>
 
-                                            <div class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
+                                            <div
+                                                class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
 
                                                 <a class="bg-maior-primary text-white py-1.5 text-center font-medium text-sm rounded-md  hover:bg-maior-secondary block"
                                                     href="#">Programar evaluación</a>
@@ -990,9 +763,10 @@
                                         <div
                                             class="p-5 w-full bg-gradient-to-t from-white group-hover/agenda:h-full hover:bg-white/50 absolute bottom-0 text-center flex flex-col justify-center duration-1000">
 
-                                            <h2 class=" text-maior-primary text-lg font-semibold">Frente</h2>
+                                            <h2 class="font-bold font-Opensans leading-5 capitalize">Frente</h2>
 
-                                            <div class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
+                                            <div
+                                                class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
 
                                                 <a class="bg-maior-primary text-white py-1.5 text-center font-medium text-sm rounded-md  hover:bg-maior-secondary block"
                                                     href="#">Programar evaluación</a>
@@ -1018,10 +792,11 @@
                                         <div
                                             class="p-5 w-full bg-gradient-to-t from-white group-hover/agenda:h-full hover:bg-white/50 absolute bottom-0 text-center flex flex-col justify-center duration-1000">
 
-                                            <h2 class=" text-maior-primary text-lg font-semibold">Axilas
+                                            <h2 class="font-bold font-Opensans leading-5 capitalize">Axilas
                                             </h2>
 
-                                            <div class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
+                                            <div
+                                                class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
 
                                                 <a class="bg-maior-primary text-white py-1.5 text-center font-medium text-sm rounded-md  hover:bg-maior-secondary block"
                                                     href="#">Programar evaluación</a>
@@ -1039,10 +814,11 @@
                                         <div
                                             class="p-5 w-full bg-gradient-to-t from-white group-hover/agenda:h-full hover:bg-white/50 absolute bottom-0 text-center flex flex-col justify-center duration-1000">
 
-                                            <h2 class=" text-maior-primary text-lg font-semibold">Espalda / Lumbar
+                                            <h2 class="font-bold font-Opensans leading-5 capitalize">Espalda / Lumbar
                                             </h2>
 
-                                            <div class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
+                                            <div
+                                                class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
 
                                                 <a class="bg-maior-primary text-white py-1.5 text-center font-medium text-sm rounded-md  hover:bg-maior-secondary block"
                                                     href="#">Programar evaluación</a>
@@ -1060,10 +836,11 @@
                                         <div
                                             class="p-5 w-full bg-gradient-to-t from-white group-hover/agenda:h-full hover:bg-white/50 absolute bottom-0 text-center flex flex-col justify-center duration-1000">
 
-                                            <h2 class=" text-maior-primary text-lg font-semibold">Cuello / Papada
+                                            <h2 class="font-bold font-Opensans leading-5 capitalize">Cuello / Papada
                                             </h2>
 
-                                            <div class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
+                                            <div
+                                                class="hidden group-hover/agenda:block mb-5 text-center justify-center mt-2.5">
 
                                                 <a class="bg-maior-primary text-white py-1.5 text-center font-medium text-sm rounded-md  hover:bg-maior-secondary block"
                                                     href="#">Programar evaluación</a>
@@ -1266,7 +1043,7 @@
             <div class="flex justify-center py-6">
                 <div class="w-36 mx-auto">
                     <a href="index.html">
-                        <img class="w-full" src="../img/maior-1.svg" alt="">
+                        <img class="w-full" src="img/maior-1.svg" alt="">
                     </a>
                 </div>
             </div>
@@ -1317,11 +1094,9 @@
     </footer>
 
     <!-- scrips js -->
-    <script src="js/accordion.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main-swiper.js"></script>
-
-    <script src="js/app.js"></script>
 
 
 </body>
