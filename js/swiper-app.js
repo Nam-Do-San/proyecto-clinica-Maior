@@ -5,10 +5,10 @@ var swiper = new Swiper(".swiper-index", {
     centeredSlides: true,
     effect: "fade",
     loop: true,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    // },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
