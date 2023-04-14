@@ -262,7 +262,8 @@
                         <div class="absolute container lg:px-36 inset-x-0 bottom-10 lg:bottom-40 w-full">
 
                             <div class="bg-white p-5 mx-4 lg:p-10 lg:w-fit">
-                                <p class="text-maior-primary font-semibold font-Opensans">Expertos en Medicina Estética
+                                <p class="text-maior-primary font-bold font-Manrope tracking-wide">Expertos en Medicina
+                                    Estética
                                 </p>
                                 <h2 class="font-Bellefair uppercase text-3xl lg:text-5xl py-2"><span>Clínica
                                         Estética</span><br><span>Medic Maior</span></h2>
@@ -387,7 +388,7 @@
                 <div class="grid lg:grid-cols-3 justify-items-center ">
 
                     <div class="text-center items-center lg:order-last lg:justify-self-end py-6 self-center">
-                        <a class="bg-maior-primary text-white text-base font-medium py-2 px-3 rounded-md hover:bg-white hover:text-maior-primary duration-500 text-center"
+                        <a class="bg-maior-primary font-Manrope text-white text-base font-semibold py-2 px-3 rounded-md hover:bg-white hover:text-maior-primary duration-500 text-center"
                             href="#">Programa tu evaluación aquí </a>
                     </div>
 
@@ -426,8 +427,8 @@
                                         alt="">
                                 </div>
 
-                                <div class="text-center py-5">
-                                    <h2 class="text-lg font-bold font-Opensans text-maior-primary">
+                                <div class="text-center py-3">
+                                    <h2 class="text-maior-primary tracking-wide text-lg font-extrabold font-Manrope">
                                         Depilación Láser</h2>
                                 </div>
                             </a>
@@ -441,8 +442,8 @@
                                         alt="">
                                 </div>
 
-                                <div class="text-center py-5">
-                                    <h2 class="text-lg font-bold font-Opensans text-maior-primary">
+                                <div class="text-center py-3">
+                                    <h2 class="font-Manrope text-lg font-extrabold tracking-wide text-maior-primary">
                                         Tratamientos Faciales</h2>
                                 </div>
                             </a>
@@ -456,8 +457,8 @@
                                         alt="">
                                 </div>
 
-                                <div class="text-center py-5">
-                                    <h2 class="text-lg font-bold font-Opensans text-maior-primary">
+                                <div class="text-center py-3">
+                                    <h2 class="font-Manrope text-lg font-extrabold tracking-wide text-maior-primary">
                                         Tratamientos Corporales</h2>
                                 </div>
                             </a>
@@ -471,8 +472,9 @@
                                         alt="">
                                 </div>
 
-                                <div class="text-center py-5">
-                                    <h2 class="text-lg font-bold font-Opensans text-maior-primary">Tratamientos Láser
+                                <div class="text-center py-3">
+                                    <h2 class="font-Manrope text-lg font-extrabold tracking-wide text-maior-primary">
+                                        Tratamientos Láser
                                     </h2>
                                 </div>
                             </a>
@@ -502,7 +504,7 @@
                     <div class="self-end px-5 lg:pl-10 lg:pr-0">
 
                         <div
-                            class="font-Opensans text-maior-primary font-bold text-lg leading-7 md:text-2xl py-10 text-center">
+                            class="font-Manrope text-maior-primary font-bold text-lg leading-7 md:text-2xl py-10 text-center">
                             <p>Nos especializamos en brindarte las mejores soluciones estéticas con resultados
                                 reales y seguras para ti <span class='bx bxs-heart text-red-500 animate-pulse'></span>
                             </p>
@@ -535,7 +537,7 @@
         </section>
 
         <!-- after and before -->
-        <div class="relative py-10">
+        <!-- <div class="relative py-10">
 
             <div class="bg-gray-50 w-full h-1/2 absolute bottom-0 -z-10">
             </div>
@@ -547,6 +549,50 @@
 
 
                 </div>
+
+                <div class=" flex justify-center items-center">
+                
+                    <div class="container-geral w-full  block">
+
+                
+                        <div class="w-full relative overflow-hidden" id="before-after-slider">
+
+                    
+                            <div class="absolute h-full w-1/2  top-0 z-10" id="before-image">
+                                <img src="img/index-after.jpg" class="w-full h-full block object-cover object-left"
+                                    alt="">
+                            </div>
+
+                
+                            <div class="block" id="after-image">
+                                <img src="img/index-before.jpg" class="w-full block" alt="">
+                            </div>
+
+                            <div class="absolute flex items-center text-white  z-10 top-0 left-1/2 bg-white w-1.5 h-full touch-pan-y resizer-after    
+                    " id="resizer">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div> -->
+
+
+        <div class="container px-36">
+            <legend>Resultados Reales</legend>
+
+            <input id="draft" class="peer/draft" type="radio" name="status" checked />
+            <label for="draft" class="peer-checked/draft:text-sky-500">Draft</label>
+
+            <input id="published" class="peer/published" type="radio" name="status" />
+            <label for="published" class="peer-checked/published:text-sky-500">Published</label>
+
+            <div class="hidden peer-checked/draft:block">
 
                 <div class=" flex justify-center items-center">
                     <!-- slider 1 -->
@@ -577,8 +623,40 @@
                 </div>
 
             </div>
+            <div class="hidden peer-checked/published:block">
 
+                <div class=" flex justify-center items-center">
+                    <!-- slider 1 -->
+                    <div class="container-geral w-full  block">
+
+                        <!-- slider-after-before -->
+                        <div class="w-full relative overflow-hidden" id="before-after-slider">
+
+                            <!-- before -->
+                            <div class="absolute h-full w-1/2  top-0 z-10" id="before-image">
+                                <img src="img/index-after.jpg" class="w-full h-full block object-cover object-left"
+                                    alt="">
+                            </div>
+
+                            <!-- after -->
+                            <div class="block" id="after-image">
+                                <img src="img/index-before.jpg" class="w-full block" alt="">
+                            </div>
+
+                            <div class="absolute flex items-center text-white  z-10 top-0 left-1/2 bg-white w-1.5 h-full touch-pan-y resizer-after    
+                    " id="resizer">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
         </div>
+
 
         <!-- depilación laser  -->
         <!-- <section class="h-screen relative py-5">
@@ -680,127 +758,8 @@
             </div>
         </section> -->
 
-        <!-- tratamientos mas populares -->
-        <section class="py-10">
-            <div class="container lg:px-36">
-
-                <div class="px-10 lg:px-0 ">
-
-                    <p class="title-section pb-10">Tratamientos más populares</p>
-
-                    <div class="swiper swiper-3">
-                        <div class="swiper-wrapper pb-14">
-
-                            <div class="swiper-slide rounded-md overflow-hidden relative group/show">
-                                <img src="img/popular-1.jpg" alt="">
-
-                                <div
-                                    class="absolute w-full h-full bottom-0 bg-gradient-to-t from-white flex justify-center items-end ">
-
-                                    <div class="text-center">
-
-                                        <h3 class="p-5 font-semibold text-lg text-maior-primary">Depilación Laser1</h3>
-
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide ">
-
-                                <div class="relative">
-                                    <img src="img/popular-1.jpg" alt="">
-                                    <div
-                                        class="invisible absolute bg-white/75 w-full h-full bottom-0 flex flex-col justify-center items-center">
-                                        <div class="bg-white w-40 text-center p-2 mb-2.5 font-semibold rounded-md">
-                                            <a class="text-maior-primary" href="#">Mas información</a>
-                                        </div>
-
-                                        <div class="bg-white w-40 text-center p-2 mt-2.5 font-semibold rounded-md">
-                                            <a class="text-maior-primary" href="#">Programar cita</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="absolute bottom-0">
-                                    <h3 class="p-5 font-semibold text-lg text-maior-primary">Depilación Laser</h3>
-                                </div>
-
-                            </div>
-
-                            <div class="swiper-slide">
-
-                                <div class="relative">
-                                    <img src="img/popular-1.jpg" alt="">
-                                    <div
-                                        class="invisible absolute bg-white/75 w-full h-full bottom-0 flex flex-col justify-center items-center">
-                                        <div class="bg-white w-40 text-center p-2 mb-2.5 font-semibold rounded-md">
-                                            <a class="text-maior-primary" href="#">Mas información</a>
-                                        </div>
-
-                                        <div class="bg-white w-40 text-center p-2 mt-2.5 font-semibold rounded-md">
-                                            <a class="text-maior-primary" href="#">Programar cita</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="absolute bottom-0">
-                                    <h3 class="p-5 font-semibold text-lg text-maior-primary">Depilación Laser</h3>
-                                </div>
-
-                            </div>
-
-                            <div class="swiper-slide group/show">
-
-                                <div class="relative">
-                                    <img src="img/popular-1.jpg" alt="">
-                                    <div
-                                        class="
-                                        invisible group-hover/show:visible
-                                        absolute bg-white/75 w-full h-full bottom-0 flex flex-col justify-center items-center">
-                                        <div
-                                            class="bg-white w-40 text-center p-2 mb-2.5 font-semibold rounded-md hover:bg-maior-primary hover:text-white">
-                                            <a href="#">Mas información</a>
-                                        </div>
-
-                                        <div
-                                            class="bg-white w-40 text-center p-2 mt-2.5 font-semibold rounded-md hover:bg-maior-primary hover:text-white">
-                                            <a href="#">Programar cita</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="bg-gradient-to- from-white absolute w-full h-full bottom-0">
-
-                                </div>
-
-                                <div class="absolute bottom-0 left-1/3">
-                                    <h3 class="pb-5 font-semibold text-lg text-maior-primary">Depilación Laser22</h3>
-                                </div>
-
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="img/popular-1.jpg" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="img/popular-1.jpg" alt="">
-                            </div>
-
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
         <!-- porque elegirnos -->
-        <section class="bg-maior-blue text-maior-primary py-10">
+        <section class="bg-gray-50 text-maior-primary py-10">
             <div class="container lg:px-36">
 
                 <div class="px-10 lg:px-0 ">
@@ -809,56 +768,50 @@
                         opción?</p>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-3 justify-items-center px-10 gap-y-5">
+                <div class="grid grid-cols-2 md:grid-cols-3 justify-items-center px-10 gap-y-10 gap-x-5">
 
                     <div class="text-center">
-                        <img src="img/icono_md_2.svg" class="mx-auto" alt="">
-                        <div>
-                            <p>las mejores <strong>instalaciones</strong> médicas</p>
-                        </div>
-                    </div>
-
-                    <div class="text-center">
-                        <img src="img/icono_md_2.svg" class="mx-auto" alt="">
-                        <div>
-                            <p>contamos con <strong>equipo médico</strong> altamente cualificado</p>
+                        <img src="icons/equipo-medico.png" class="mx-auto" alt="">
+                        <div class="pt-2.5">
+                            <p><strong>Equipo médico</strong> altamente cualificado</p>
                         </div>
                     </div>
 
                     <div class="text-center">
-                        <img src="img/icono_md_2.svg" class="mx-auto" alt="">
-                        <div>
-                            <p><strong>innovación tecnológica</strong> constante</p>
+                        <img src="icons/tecnologia.png" class="mx-auto" alt="">
+                        <div class="pt-2.5">
+                            <p><strong>Innovación tecnológica</strong> constante</p>
                         </div>
                     </div>
 
                     <div class="text-center">
-                        <img src="img/icono_md_2.svg" class="mx-auto" alt="">
-                        <div>
-                            <p>para nosotros <strong>el paciente</strong> siempre es primero</p>
+                        <img src="icons/paciente.png" class="mx-auto" alt="">
+                        <div class="pt-2.5">
+                            <p>Para nosotros <strong>el paciente</strong> siempre es primero</p>
                         </div>
                     </div>
 
                     <div class="text-center">
-                        <img src="img/icono_md_2.svg" class="mx-auto" alt="">
-                        <div>
-                            <p>tenemos <strong>4.2 en valoraciones</strong> en google</p>
+                        <img src="icons/evaluacion.png" class="mx-auto" alt="">
+                        <div class="pt-2.5">
+                            <p><strong>Evaluación y seguimiento</strong> personalizado</p>
                         </div>
                     </div>
 
                     <div class="text-center">
-                        <img src="img/icono_md_2.svg" class="mx-auto" alt="">
-                        <div>
-                            <p><strong>más de 7 años </strong>como centro medico estético</p>
+                        <img src="icons/valoracion.png" class="mx-auto" alt="">
+                        <div class="pt-2.5">
+                            <p>Tenemos <strong>4.5 en valoraciones</strong> en google</p>
                         </div>
                     </div>
 
-                    <div class="text-center pt-5">
-                        <img src="img/icono_md_2.svg" class="mx-auto" alt="">
-                        <div>
-                            <p><strong>16 profesionales</strong> médicos</p>
+                    <div class="text-center">
+                        <img src="icons/experiencia.png" class="mx-auto" alt="">
+                        <div class="pt-2.5">
+                            <p><strong>Más de 9 años </strong>como centro medico estético</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -869,7 +822,7 @@
 
                 <!-- Swiper -->
                 <div class="swiper mySwiper-medico">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper pb-16">
 
                         <div class="swiper-slide">
                             <div class="grid grid-cols-1 md:grid-cols-2  md:m-10">
@@ -883,16 +836,25 @@
                                     </div>
                                 </div>
 
-                                <div class="self-center lg:w-3/5 text-center px-10">
+                                <div class="self-center lg:w-3/5 px-10">
 
                                     <div>
-                                        <h2 class="text-xl font-bold font-Opensans text-maior-primary">
+                                        <h2 class="sub-section">
                                             Dra. Melania Paredes</h2>
-                                        <P class="text-maior-primary">Especialista en Medicina Estética</P>
-                                        <p>Colegia Medico CMP 51547</p>
+                                        <P class="text-maior-primary">Medicina Estética</P>
 
-                                        <p>La Dra. Melania Paredes, es Licenciada en Medicina y Cirugía por la
-                                            Universidad de Barcelona.</p>
+
+                                        <p class="mt-5 text-sm">
+                                            La Dra. Melania es una especialista en medicina estética con una amplia
+                                            experiencia y comprometida, que ofrece tratamientos estéticos personalizados
+                                            y seguros con un enfoque centrado en la satisfacción y bienestar de sus
+                                            pacientes.
+                                        </p>
+
+                                        <div class="mt-8">
+                                            <a class="btn-line-primary" href="drmelaniaparedes.html">Conoce mas de la
+                                                Dra. Melania</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -910,16 +872,23 @@
                                     </div>
                                 </div>
 
-                                <div class="self-center lg:w-3/5 text-center px-10">
+                                <div class="self-center lg:w-3/5 px-10">
 
                                     <div>
-                                        <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">
-                                            Dr. Julio Suca</h2>
-                                        <P class="text-maior-primary">Especialista en Cirugía Plástica</P>
-                                        <p>CMP 222-222</p>
+                                        <h2 class="sub-section">Dr. Julio Suca</h2>
+                                        <P class="text-maior-primary">Cirugía Plástica y Reconstructiva</P>
 
-                                        <p>Combine texto grande con una imagen para enfocar el producto,
-                                            la colección o la publicación de blog que haya elegido.</p>
+                                        <p class="mt-5 text-sm">
+                                            El Dr. Julio Suca es un cirujano plástico reconocido por su experiencia y
+                                            dedicación en el campo de la cirugía estética con una destacada trayectoria
+                                            profesional, ofreciendo una atención personalizada y resultados estéticos
+                                            naturales y satisfactorios.
+                                        </p>
+
+                                        <div class="mt-8">
+                                            <a class="btn-line-primary" href="drjuliosuca.html">Conoce mas de la Dr.
+                                                Julio</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -937,16 +906,23 @@
                                     </div>
                                 </div>
 
-                                <div class="self-center lg:w-3/5 text-center px-10">
+                                <div class="self-center lg:w-3/5 px-10">
 
                                     <div>
-                                        <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">
-                                            Dra. Patricia Bolaños</h2>
-                                        <P class="text-maior-primary">Especialista en Medicina Estética</P>
-                                        <p>CMP 222-222</p>
+                                        <h2 class="sub-section">Dra. Patricia Bolaños</h2>
+                                        <P class="text-maior-primary">Medicina Estética</P>
 
-                                        <p>Combine texto grande con una imagen para enfocar el producto,
-                                            la colección o la publicación de blog que haya elegido.</p>
+                                        <p class="mt-5 text-sm">
+                                            La Dra. Patricia se destaca por su enfoque ético y transparente en su
+                                            práctica médica, su objetivo es asegurarse de que sus pacientes se sientan
+                                            cómodos y confiados en todo momento, con resultados estéticos deseados de
+                                            manera segura y efectiva.
+                                        </p>
+
+                                        <div class="mt-8">
+                                            <a class="btn-line-primary" href="drapatriciabola.html">Conoce mas de la
+                                                Dra. Patricia</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -964,16 +940,22 @@
                                     </div>
                                 </div>
 
-                                <div class="self-center lg:w-3/5 text-center px-10">
+                                <div class="self-center lg:w-3/5 px-10">
 
                                     <div>
-                                        <h2 class="text-xl font-bold -tracking-wide font-Opensans text-maior-primary">
-                                            Dr. Alexander Flores</h2>
-                                        <P class="text-maior-primary">Especialista en Cirugía Plástica</P>
-                                        <p>CMP 222-222</p>
+                                        <h2 class="sub-section">Dr. Alexander Flores</h2>
+                                        <P class="text-maior-primary">Cirugía Plástica y Reconstructiva</P>
 
-                                        <p>Combine texto grande con una imagen para enfocar el producto,
-                                            la colección o la publicación de blog que haya elegido.</p>
+                                        <p class="mt-5 text-sm">
+                                            El Dr. Alexander es un profesional altamente capacitado y especializado en
+                                            su campo. Posee una vasta experiencia y habilidades en el campo de la
+                                            cirugía plástica, así como por su dedicación y pasión por su trabajo.
+                                        </p>
+
+                                        <div class="mt-8">
+                                            <a class="btn-line-primary" href="drjuliosuca.html">Conoce mas de la Dr.
+                                                Alexander</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
