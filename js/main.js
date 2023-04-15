@@ -26,7 +26,7 @@
 const slider = document.getElementById('before-after-slider');
 const before = document.getElementById('before-image');
 const beforeImage = before.getElementsByTagName('img')[0];
-const resizer = document.getElementById('resizer');
+const resizer = document.querySelector('#resizer');
 
 let active = false;
 
@@ -113,20 +113,49 @@ function pauseEvent(e) {
     return false;
 }
 
+
+
+let botox_btn = document.getElementById('btn-botox');
+let hydra_btn = document.getElementById('btn-hydra');
+
+
+
+
+botox_btn.addEventListener('click', function (params) {
+
+        document.getElementById('matrix-after').src="img/bg-services/bg-hydrafacial-after.jpg";
+        document.getElementById('matrix-before').src="img/bg-services/bg-hydrafacial-before.jpg";
+        
+})
+
+hydra_btn.addEventListener('click', function (params) {
+
+    document.getElementById('matrix-after').src="img/bg-services/toxina-botulinica/antes-botox.jpg";
+    document.getElementById('matrix-before').src="img/bg-services/toxina-botulinica/despues-botox.jpg";
+    
+})
+
+
+
+
+
+
+
+
 ////////////////////////////////////////
 // accordion
 ////////////////////////////////////////
 const accordionContent = document.querySelectorAll(".accordion-content");
 accordionContent.forEach((item, index) => {
     let header = item.querySelector(".faq");
-    header.addEventListener("click", () =>{
+    header.addEventListener("click", () => {
         item.classList.toggle("open");
 
         let description = item.querySelector(".description");
-        if(item.classList.contains("open")){
+        if (item.classList.contains("open")) {
             description.style.height = `${description.scrollHeight}px`; //scrollHeight property returns the height of an element including padding , but excluding borders, scrollbar or margin
             item.querySelector("i").classList.replace("bx-plus", "bx-minus");
-        }else{
+        } else {
             description.style.height = "0px";
             item.querySelector("i").classList.replace("bx-minus", "bx-plus");
         }
@@ -134,9 +163,9 @@ accordionContent.forEach((item, index) => {
     })
 })
 
-function removeOpen(index1){
+function removeOpen(index1) {
     accordionContent.forEach((item2, index2) => {
-        if(index1 != index2){
+        if (index1 != index2) {
             item2.classList.remove("open");
 
             let des = item2.querySelector(".description");
