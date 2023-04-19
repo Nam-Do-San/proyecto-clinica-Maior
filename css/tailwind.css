@@ -825,10 +825,6 @@ video {
   right: -18rem;
 }
 
-.-top-20{
-  top: -5rem;
-}
-
 .-top-24{
   top: -6rem;
 }
@@ -883,10 +879,6 @@ video {
 
 .top-6{
   top: 1.5rem;
-}
-
-.bottom-5{
-  bottom: 1.25rem;
 }
 
 .-z-10{
@@ -983,6 +975,10 @@ video {
   margin-right: 0.75rem;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .mt-16{
   margin-top: 4rem;
 }
@@ -1009,10 +1005,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
 }
 
 .block{
@@ -1083,10 +1075,6 @@ video {
   height: 90vh;
 }
 
-.max-h-\[600px\]{
-  max-height: 600px;
-}
-
 .w-1{
   width: 0.25rem;
 }
@@ -1130,10 +1118,6 @@ video {
 
 .w-screen{
   width: 100vw;
-}
-
-.max-w-\[800px\]{
-  max-width: 800px;
 }
 
 .-translate-x-1\/2{
@@ -1307,11 +1291,6 @@ video {
   border-color: rgb(231 231 231 / var(--tw-border-opacity));
 }
 
-.border-maior-primary{
-  --tw-border-opacity: 1;
-  border-color: rgb(3 43 71 / var(--tw-border-opacity));
-}
-
 .border-b-maior-gray{
   --tw-border-opacity: 1;
   border-bottom-color: rgb(231 231 231 / var(--tw-border-opacity));
@@ -1360,10 +1339,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-white\/20{
-  background-color: rgb(255 255 255 / 0.2);
-}
-
 .bg-white\/50{
   background-color: rgb(255 255 255 / 0.5);
 }
@@ -1388,10 +1363,6 @@ video {
 
 .bg-fixed{
   background-attachment: fixed;
-}
-
-.bg-bottom{
-  background-position: bottom;
 }
 
 .bg-center{
@@ -1517,10 +1488,6 @@ video {
 
 .pb-16{
   padding-bottom: 4rem;
-}
-
-.pb-40{
-  padding-bottom: 10rem;
 }
 
 .pb-5{
@@ -1777,11 +1744,6 @@ p{
   font-family: Manrope, sans-seri;
 }
 
-.hover\:bg-gray-100:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-gray-50:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -1959,11 +1921,6 @@ p{
     letter-spacing: 0.05em;
   }
 
-  .md\:text-white{
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
   .md\:text-white\/80{
     color: rgb(255 255 255 / 0.8);
   }
@@ -1974,20 +1931,12 @@ p{
     position: absolute;
   }
 
-  .lg\:bottom-10{
-    bottom: 2.5rem;
-  }
-
   .lg\:bottom-36{
     bottom: 9rem;
   }
 
   .lg\:left-0{
     left: 0px;
-  }
-
-  .lg\:right-36{
-    right: 9rem;
   }
 
   .lg\:top-auto{
@@ -2004,21 +1953,6 @@ p{
 
   .lg\:col-span-2{
     grid-column: span 2 / span 2;
-  }
-
-  .lg\:mx-10{
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
-  .lg\:mx-20{
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
-  .lg\:mx-24{
-    margin-left: 6rem;
-    margin-right: 6rem;
   }
 
   .lg\:mx-36{
