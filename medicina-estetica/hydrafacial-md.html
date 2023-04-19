@@ -247,16 +247,19 @@
 
         <div class="container-general w-full block mt-28 relative">
 
-            <!-- slider-after-before -->
-            <div class="w-full relative overflow-hidden" id="before-after-slider">
+            <picture>
+                <source media="(min-width:768px )" srcset="../img/bg-services/hydrafacial/bg-hydrafacial-main.jpg">
+                <img src="../img/bg-services/hydrafacial/bg-hydrafacial-movil.jpg" class="w-full" alt="">
+            </picture>
 
-                <!-- before -->
+            <!-- slider-after-before -->
+            <!-- <div class="w-full relative overflow-hidden" id="before-after-slider">
+
                 <div class="absolute h-full w-1/2  top-0 z-10" id="before-image">
                     <img src="../img/bg-services/hydrafacial/bg-hydrafacial-after.jpg"
                         class="w-full h-full block object-cover object-left" alt="">
                 </div>
 
-                <!-- after -->
                 <div class="block" id="after-image">
                     <img src="../img/bg-services/hydrafacial/bg-hydrafacial-before.jpg" class="w-full block" alt="">
                 </div>
@@ -264,14 +267,14 @@
                 <div class="resizer-after absolute flex items-center text-white  z-10 top-0 left-1/2 bg-white w-1.5 h-full touch-pan-y"
                     id="resizer">
                 </div>
-            </div>
+            </div> -->
 
-            <div class="container md:absolute  lg:px-36 inset-x-0 bottom-10 lg:bottom-10 w-full z-10">
+            <div class="container md:absolute  lg:px-36 inset-x-0 bottom-10 w-full z-10">
 
-                <div class="px-10 lg:px-0  pt-5">
-                    <p class="font-bold font-Manrope text-lg tracking-wide md:text-white">Medicina Estética - Facial
+                <div class="px-10 lg:px-0 pt-5 text-maior-primary lg:text-white/80">
+                    <p class="font-bold font-Manrope tracking-wide">Medicina Estética - Facial
                     </p>
-                    <h1 class="title-section md:text-white/80">Hydrafacial MD</h1>
+                    <h1 class="font-Manrope font-extrabold  text-3xl lg:text-5xl py-2.5">Hydrafacial MD</h1>
                 </div>
 
             </div>
@@ -405,7 +408,7 @@
 
                             <div class="mt-2.5 text-right md:text-center">
                                 <p>Duración del tratamiento</p>
-                                <p><strong>35 - 50 minutos</strong></p>
+                                <p><strong>35 - 60 minutos*</strong></p>
                             </div>
                         </div>
 
@@ -426,7 +429,7 @@
                             </svg>
                             <div class="mt-2.5 text-right md:text-center">
                                 <p>Tipo de anestesia</p>
-                                <p><strong>no requiere necesariamente</strong></p>
+                                <p><strong>no requiere</strong></p>
                             </div>
                         </div>
 
@@ -465,7 +468,7 @@
                             </svg>
                             <div class="mt-2.5 text-right md:text-center">
                                 <p>Duración de resultados</p>
-                                <p><strong>4 - 6 meses</strong></p>
+                                <p><strong>1 - 2 semanas*</strong></p>
                             </div>
                         </div>
 
@@ -478,7 +481,7 @@
         </div>
 
         <!-- img bg blanco -->
-        <div class="h-screen/50 bg-fixed bg-left bg-no-repeat bg-cover"
+        <div class="h-screen/50 bg-fixed bg-center bg-no-repeat bg-cover"
             style="background-image: url(../img/hydra-01.jpg);">
         </div>
 
@@ -487,20 +490,22 @@
 
             <div class="container lg:px-36">
 
-                <div class="px-10 lg:px-0">
-                    <h2 class="title-section pb-5">Faqs sobre el Hydrafacial MD</h2>
+                <div class="px-10 pb-5 lg:px-0">
+                    <h2 class="title-section">Todo lo que necesitas saber</h2>
+                </div>
 
-                    <div class="accordion">
+                <div>
+                    <div class="accordion mx-5">
                         <div
-                            class="accordion-content overflow-hidden lg:mx-10 border-b border-maior-primary text-maior-primary">
-                            <div class="faq py-5 flex justify-between items-center">
-                                <h2>¿Es doloroso el tratamiento de Mesoterapia?
+                            class="accordion-content overflow-hidden text-maior-primary hover:bg-gray-50 rounded">
+                            <div class="faq p-5 lg:p-5 flex justify-between items-center">
+                                <h2>¿Es doloroso el tratamiento de Mesoterapia1?
                                 </h2>
                                 <i class='bx bx-plus'></i>
                             </div>
 
-                            <div class="description h-0">
-                                <p class="pb-5">
+                            <div class="description h-auto bg-gray-50">
+                                <p class="p-5">
                                     Los riesgos son inherentes a cualquier tipo de procedimiento quirúrgico electivo.
                                     Algunas eventualidades que pueden ocurrir incluyen infección, sangrado, seroma, mal
                                     curación, dolor, entre otros. Aquí lo más importante es realizar un buen
@@ -510,17 +515,16 @@
                             </div>
                         </div>
 
-                        <div
-                            class="accordion-content overflow-hidden lg:mx-10 border-b border-maior-primary text-maior-primary">
-                            <div class="faq py-5 flex justify-between items-center">
+                        <div class="accordion-content overflow-hidden text-maior-primary hover:bg-gray-50">
+                            <div class="faq p-5 lg:p-5 flex justify-between items-center">
                                 <h2>¿Es doloroso el tratamiento de
                                     Mesoterapia?
                                 </h2>
                                 <i class='bx bx-plus'></i>
                             </div>
 
-                            <div class="description h-0">
-                                <p class="pb-5">
+                            <div class="description h-0 bg-gray-50">
+                                <p class="p-5">
                                     Los riesgos son inherentes a cualquier tipo de procedimiento quirúrgico electivo.
                                     Algunas eventualidades que pueden ocurrir incluyen infección, sangrado, seroma, mal
                                     curación, dolor, entre otros. Aquí lo más importante es realizar un buen
@@ -530,17 +534,16 @@
                             </div>
                         </div>
 
-                        <div
-                            class="accordion-content overflow-hidden lg:mx-10 border-b border-maior-primary text-maior-primary">
-                            <div class="faq py-5 flex justify-between items-center">
+                        <div class="accordion-content overflow-hidden text-maior-primary hover:bg-gray-50">
+                            <div class="faq p-5 lg:p-5 flex justify-between items-center">
                                 <h2>¿Es doloroso el tratamiento de
                                     Mesoterapia?
                                 </h2>
                                 <i class='bx bx-plus'></i>
                             </div>
 
-                            <div class="description h-0">
-                                <p class="pb-5">
+                            <div class="description h-0 bg-gray-50">
+                                <p class="p-5">
                                     Los riesgos son inherentes a cualquier tipo de procedimiento quirúrgico electivo.
                                     Algunas eventualidades que pueden ocurrir incluyen infección, sangrado, seroma, mal
                                     curación, dolor, entre otros. Aquí lo más importante es realizar un buen
@@ -552,6 +555,9 @@
                     </div>
                 </div>
 
+                <div class="text-center mt-16 mb-2">
+                    <a class="btn-assessment" href="https://wa.link/1tmbhc">¿Desea programar una evaluación?</a>
+                </div>
             </div>
         </section>
 
@@ -565,41 +571,27 @@
                     <div class="swiper swiper-3">
                         <div class="swiper-wrapper pb-14">
                             <div class="swiper-slide">
-                                <img class="w-full h-full object-cover cursor-pointer"
+                                <img class="w-full h-full object-cover cursor-pointer rounded"
                                     src="../img/bg-services/hydrafacial/hydrafacial.jpg" alt="Flower"
                                     onclick="showModal('../img/bg-services/hydrafacial/hydrafacial.jpg')" />
                             </div>
 
                             <div class="swiper-slide">
-                                <img class="w-full h-full object-cover cursor-pointer"
+                                <img class="w-full h-full object-cover cursor-pointer rounded"
                                     src="../img/bg-services/hydrafacial/hydrafacial-2.jpg" alt="Flower"
                                     onclick="showModal('../img/bg-services/hydrafacial/hydrafacial-2.jpg')" />
                             </div>
 
                             <div class="swiper-slide">
-                                <img class="w-full h-full object-cover cursor-pointer"
+                                <img class="w-full h-full object-cover cursor-pointer rounded"
                                     src="../img/bg-services/hydrafacial/hydrafacial-3.jpg" alt="Flower"
                                     onclick="showModal('../img/bg-services/hydrafacial/hydrafacial-3.jpg')" />
                             </div>
 
                             <div class="swiper-slide">
-                                <img class="w-full h-full object-cover cursor-pointer"
+                                <img class="w-full h-full object-cover cursor-pointer rounded"
                                     src="../img/bg-services/hydrafacial/hydrafacial-4.jpg" alt="Flower"
                                     onclick="showModal('../img/bg-services/hydrafacial/hydrafacial-3.jpg')" />
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img class="w-full h-full object-cover cursor-pointer"
-                                    src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-2.jpeg"
-                                    alt="Flower"
-                                    onclick="showModal('https://www.kindacode.com/wp-content/uploads/2022/07/flower-2.jpeg')" />
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img class="w-full h-full object-cover cursor-pointer"
-                                    src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-1.jpeg"
-                                    alt="Flower"
-                                    onclick="showModal('https://www.kindacode.com/wp-content/uploads/2022/07/flower-1.jpeg')" />
                             </div>
 
                         </div>
@@ -624,10 +616,10 @@
         </section>
 
         <!-- contacto -->
-        <div class="mt-20 lg:mt-48 bg-cover">
+        <div class="mt-20 md:mt-48 bg-cover">
 
             <div class="container relative">
-                <div class="p-10 text-maior-primary bg-gray-50 w-fit rounded lg:absolute -top-24 lg:mx-36 right-0">
+                <div class="p-10 text-maior-primary bg-gray-50 w-fit rounded md:absolute -top-24 lg:mx-36 right-0">
 
                     <div class="mb-10 ">
                         <p class="title-section">Contactamos</p>
@@ -635,7 +627,7 @@
 
                     <div class="pb-5 border-b border-b-maior-gray">
 
-                        <div class="flex items-center text-sm font-extrabold font-Manrope">
+                        <div class="flex items-center font-extrabold font-Manrope">
                             <i class='bx bx-calendar text-xl mr-3'></i>
                             <p>Nuestro horario de atención</p>
                         </div>
@@ -661,17 +653,17 @@
                     </div>
 
                     <div class="py-5 border-b border-b-maior-gray">
-                        <div class="flex items-center text-sm font-extrabold font-Manrope">
+                        <div class="flex items-center font-extrabold font-Manrope">
                             <i class='bx bx-map text-xl mr-3'></i>
                             <p>Ubicación</p>
                         </div>
                         <div class="ml-8">
-                            <p>Urb. León XIII i-3 Av. Trinidad y Moran, Cayma, Arequipa</p>
+                            <p>Av. Trinidad Moran i-3, Urb. León XIII Cayma - Arequipa</p>
                         </div>
                     </div>
 
                     <div class="py-5 border-b border-b-maior-gray">
-                        <div class="flex items-center text-sm font-extrabold font-Manrope">
+                        <div class="flex items-center font-extrabold font-Manrope">
                             <i class='bx bx-phone-call text-xl mr-3'></i>
                             <p>Teléfono fijo</p>
                         </div>
@@ -682,7 +674,7 @@
                     </div>
 
                     <div class="pt-5">
-                        <div class="flex items-center text-sm font-extrabold font-Manrope">
+                        <div class="flex items-center font-extrabold font-Manrope">
                             <i class='bx bxl-whatsapp text-xl mr-3'></i>
                             <p>WhatsApp</p>
                         </div>
@@ -702,8 +694,8 @@
 
     </main>
 
-       <!-- pie de pagina -->
-       <footer class="pt-10">
+    <!-- pie de pagina -->
+    <footer class="pt-10">
         <div class="container text-maior-primary">
 
 
@@ -735,7 +727,6 @@
                 </ul>
             </div>
 
-
             <div class="grid  md:grid-cols-3 justify-center border-b border-b-maior-primary py-5">
 
                 <div class="justify-self-center lg:justify-self-start flex items-center my-2">
@@ -745,10 +736,10 @@
 
                 <div class="justify-self-center flex  items-center my-2">
                     <i class='bx bx-map mx-2'></i>
-                    <P>Av. Trinidad & Moran i-3 </P>
+                    <P>Av. Trinidad Moran i-3 | Cayma, Arequipa</P>
                 </div>
 
-                <div class=" lg:justify-self-end flex items-center my-2">
+                <div class="justify-self-center lg:justify-self-end flex items-center my-2">
                     <i class='bx bx-phone-call mx-2'></i>
                     <p>reservas@maior.com</p>
                 </div>
@@ -765,12 +756,11 @@
 
 
     <!-- scre -->
-    <!-- <script src="../js/accordion.js"></script> -->
     <script src="../js/main.js"></script>
+    <!-- <script src="../js/slider-after-before.js"></script> -->
+
     <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/main-swiper.js"></script>
-
-    <!-- <script src="../js/app.js"></script> -->
 
 </body>
 
