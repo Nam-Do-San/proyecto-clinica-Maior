@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,8 @@
     <meta name="description"
         content="La Toxina Botulínica es el tratamiento estéticas por excelencia para atenuar las arrugas y lineas de expresión, opten resultados reales de inmediato y luce un rostro rejuvenecido espectacular. Muchas personas eligen usar este tratamiento como parte de su rutina de cuidado personal y sentirse más seguras de sí mismas." />
 
-    <meta name="keywords" content=" clínica estética y depilación láser en Arequipa">
+    <meta name="keywords"
+        content="toxina botulínica, botox, tratamiento estético para atenuar arrugas, rostro rejuvenecido, tratamiento medico, reducción de las arrugas, reducir la apariencia de las arrugas, lineas de expresión, tratamiento para arrugas, patas de gallo, reducción de la formación de arrugas, elevación de las cejas, reducción del bruxismo, la toxina botulínica puede mejorar, reducir la apariencia de las arrugas, duración del tratamiento, tiempo de recuperación, duración de resultados, preguntas frecuentes, clínica estética y depilación láser en Arequipa">
 
     <!-- tailwind -->
     <link rel="stylesheet" href="../css/tailwind.css">
@@ -250,36 +251,46 @@
 
     <main>
 
-        <div class="container-general w-full block mt-28">
+        <div class="container-general w-full block mt-28 relative">
 
+            <!-- slider-after-before -->
             <div class="w-full relative overflow-hidden" id="before-after-slider">
 
+                <!-- before -->
                 <div class="absolute h-full w-1/2  top-0 z-10" id="before-image">
-                    <img src="../img/bg-services/toxina-botulinica/antes-botox.jpg"
-                        class="w-full h-full block object-cover object-left" alt="">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="../img/bg-services/toxina-botulinica/antes-botox.jpg">
+                        <img src="../img/bg-services/toxina-botulinica/antes-botox-movil.jpg"
+                            class="w-full h-full block object-cover object-left" alt="">
+                    </picture>
                 </div>
 
+                <!-- after -->
                 <div class="block" id="after-image">
-                    <img src="../img/bg-services/toxina-botulinica/despues-botox.jpg" class="w-full block" alt="">
+                    <picture>
+                        <source media="(min-width:768px)"
+                            srcset="../img/bg-services/toxina-botulinica/despues-botox.jpg">
+                        <img src="../img/bg-services/toxina-botulinica/despues-botox-movil.jpg" class="w-full block"
+                            alt="">
+                    </picture>
                 </div>
 
-                <div class="absolute flex items-center text-white  z-10 top-0 left-1/2 bg-white w-1.5 h-full touch-pan-y
-
-                after:w-6 after:h-6 after:bg-white after:absolute after:-left-2 after:rounded-full after:content-['♥'] after:text-red-500 after:flex
-                after:items-center after:justify-center after:hover:scale-150 
-
-                " id="resizer">
+                <div class="resizer-after absolute flex items-center text-white  z-10 top-0 left-1/2 bg-white w-1.5 h-full touch-pan-y"
+                    id="resizer">
                 </div>
             </div>
 
-            <div class="container md:absolute  lg:px-36 inset-x-0 bottom-10 lg:bottom-20 w-full z-10">
 
-                <div class="px-10 lg:px-0  pt-5">
-                    <h1 class="title-section md:text-white/50">Toxina Botulínica</h1>
+            <div class="container md:absolute  lg:px-36 inset-x-0 bottom-10 w-full z-10">
+
+                <div class="px-10 lg:px-0 pt-5 text-maior-primary lg:text-white/80">
+                    <p class="font-bold font-Manrope tracking-wide">Medicina Estética - Corporal
+                    </p>
+                    <h1 class="font-Manrope font-extrabold tracking-wide  text-3xl lg:text-5xl py-2.5">Toxina botulínica
+                    </h1>
                 </div>
 
             </div>
-
         </div>
 
         <section class="overflow-hidden">
@@ -291,7 +302,7 @@
 
                         <article class=" ">
 
-                            <p class="font-medium">
+                            <p class="font-semibold">
                                 La Toxina Botulínica es el tratamiento estéticas por excelencia para atenuar las arrugas
                                 y lineas de expresión, opten resultados reales de inmediato y luce un rostro
                                 rejuvenecido espectacular.
@@ -367,11 +378,6 @@
                         <strong>Elevación de las cejas:</strong> La toxina botulínica puede levantar las cejas y crear
                         una apariencia más
                         abierta y juvenil en la zona del ojo.
-                        <br>
-                        <strong>Reducción del bruxismo:</strong> La toxina botulínica puede reducir la tensión muscular
-                        en la mandíbula y
-                        disminuir la presión sobre los dientes, lo que puede reducir la aparición de dolores de cabeza y
-                        la necesidad de tratamientos dentales costosos.
                         <br>
                         <strong>Mejora del aspecto de la sonrisa:</strong> La toxina botulínica puede mejorar el aspecto
                         de la sonrisa al
@@ -480,11 +486,9 @@
         </div>
 
         <!-- img bg blanco -->
-        <div class="h-screen/50 bg-fixed bg-center bg-no-repeat bg-cover  relative"
-            style="background-image: url(../img/bg-services/toxina-botulinica/bg-botox2.jpg);">
+        <div class="h-screen/50 bg-fixed bg-center bg-no-repeat bg-cover"
+            style="background-image: url(../img/bg-services/toxina-botulinica/bg-botox.jpg);">
 
-            <div class="w-full h-full absolute top-0 bg-gradient-to-t from-white">
-            </div>
         </div>
 
         <!-- preguntas frecuentes -->
@@ -559,6 +563,83 @@
 
             </div>
         </section>
+
+        <!-- contacto -->
+        <div class="mt-20 lg:mt-48 bg-cover">
+
+            <div class="container relative">
+                <div class="p-10 text-maior-primary bg-gray-50 w-fit rounded lg:absolute -top-24 lg:mx-36 right-0">
+
+                    <div class="mb-10 ">
+                        <p class="title-section">Contactamos</p>
+                    </div>
+
+                    <div class="pb-5 border-b border-b-maior-gray">
+
+                        <div class="flex items-center text-sm font-extrabold font-Manrope">
+                            <i class='bx bx-calendar text-xl mr-3'></i>
+                            <p>Nuestro horario de atención</p>
+                        </div>
+
+                        <div class="ml-8 flex justify-between">
+                            <div>
+                                <p>Lun - Vier</p>
+                            </div>
+                            <div class="flex items-center">
+
+                                <p>9:30 am - 7:00 pm</p>
+                            </div>
+                        </div>
+                        <div class="ml-8 flex justify-between">
+                            <div>
+                                <p>Sábados</p>
+                            </div>
+                            <div class="flex items-center">
+
+                                <p>9:30 am - 2:00 pm</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-5 border-b border-b-maior-gray">
+                        <div class="flex items-center text-sm font-extrabold font-Manrope">
+                            <i class='bx bx-map text-xl mr-3'></i>
+                            <p>Ubicación</p>
+                        </div>
+                        <div class="ml-8">
+                            <p>Urb. León XIII i-3 Av. Trinidad y Moran, Cayma, Arequipa</p>
+                        </div>
+                    </div>
+
+                    <div class="py-5 border-b border-b-maior-gray">
+                        <div class="flex items-center text-sm font-extrabold font-Manrope">
+                            <i class='bx bx-phone-call text-xl mr-3'></i>
+                            <p>Teléfono fijo</p>
+                        </div>
+
+                        <div class="ml-8">
+                            <p>(054) 659842</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-5">
+                        <div class="flex items-center text-sm font-extrabold font-Manrope">
+                            <i class='bx bxl-whatsapp text-xl mr-3'></i>
+                            <p>WhatsApp</p>
+                        </div>
+
+                        <div class="ml-8">
+                            <p>918 796 056</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="h-screen/50">
+                <img src="../img/footer-contact.jpg" class="w-full h-full object-cover" alt="">
+            </div>
+        </div>
 
     </main>
 
