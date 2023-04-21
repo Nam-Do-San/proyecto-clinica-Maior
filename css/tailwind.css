@@ -428,6 +428,16 @@ video {
 }
 
 @font-face {
+  font-family:"Southland" ;
+
+  src: url("../fonts/Southland.ttf") format("truetype");
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
   font-family:"Aesthetica" ;
 
   src: url("../fonts/aesthetica.ttf") format("truetype");
@@ -791,6 +801,10 @@ video {
   right: 0px;
 }
 
+.-bottom-6{
+  bottom: -1.5rem;
+}
+
 .-left-14{
   left: -3.5rem;
 }
@@ -939,6 +953,14 @@ video {
 
 .mb-5{
   margin-bottom: 1.25rem;
+}
+
+.ml-11{
+  margin-left: 2.75rem;
+}
+
+.ml-2{
+  margin-left: 0.5rem;
 }
 
 .ml-5{
@@ -1170,6 +1192,10 @@ video {
 
 .justify-evenly{
   justify-content: space-evenly;
+}
+
+.justify-items-start{
+  justify-items: start;
 }
 
 .justify-items-end{
@@ -1498,20 +1524,16 @@ video {
   font-family: Aesthetica, script;
 }
 
-.font-Betterlett{
-  font-family: Betterlett, script;
-}
-
 .font-Manrope{
   font-family: Manrope, sans-seri;
 }
 
-.font-Marcellus{
-  font-family: Marcellus, serif;
-}
-
 .font-Opensans{
   font-family: Open Sans, sans-serif;
+}
+
+.font-Southland{
+  font-family: Southland, script;
 }
 
 .text-3xl{
@@ -1526,11 +1548,6 @@ video {
 
 .text-5xl{
   font-size: 3rem;
-  line-height: 1;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
   line-height: 1;
 }
 
