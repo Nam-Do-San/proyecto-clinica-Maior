@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ácido hialurónico | Maior Estética & Láser - Cayma, Arequipa</title>
+
+    <meta name="description"
+        content="Combate arrugas y flacidez con nuestros tratamientos de ácido hialurónico de grado médico. Resultados naturales y duraderos sin cirugía. Hidrata y restaura el volumen facial. ¡Agenda tu cita hoy!" />
+
+    <meta name="keywords" 
+        content="ácido hialurónico, mejorar la apariencia de la piel, lineas de expresión, arrugas, surcos, pliegues, aspecto juvenil y fresco, rejuvenecer, rejuvenecido, beneficios del ácido hialurónico, belleza facial, estética, sin cirugía, resultados naturales y duraderos, atenúa arrugas, pliegues, lineas de expresión, tratamiento no invasivo, aumento de labios, volumen de labios, hidratar profundamente la piel, reducir la apariencia de la piel seca, contorno facial, pómulos, duración del tratamiento, tipo de anestesia, tiempo de recuperación, duración de resultados, cuanto tiempo dura el ácido hialurónico, es doloroso el tratamiento con ácido hialurónico, medicina estética, tratamiento facial, clínica estética, relleno facial, rejuvenecimiento facial, arrugas, lineas de expresión, hidratación, elasticidad, labios, nariz, ojeras, procedimiento no quirúrgico,Urb. León XIII i-3, Av. Trinidad y Moran, Cayma, Arequipa">
 
 
     <!-- tailwind -->
@@ -21,6 +27,246 @@
 
 <body>
 
+    <!-- header -->
+    <header class="fixed top-0 w-full z-50 bg-white shadow-sm" id="header">
+
+        <!-- promo -->
+        <div class=" border-b bg-gray-50" id="sale">
+
+            <div class="container">
+
+                <div class="grid grid-cols-2  md:grid-cols-3">
+
+                    <div class="justify-self-start flex  items-center">
+                        <i class='bx bx-time-five mx-2'></i>
+                        <P class="text-xs uppercase">Lun - Sab: 9 am - 1 pm</P>
+                    </div>
+
+                    <div class="justify-self-center  uppercase text-xs tracking-widest    my-auto  hidden md:block">
+                        <P>Dia de la mujer <span class='bx bxs-heart text-red-500'></span>
+                        </P>
+                    </div>
+
+                    <div class="justify-self-end flex items-center">
+                        <ul class="flex">
+                            <li class="mx-2">
+                                <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#" target="_blank"><i class='bx bxl-facebook  '></i></a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#" target="_blank"><i class='bx bxl-tiktok    '></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- header center -->
+        <div class="bg-white lg:bg-inherit">
+            <div class="grid grid-cols-3">
+
+                <!-- btn open nav -->
+                <div class="my-auto justify-self-start px-3 text-white" id="btn-menu">
+                    <button class=" text-maior-primary lg:hidden" id="open">
+                        <i class='bx bx-menu text-3xl'></i>
+                    </button>
+                    <button class=" text-maior-primary hidden" id="close">
+                        <i class='bx bx-x text-3xl'></i>
+                    </button>
+                </div>
+
+                <div class="flex justify-center py-6">
+                    <div class="w-32 mx-auto">
+                        <a href="index.html">
+                            <img class="w-full" src="../img/maior-1.svg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- menu items -->
+        <nav class=" relative h-screen lg:h-auto text-maior-primary  hidden lg:block " id="menu-nav">
+            <ul
+                class="container lg:px-36 lg:flex justify-between uppercase font-semibold text-xs md:tracking-wider md:w-full">
+
+                <li class="px-2.5 py-3.5 lg:px-0 lg:p-2 hover:text-maior-secondary">
+                    <a href="#">Depilación Láser</a>
+                </li>
+
+                <li class="px-2.5 py-3.5 lg:px-0 lg:p-2 hover:text-maior-secondary">
+                    <a href="#">Tratamientos Faciales</a>
+                </li>
+
+                <li class="px-2.5 py-3.5 lg:px-0 lg:p-2 hover:text-maior-secondary">
+                    <a href="#">Tratamientos Corporales</a>
+                </li>
+
+                <!-- medicina estética y laser -->
+                <!-- <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary group/item">
+                    <a href="#">Medicina Estética</a>
+
+                    <ul class="bg-gray-50 lg:flex justify-center  absolute 
+                        w-1/2 right-0 top-0 p-2.5
+                        
+                        h-full
+                        overflow-y-auto
+    
+                        lg:h-auto
+                        lg:top-auto
+                        lg:mt-2 lg:w-full lg:left-0  
+                        invisible group-hover/item:visible">
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-facial.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5 text-maior-primary">
+                                        <p>Tratamiento Facial</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-corporal.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Tratamiento Corporal</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-laser.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Tratamiento Laser</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="md:p-8">
+                            <a href="#">
+                                <div>
+                                    <img src="img/nav-depilacion.jpg" class="object-cover w-full h-full" alt="">
+                                    <div class="py-2.5">
+                                        <p>Depilación Láser</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li> -->
+
+                <!-- cirugía plástica -->
+                <li class="px-2.5 py-3.5 lg:px-0 lg:p-2 hover:text-maior-secondary group/item">
+                    <a href="#">Staff Medico</a>
+
+                    <div class="bg-gray-50 absolute w-1/2 right-0 top-0 lg:top-auto  lg:w-full lg:mt-2
+                    overflow-y-auto h-full lg:h-auto
+                    invisible group-hover/item:visible
+                    ">
+
+                        <ul class="container lg:px-36 lg:flex lg:gap-10
+                        p-4 lg:p-0 
+                        ">
+
+                            <li class="md:py-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="../img/equipo-medico/melania.jpg" class="object-cover w-full h-full"
+                                            alt="">
+                                        <div class="pt-2.5">
+                                            <p>Dra. Melania Paredes</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="md:py-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="../img/equipo-medico/julio.jpg" class="object-cover w-full h-full"
+                                            alt="">
+                                        <div class="pt-2.5">
+                                            <p>Dr. Julio Suca</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="md:py-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="../img/equipo-medico/patricia.jpg" class="object-cover w-full h-full"
+                                            alt="">
+                                        <div class="pt-2.5">
+                                            <p>Dra. Patricia Bolaños</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="md:py-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="../img/equipo-medico/alex.jpg" class="object-cover w-full h-full"
+                                            alt="">
+                                        <div class="pt-2.5">
+                                            <p>Dra. Alexander Flores</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="md:py-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="../img/equipo-medico/melania.jpg" class="object-cover w-full h-full"
+                                            alt="">
+                                        <div class="pt-2.5">
+                                            <p>Dr. Omayra</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </li>
+
+                <li class="px-2.5 py-3.5 lg:px-0 lg:p-2 hover:text-maior-secondary"><a
+                        href="../nosotros.html">Nosotros</a>
+                </li>
+
+                <li class="px-2.5 py-3.5 lg:px-0 lg:p-2 opacity-50"><a href="#">Novedades</a></li>
+                <li class="px-2.5 py-3.5 lg:px-0 lg:p-2 hover:text-maior-secondary"><a
+                        href="../contacto.html">Contacto</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
 
     <main>
 
@@ -87,7 +333,6 @@
                             </p>
                             <br>
                             <p>
-                                Además, es utilizado en tratamientos de hidratación profunda y labios más voluminosos.
                                 El ácido hialurónico puede ayudarte a rejuvenecer la piel del rostro y a lucir radiante
                                 y rejuvenecido. ¡Sé la envidia de todos con un rostro revitalizado gracias al ácido
                                 hialurónico!
@@ -144,28 +389,36 @@
 
                     <h2 class="title-section text-white pb-5">Beneficios del ácido hialurónico</h2>
                     <p>
+                        Descubre los beneficios del ácido hialurónico para la piel y la belleza facial.
                         El ácido hialurónico es un compuesto muy versátil que puede utilizarse en diferentes áreas del
-                        cuerpo para mejorar la apariencia estética y la salud de la piel.
+                        cuerpo para mejorar la apariencia estética y la salud sin cirugía, con resultados naturales y
+                        duraderos.
                     </p>
                     <br>
                     <p>
-                        <strong>Atenúa arrugas:</strong> El ácido hialurónico es un relleno facial popular que se utiliza para
+                        <strong>Atenúa arrugas:</strong> El ácido hialurónico es un relleno facial popular que se
+                        utiliza para
                         reducir la apariencia de arrugas, pliegues y líneas de expresión. El relleno de ácido
                         hialurónico puede durar hasta varios meses y es un tratamiento no invasivo.
                         <br>
-                        <strong>Aumento de labios:</strong> El ácido hialurónico también se utiliza para aumentar el volumen de los
+                        <strong>Aumento de labios:</strong> El ácido hialurónico también se utiliza para aumentar el
+                        volumen de los
                         labios. Este tratamiento ayuda a definir la forma de los labios y a suavizar las líneas
                         alrededor de la boca.
                         <br>
-                        <strong>Hidratación profunda:</strong> El ácido hialurónico es un ingrediente común en cremas y sueros
+                        <strong>Hidratación profunda:</strong> El ácido hialurónico es un ingrediente común en cremas y
+                        sueros
                         hidratantes para la piel, ya que puede retener grandes cantidades de agua. Esto ayuda a hidratar
                         profundamente la piel, reducir la apariencia de la piel seca y mejorar la elasticidad de la
                         piel.
                         <br>
-                        <strong>Contorno facial:</strong> El ácido hialurónico también se utiliza para dar forma y definir ciertas áreas del rostro, como los pómulos y la mandíbula. Este tratamiento puede ayudar a mejorar el
+                        <strong>Contorno facial:</strong> El ácido hialurónico también se utiliza para dar forma y
+                        definir ciertas áreas del rostro, como los pómulos y la mandíbula. Este tratamiento puede ayudar
+                        a mejorar el
                         equilibrio y la simetría facial.
                         <br>
-                        <strong>Reparación de cicatrices:</strong> El ácido hialurónico también puede ayudar a reducir la apariencia de cicatrices y a mejorar la textura de la piel.
+                        <strong>Reparación de cicatrices:</strong> El ácido hialurónico también puede ayudar a reducir
+                        la apariencia de cicatrices y a mejorar la textura de la piel.
                     </p>
                 </div>
 
@@ -284,59 +537,51 @@
                 </div>
 
                 <div>
-                    <div class="accordion mx-5 lg:mx-5">
+                    <div class="accordion mx-5 lg:mx-0">
                         <div class="accordion-content overflow-hidden text-maior-primary hover:bg-gray-50 rounded">
                             <div class="faq p-5 lg:p-5 flex justify-between items-center">
-                                <h2>¿Es doloroso el tratamiento de Mesoterapia1?
-                                </h2>
+                                <h2>¿Cuánto tiempo dura el ácido hialurónico?</h2>
                                 <i class='bx bx-plus'></i>
                             </div>
 
                             <div class="description h-auto bg-gray-50">
                                 <p class="p-5">
-                                    Los riesgos son inherentes a cualquier tipo de procedimiento quirúrgico electivo.
-                                    Algunas eventualidades que pueden ocurrir incluyen infección, sangrado, seroma, mal
-                                    curación, dolor, entre otros. Aquí lo más importante es realizar un buen
-                                    pre-operatorio,
-                                    con el fin de reducir el riesgo al mínimo posible.
+                                    La duración del ácido hialurónico depende de varios factores, como la cantidad
+                                    administrada, la zona tratada y el tipo de ácido hialurónico utilizado. En general,
+                                    los resultados pueden durar de seis meses a un año.
                                 </p>
                             </div>
                         </div>
 
                         <div class="accordion-content overflow-hidden text-maior-primary hover:bg-gray-50">
                             <div class="faq p-5 lg:p-5 flex justify-between items-center">
-                                <h2>¿Es doloroso el tratamiento de
-                                    Mesoterapia?
-                                </h2>
+                                <h2>¿Es doloroso el tratamiento con ácido hialurónico?</h2>
                                 <i class='bx bx-plus'></i>
                             </div>
 
                             <div class="description h-0 bg-gray-50">
                                 <p class="p-5">
-                                    Los riesgos son inherentes a cualquier tipo de procedimiento quirúrgico electivo.
-                                    Algunas eventualidades que pueden ocurrir incluyen infección, sangrado, seroma, mal
-                                    curación, dolor, entre otros. Aquí lo más importante es realizar un buen
-                                    pre-operatorio,
-                                    con el fin de reducir el riesgo al mínimo posible.
+                                    El tratamiento con ácido hialurónico generalmente se considera un procedimiento muy
+                                    tolerable. A menudo se utiliza una crema anestésica tópica para adormecer la piel
+                                    antes de la inyección, lo que ayuda a minimizar cualquier molestia.
                                 </p>
                             </div>
                         </div>
 
                         <div class="accordion-content overflow-hidden text-maior-primary hover:bg-gray-50">
                             <div class="faq p-5 lg:p-5 flex justify-between items-center">
-                                <h2>¿Es doloroso el tratamiento de
-                                    Mesoterapia?
-                                </h2>
+                                <h2>¿Cuáles son las precauciones que deben tomarse antes de someterse al tratamiento con
+                                    ácido hialurónico?</h2>
                                 <i class='bx bx-plus'></i>
                             </div>
 
                             <div class="description h-0 bg-gray-50">
                                 <p class="p-5">
-                                    Los riesgos son inherentes a cualquier tipo de procedimiento quirúrgico electivo.
-                                    Algunas eventualidades que pueden ocurrir incluyen infección, sangrado, seroma, mal
-                                    curación, dolor, entre otros. Aquí lo más importante es realizar un buen
-                                    pre-operatorio,
-                                    con el fin de reducir el riesgo al mínimo posible.
+                                    Antes de someterse al tratamiento con ácido hialurónico, es importante hablar con un
+                                    médico y discutir cualquier condición médica que pueda afectar la seguridad del
+                                    procedimiento. También es importante informar al médico sobre cualquier medicamento
+                                    que se esté tomando, ya que algunos pueden aumentar el riesgo de sangrado o
+                                    hematomas.
                                 </p>
                             </div>
                         </div>
@@ -486,6 +731,9 @@
         </div>
 
     </footer>
+
+    <!-- script -->
+    <script src="../js/main.js"></script>
 
 </body>
 
