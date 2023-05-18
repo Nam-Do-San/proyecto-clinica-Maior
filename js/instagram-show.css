@@ -1,0 +1,10 @@
+/* Establecer la apariencia predeterminada de los divs */
+.contenedor-divs div {
+  background-color: gray;
+  display: none;
+}
+
+/* Mostrar solo los primeros 9 divs */
+.contenedor-divs div:nth-child(-n + 9) {
+  display: block;
+}
