@@ -8,3 +8,11 @@
 .contenedor-divs div:nth-child(-n + 9) {
   display: block;
 }
+
+
+/* STYLE TAB WINDOW */
+.tab.active-tab {
+  border-bottom: 2px solid #163056;
+}
+
+
