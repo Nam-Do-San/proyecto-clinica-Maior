@@ -13,6 +13,9 @@
 
     <link rel="stylesheet" href="../js/instagram-show.css">
 
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -23,29 +26,23 @@
         <!-- promo -->
         <div class=" border-b bg-gray-50" id="sale">
 
-            <div class="container">
+            <div class="container lg:px-36">
 
-                <div class="grid grid-cols-2  md:grid-cols-3">
+                <div class="grid grid-cols-2">
 
                     <div class="justify-self-start flex  items-center">
-                        <i class='bx bx-time-five mx-2'></i>
-                        <P class="text-sm uppercase">Lun - Sab: 9 am - 1 pm</P>
-                    </div>
-
-                    <div class="justify-self-center  uppercase text-xs tracking-widest    my-auto  hidden md:block">
-                        <P>Dia de la mujer <span class='bx bxs-heart text-red-500'></span>
-                        </P>
+                        <P class="text-sm">Av. Trinidad & Morán, Cayma - Arequipa</P>
                     </div>
 
                     <div class="justify-self-end flex items-center text-maior-primary">
-                        <ul class="flex text-xl">
-                            <li class="mx-2">
+                        <ul class="flex text-xl py-0.5">
+                            <li class="ml-4 hover:text-maior-secondary">
                                 <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
                             </li>
-                            <li class="mx-2">
+                            <li class="ml-4 hover:text-maior-secondary">
                                 <a href="#" target="_blank"><i class='bx bxl-facebook  '></i></a>
                             </li>
-                            <li class="mx-2">
+                            <li class="ml-4 hover:text-maior-secondary">
                                 <a href="#" target="_blank"><i class='bx bxl-tiktok    '></i></a>
                             </li>
                         </ul>
@@ -72,7 +69,6 @@
                 </div>
 
                 <div class="flex justify-center py-10">
-
                     <a href="index.html">
                         <img class="w-full h-12" src="../img/maior-logo.svg" alt="">
                     </a>
@@ -90,151 +86,146 @@
 
         <!-- menu items -->
         <nav class=" relative h-screen lg:h-auto text-maior-primary  hidden lg:block " id="menu-nav">
-            <ul class="container lg:flex justify-evenly uppercase font-bold text-sm md:tracking-wider md:w-full">
+            <ul
+                class="container lg:px-36 lg:flex justify-between uppercase font-semibold text-xs md:tracking-wider md:w-full">
 
-                <li class="px-2.5 py-3.5 lg:p-3 hover:text-maior-secondary">
-                    <a href="depilacion-laser.html">Depilación Láser</a>
+                <li class="px-2.5 py-3.5 lg:px-0 lg:p-2 hover:text-maior-secondary">
+                    <a href="#">Depilación Láser</a>
                 </li>
 
-                <li class="px-2.5 py-3.5 lg:p-3 hover:text-maior-secondary">
-                    <a href="#">Faciales</a>
+                <li class="px-2.5 py-3.5 lg:px-0 lg:p-2 hover:text-maior-secondary group/item">
+                    <a href="#">Tratamientos Faciales</a>
+
+                    <div class="bg-gray-50 absolute w-1/2 right-0 top-0 lg:top-auto  lg:w-full lg:mt-2
+                    overflow-y-auto h-full lg:h-auto
+                    invisible group-hover/item:visible
+                    ">
+
+                        <ul class="container lg:px-36 lg:flex lg:gap-10 justify-between
+                        p-4 lg:p-0 text-maior-primary
+                        ">
+
+                            <li class="md:py-8">
+                                <h2>Rejuvenecimiento</h2>
+                            </li>
+
+                            <li class="md:py-8">
+                                <h2>Rejuvenecimiento</h2>
+                            </li>
+
+                            <li class="md:py-8">
+                                <h2>Rejuvenecimiento</h2>
+                            </li>
+
+                            <li class="md:py-8">
+                                sss
+                            </li>
+
+                            <li class="md:py-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="../img/equipo-medico/alex.jpg" class="object-cover w-full h-full"
+                                            alt="">
+                                        <div class="pt-2.5">
+                                            <p>Dra. Alexander Flores</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
                 </li>
 
-                <li class="px-2.5 py-3.5 lg:p-3 hover:text-maior-secondary">
-                    <a href="#">Corporales</a>
+                <li class="px-2.5 py-3.5 lg:px-0 lg:p-2 hover:text-maior-secondary">
+                    <a href="#">Tratamientos Corporales</a>
                 </li>
-
-                <!-- medicina estética y laser -->
-                <!-- <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary group/item">
-                    <a href="#">Medicina Estética</a>
-
-                    <ul class="bg-gray-50 lg:flex justify-center  absolute 
-                        w-1/2 right-0 top-0 p-2.5
-                        
-                        h-full
-                        overflow-y-auto
-    
-                        lg:h-auto
-                        lg:top-auto
-                        lg:mt-2 lg:w-full lg:left-0  
-                        invisible group-hover/item:visible">
-                        <li class="md:p-8">
-                            <a href="#">
-                                <div>
-                                    <img src="img/nav-facial.jpg" class="object-cover w-full h-full" alt="">
-                                    <div class="py-2.5 text-maior-primary">
-                                        <p>Tratamiento Facial</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="md:p-8">
-                            <a href="#">
-                                <div>
-                                    <img src="img/nav-corporal.jpg" class="object-cover w-full h-full" alt="">
-                                    <div class="py-2.5">
-                                        <p>Tratamiento Corporal</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="md:p-8">
-                            <a href="#">
-                                <div>
-                                    <img src="img/nav-laser.jpg" class="object-cover w-full h-full" alt="">
-                                    <div class="py-2.5">
-                                        <p>Tratamiento Laser</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="md:p-8">
-                            <a href="#">
-                                <div>
-                                    <img src="img/nav-depilacion.jpg" class="object-cover w-full h-full" alt="">
-                                    <div class="py-2.5">
-                                        <p>Depilación Láser</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-
-                </li> -->
 
                 <!-- cirugía plástica -->
-                <!-- <li class="px-2.5 py-3.5 lg:p-2 hover:text-maior-secondary group/item">
-                    <a href="#">Cirugía Plástica</a>
+                <li class="px-2.5 py-3.5 lg:px-0 lg:p-2 hover:text-maior-secondary group/item">
+                    <a href="#">Staff Medico</a>
 
-                    <ul class="bg-gray-50 lg:flex justify-center  absolute 
-                        
-    
-                        w-1/2 right-0 top-0 p-2.5
-                        h-full
-                        overflow-y-auto
-    
-                        lg:h-auto
-                        lg:top-auto
-                        lg:mt-2 lg:w-full lg:left-0  
-                        invisible group-hover/item:visible">
-                        <li class="md:p-8">
-                            <a href="#">
-                                <div>
-                                    <img src="../img/nav-img.webp" class="object-cover w-full h-full" alt="">
-                                    <div class="py-2.5">
-                                        <p>Cirugía Facial</p>
+                    <div class="bg-gray-50 absolute w-1/2 right-0 top-0 lg:top-auto  lg:w-full lg:mt-2
+                    overflow-y-auto h-full lg:h-auto
+                    invisible group-hover/item:visible
+                    ">
+
+                        <ul class="container lg:px-36 lg:flex lg:gap-10
+                        p-4 lg:p-0 text-maior-primary
+                        ">
+
+                            <li class="md:py-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="../img/equipo-medico/melania.jpg" class="object-cover w-full h-full"
+                                            alt="">
+                                        <div class="pt-2.5">
+                                            <p>Dra. Melania Paredes</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
 
-                        <li class="md:p-8">
-                            <a href="#">
-                                <div>
-                                    <img src="../img/nav-img.webp" class="object-cover w-full h-full" alt="">
-                                    <div class="py-2.5">
-                                        <p>Cirugía Corporal</p>
+                            <li class="md:py-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="../img/equipo-medico/julio.jpg" class="object-cover w-full h-full"
+                                            alt="">
+                                        <div class="pt-2.5">
+                                            <p>Dr. Julio Suca</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
 
-                        <li class="md:p-8">
-                            <a href="#">
-                                <div>
-                                    <img src="../img/nav-img.webp" class="object-cover w-full h-full" alt="">
-                                    <div class="py-2.5">
-                                        <p>Cirugía Reconstructiva</p>
+                            <li class="md:py-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="../img/equipo-medico/patricia.jpg" class="object-cover w-full h-full"
+                                            alt="">
+                                        <div class="pt-2.5">
+                                            <p>Dra. Patricia Bolaños</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
 
-                        <li class="md:p-8">
-                            <a href="#">
-                                <div>
-                                    <img src="../img/nav-img.webp" class="object-cover w-full h-full" alt="">
-                                    <div class="py-2.5">
-                                        <p>Dr. Julio Suca</p>
+                            <li class="md:py-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="../img/equipo-medico/alex.jpg" class="object-cover w-full h-full"
+                                            alt="">
+                                        <div class="pt-2.5">
+                                            <p>Dra. Alexander Flores</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li> -->
+                                </a>
+                            </li>
 
-                <li class="px-2.5 py-3.5 lg:p-3 hover:text-maior-secondary">
-                    <a href="#">Staff medico</a>
+                            <li class="md:py-8">
+                                <a href="#">
+                                    <div>
+                                        <img src="../img/equipo-medico/melania.jpg" class="object-cover w-full h-full"
+                                            alt="">
+                                        <div class="pt-2.5">
+                                            <p>Dr. Omayra</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
                 </li>
 
-                <li class="px-2.5 py-3.5 lg:p-3 hover:text-maior-secondary"><a href="instalaciones.html">Nosotros</a>
+                <li class="px-2.5 py-3.5 lg:px-0 lg:p-2 hover:text-maior-secondary"><a
+                        href="../nosotros.html">Nosotros</a>
                 </li>
 
-                <li class="px-2.5 py-3.5 lg:p-3 opacity-50"><a href="novedades.html">Novedades</a></li>
-                <li class="px-2.5 py-3.5 lg:p-3 hover:text-maior-secondary"><a href="#">Contacto</a></li>
+                <li class="px-2.5 py-3.5 lg:px-0 lg:p-2 opacity-50"><a href="#">Novedades</a></li>
+                <li class="px-2.5 py-3.5 lg:px-0 lg:p-2 hover:text-maior-secondary"><a
+                        href="../contacto.html">Contacto</a></li>
             </ul>
 
         </nav>
@@ -300,37 +291,51 @@
                         </li>
                     </ul>
                     <div class="tab-content py-5" id="tab1">
-                        <p>Refleja belleza y seguridad con la eliminación progresiva y definitiva del vello de cualquier zona
-                            de tu cuerpo con nuestro servicio de depilación láser. Contamos con la tecnología Soprano Ice
-                            Platinum que combina los 3 tipos de láser: diodo, alejandrita y neodimio YAG. Además, contamos con
+                        <p>Refleja belleza y seguridad con la eliminación progresiva y definitiva del vello de cualquier
+                            zona
+                            de tu cuerpo con nuestro servicio de depilación láser. Contamos con la tecnología Soprano
+                            Ice
+                            Platinum que combina los 3 tipos de láser: diodo, alejandrita y neodimio YAG. Además,
+                            contamos con
                             las mejores especialistas que te atenderán y harán sentir cómodamente en cada sesión.
                         </p>
                     </div>
-        
+
                     <div class="tab-content py-5 hidden" id="tab2">
-        
+
                         <p>
-                            <strong>Evita la depilación con cera</strong>, pinza o máquina eléctrica en la zona a tratar al menos 15 días antes
-                            del tratamiento. Si te has rasurado, no hay problema, pero es preferible acudir con el vello crecido
+                            <strong>Evita la depilación con cera</strong>, pinza o máquina eléctrica en la zona a tratar
+                            al menos 15 días antes
+                            del tratamiento. Si te has rasurado, no hay problema, pero es preferible acudir con el vello
+                            crecido
                             para que el láser sea más efectivo.
                             <br>
-                            Evita la exposición prolongada al sol al menos 15 días antes y 15 días después del tratamiento. La
-                            exposición solar puede aumentar el riesgo de complicaciones y disminuir la eficacia del láser.
-                            Siempre usa protector solar de amplio espectro en la zona tratada cuando estés al aire libre.
+                            Evita la exposición prolongada al sol al menos 15 días antes y 15 días después del
+                            tratamiento. La
+                            exposición solar puede aumentar el riesgo de complicaciones y disminuir la eficacia del
+                            láser.
+                            Siempre usa protector solar de amplio espectro en la zona tratada cuando estés al aire
+                            libre.
                             <br>
-                            No utilices exfoliantes químicos en la zona a tratar como mínimo 3 días antes del tratamiento. Estos
+                            No utilices exfoliantes químicos en la zona a tratar como mínimo 3 días antes del
+                            tratamiento. Estos
                             productos pueden irritar la piel y hacerla más sensible durante el procedimiento.
                             <br>
                             Si padeces algún proceso infeccioso o tienes problemas hormonales, es importante comunicarlo
-                            previamente al especialista. Estos factores pueden influir en el tratamiento y es necesario tomar
+                            previamente al especialista. Estos factores pueden influir en el tratamiento y es necesario
+                            tomar
                             precauciones adicionales.
-        
+
                         </p>
                     </div>
                     <div class="tab-content py-5 hidden" id="tab3">
-        
+
                         <p>
-                            Adicionalmente le indicamos que, en vitíligo, psoriasis, epilepsia, lupus, cáncer o antecedente personal de cáncer, embarazo o sospecha, diabetes no controlada, de estar bajo prescripción médica con medicamentos fotosensibles entran en contraindicaciones con el presente tratamiento. Asimismo, le indicamos que, no se puede realizar el tratamiento de presentar algunas de estas patologías en la zona a tratar:                    
+                            Adicionalmente le indicamos que, en vitíligo, psoriasis, epilepsia, lupus, cáncer o
+                            antecedente personal de cáncer, embarazo o sospecha, diabetes no controlada, de estar bajo
+                            prescripción médica con medicamentos fotosensibles entran en contraindicaciones con el
+                            presente tratamiento. Asimismo, le indicamos que, no se puede realizar el tratamiento de
+                            presentar algunas de estas patologías en la zona a tratar:
                         </p>
                     </div>
                 </div>
@@ -348,23 +353,6 @@
             <div class="swiper SwiperZonas">
                 <div class="swiper-wrapper mb-10">
                     <div class="swiper-slide">
-                        
-                        <a href="">
-                            <div class="overflow-hidden rounded-sm">
-                                <img src="../img/zonas-depilacion-laser/bozo2.jpg" class="hover:scale-125 duration-1000"
-                                    alt="">
-                            </div>
-                            <div class="text-center font-Manrope mt-2">
-                                <h2
-                                    class="font-semibold tracking-wide capitalize text-maior-primary hover:text-maior-secondary">
-                                    Bozo</h2>
-                                <p class="font-Opensans">Depilación Láser</p>
-                            </div>
-                        </a>
-
-                    </div>
-
-                    <div class="swiper-slide">
 
                         <a href="">
                             <div class="overflow-hidden rounded-sm">
@@ -382,7 +370,24 @@
                     </div>
 
                     <div class="swiper-slide">
-                        
+
+                        <a href="">
+                            <div class="overflow-hidden rounded-sm">
+                                <img src="../img/zonas-depilacion-laser/bozo2.jpg" class="hover:scale-125 duration-1000"
+                                    alt="">
+                            </div>
+                            <div class="text-center font-Manrope mt-2">
+                                <h2
+                                    class="font-semibold tracking-wide capitalize text-maior-primary hover:text-maior-secondary">
+                                    Bozo</h2>
+                                <p class="font-Opensans">Depilación Láser</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
                         <a href="">
                             <div class="overflow-hidden rounded-sm">
                                 <img src="../img/zonas-depilacion-laser/bozo2.jpg" class="hover:scale-125 duration-1000"
@@ -493,6 +498,7 @@
     </footer>
 
     <!-- SCRIPT JS -->
+    <script src="../js/main.js"></script>
     <script src="../js/vanilla.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
 
