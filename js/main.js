@@ -25,11 +25,11 @@ window.addEventListener('scroll', function (params) {
     // si scroll < 100 - mostrar sale
     if (window.scrollY < 100) {
         sale.classList.remove('hidden');
-        header.classList.remove('md:bg-white');
+        // header.classList.remove('md:bg-white');
     }
     else {
         sale.classList.add('hidden');
-        header.classList.add('md:bg-white');
+        // header.classList.add('md:bg-white');
     }
 
     // show arrow show scroll

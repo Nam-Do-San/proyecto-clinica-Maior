@@ -12,8 +12,6 @@
 //     document.getElementById(tabName).style.display = "block";
 // }
 
-
-
 function openTab(event, tabName) {
     var i, tabContent, tab;
   
