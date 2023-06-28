@@ -47,7 +47,6 @@ window.addEventListener('scroll', function (params) {
 const btn_menu = document.getElementById('btn-menu');
 let open = document.getElementById('open');
 let close = document.getElementById('close');
-
 const menu_nav = document.getElementById('menu-nav');
 
 btn_menu.addEventListener('click', function (params) {

@@ -611,33 +611,6 @@ video {
 
 /* componentes page tratamientos */
 
-.btn-tratamiento{
-  display: flex;
-  height: 2.5rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  font-family: Open Sans, sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgb(23 45 85 / var(--tw-text-opacity));
-  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  transition-duration: 700ms;
-}
-
-.btn-tratamiento:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 45 85 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 /* buttons style*/
 
 .btn-w-size{
@@ -829,10 +802,6 @@ video {
   top: 0px;
 }
 
-.top-1\/3{
-  top: 33.333333%;
-}
-
 .top-2{
   top: 0.5rem;
 }
@@ -915,11 +884,6 @@ video {
   margin-bottom: 0.625rem;
 }
 
-.my-3{
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -935,11 +899,6 @@ video {
   margin-bottom: auto;
 }
 
-.my-6{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -950,6 +909,10 @@ video {
 
 .mb-5{
   margin-bottom: 1.25rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 
 .ml-11{
@@ -1010,10 +973,6 @@ video {
 
 .mt-56{
   margin-top: 14rem;
-}
-
-.mb-6{
-  margin-bottom: 1.5rem;
 }
 
 .block{
@@ -1102,10 +1061,6 @@ video {
 
 .w-24{
   width: 6rem;
-}
-
-.w-32{
-  width: 8rem;
 }
 
 .w-36{
@@ -1306,6 +1261,10 @@ video {
   border-left-width: 1px;
 }
 
+.border-t{
+  border-top-width: 1px;
+}
+
 .border-maior-primary{
   --tw-border-opacity: 1;
   border-color: rgb(23 45 85 / var(--tw-border-opacity));
@@ -1359,8 +1318,9 @@ video {
   background-color: rgb(244 211 174 / 0.8);
 }
 
-.bg-maior-secondary\/90{
-  background-color: rgb(244 211 174 / 0.9);
+.bg-red-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
 .bg-slate-50{
@@ -1556,10 +1516,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.pb-6{
-  padding-bottom: 1.5rem;
-}
-
 .pb-8{
   padding-bottom: 2rem;
 }
@@ -1578,6 +1534,10 @@ video {
 
 .pt-2\.5{
   padding-top: 0.625rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
 }
 
 .pt-5{
@@ -1618,6 +1578,10 @@ video {
 
 .font-Southland{
   font-family: Southland, script;
+}
+
+.font-serif{
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-2xl{
@@ -1671,10 +1635,6 @@ video {
 
 .font-extrabold{
   font-weight: 800;
-}
-
-.font-light{
-  font-weight: 300;
 }
 
 .font-medium{
@@ -2012,16 +1972,8 @@ p{
     display: flex;
   }
 
-  .md\:h-screen{
-    height: 100vh;
-  }
-
   .md\:max-h-\[600px\]{
     max-height: 600px;
-  }
-
-  .md\:w-1\/2{
-    width: 50%;
   }
 
   .md\:w-2\/5{
@@ -2103,10 +2055,6 @@ p{
 
   .md\:pb-20{
     padding-bottom: 5rem;
-  }
-
-  .md\:text-left{
-    text-align: left;
   }
 
   .md\:text-center{
@@ -2228,16 +2176,8 @@ p{
     width: 50%;
   }
 
-  .lg\:w-1\/5{
-    width: 20%;
-  }
-
   .lg\:w-3\/5{
     width: 60%;
-  }
-
-  .lg\:w-36{
-    width: 9rem;
   }
 
   .lg\:w-fit{
@@ -2255,10 +2195,6 @@ p{
 
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-5{
@@ -2343,11 +2279,6 @@ p{
     padding-right: 6rem;
   }
 
-  .lg\:px-32{
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
-
   .lg\:px-36{
     padding-left: 9rem;
     padding-right: 9rem;
@@ -2373,6 +2304,11 @@ p{
     padding-bottom: 1rem;
   }
 
+  .lg\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
   .lg\:pl-0{
     padding-left: 0px;
   }
@@ -2393,6 +2329,11 @@ p{
   .lg\:text-xs{
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .lg\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .lg\:font-bold{
