@@ -1,70 +1,64 @@
 // archivo de js vanilla
 
-
 ////////////////////////////////////////
-// navbar hidden 
+// navbar hidden
 ////////////////////////////////////////
-let header = document.getElementById('header');
-let sale = document.getElementById('sale');
+let header = document.getElementById("header");
+let sale = document.getElementById("sale");
 
-// scroll var 
-const scroll_down = document.getElementById('scroll-down');
+// scroll var
+const scroll_down = document.getElementById("scroll-down");
 
-window.addEventListener('scroll', function (params) {
-    // if (prevY > window.scrollY){
-    //     console.log('subiendo');
-    //     // sale.classList.remove('hidden');
-    //     // solo aplica bg-black en tamaños - md ipad
-    //     // header.classList.remove('md:bg-black'); 
-    // }else{
-    //     console.log('bajando')
-    //     sale.classList.add('hidden');
-    //     header.classList.add('md:bg-black')
-    // }
-
+window.addEventListener("scroll", function (params) {
     // si scroll < 100 - mostrar sale
     if (window.scrollY < 100) {
-        sale.classList.remove('hidden');
+        sale.classList.remove("hidden");
         // header.classList.remove('md:bg-white');
-    }
-    else {
-        sale.classList.add('hidden');
+    } else {
+        sale.classList.add("hidden");
         // header.classList.add('md:bg-white');
     }
-
-    // show arrow show scroll
-    // if (window.scrollY > 1000) {
-    //     scroll_down.classList.remove('hidden');
-    // }
-    // else{
-    //     scroll_down.classList.add('hidden');
-    // }
-})
+});
 
 ////////////////////////////////////////
 // BUTTON TO OPEN AND CLOSE NAV MENU
 ////////////////////////////////////////
-const btn_menu = document.getElementById('btn-menu');
-let open = document.getElementById('open');
-let close = document.getElementById('close');
-const menu_nav = document.getElementById('menu-nav');
+const btn_menu = document.getElementById("btn-menu");
+let open = document.getElementById("open");
+let close = document.getElementById("close");
+const menu_nav = document.getElementById("menu-nav");
 
-btn_menu.addEventListener('click', function (params) {
-    open.classList.toggle('hidden');
-    menu_nav.classList.toggle('hidden');
+btn_menu.addEventListener("click", function (params) {
+    open.classList.toggle("hidden");
+    menu_nav.classList.toggle("hidden");
 
-    close.classList.toggle('hidden');
-    menu_nav.classList.toggle('block');
-})
+    close.classList.toggle("hidden");
+    menu_nav.classList.toggle("block");
+});
 
+// /////////////////////////////////////////
+// botton up
 
+window.onscroll = function () {
+    scrollFunction();
+};
 
+function scrollFunction() {
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    const btn_whatsapp = document.getElementById("btn-whatsapp");
 
+    if (document.documentElement.scrollTop > 800) {
+        btn_whatsapp.style.display = "block";
+        scrollToTopBtn.style.display = "block";
+    } else {
+        btn_whatsapp.style.display = "none";
+        scrollToTopBtn.style.display = "none";
+    }
+}
 
-
-
-
-
+function scrollToTop() {
+    document.documentElement.scrollTop = 0;
+}
 
 ////////////////////////////////////////
 // accordion
@@ -84,8 +78,8 @@ accordionContent.forEach((item, index) => {
             item.querySelector("i").classList.replace("bx-minus", "bx-plus");
         }
         removeOpen(index); //calling the funtion and also passing the index number of the clicked header
-    })
-})
+    });
+});
 
 function removeOpen(index1) {
     accordionContent.forEach((item2, index2) => {
@@ -96,7 +90,7 @@ function removeOpen(index1) {
             des.style.height = "0px";
             item2.querySelector("i").classList.replace("bx-minus", "bx-plus");
         }
-    })
+    });
 }
 
 ////////////////////////////////////////
@@ -110,12 +104,11 @@ var modalImg = document.getElementById("modal-img");
 
 // this function is called when a small image is clicked
 function showModal(src) {
-    modal.classList.remove('invisible');
+    modal.classList.remove("invisible");
     modalImg.src = src;
 }
 
 // this function is called when the close button is clicked
 function closeModal() {
-    modal.classList.add('invisible');
+    modal.classList.add("invisible");
 }
-

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -23,14 +23,532 @@
 
 <body>
 
+    <!-- official -->
+    <header class="fixed top-0 w-full z-50 shadow-sm font-Manrope" id="header">
+
+        <!-- promo -->
+        <div class="bg-gray-100" id="sale">
+
+            <div class="container lg:px-36">
+
+                <div class="px-5 md:px-0 flex justify-between text-sm py-1 items-center text-gray-500">
+
+                    <div class="items-center font-semibold text-center">
+                        <P class="text-xs">Av. Trinidad & Morán, Cayma - Arequipa</P>
+                    </div>
+
+                    <ul class="hidden  md:flex text-lg">
+                        <li class="ml-4 hover:text-gray-700">
+                            <a href="#" target="_blank"><i class="bx bxl-instagram"></i></a>
+                        </li>
+                        <li class="ml-4 hover:text-gray-700">
+                            <a href="#" target="_blank"><i class="bx bxl-facebook  "></i></a>
+                        </li>
+                        <li class="ml-4 hover:text-gray-700">
+                            <a href="#" target="_blank"><i class="bx bxl-tiktok    "></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- header center -->
+        <div class="bg-white">
+            <div class="grid grid-cols-3">
+
+                <div>
+
+                </div>
+
+                <div class="flex justify-center py-5 lg:py-10">
+                    <a href="index.html">
+                        <img class="w-full h-12" src="../img/maior-logo.svg" alt="">
+                    </a>
+                </div>
+
+                <!-- btn open nav -->
+                <div class="my-auto justify-self-end px-3 text-white" id="btn-menu">
+                    <button class=" text-maior-primary lg:hidden" id="open">
+                        <i class='bx bx-menu text-3xl'></i>
+                    </button>
+                    <button class=" text-maior-primary hidden" id="close">
+                        <i class='bx bx-x text-3xl'></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="bg-white md:w-96 lg:w-full relative hidden lg:block" id="menu-nav">
+
+            <ul
+                class="container text-maior-primary h-full overflow-y-auto  lg:flex lg:px-36 lg:justify-between uppercase text-xs tracking-wider ">
+
+                <!-- depilación laser -->
+                <li class="mx-5 lg:mx-0 border-b lg:border-b-0 hover:text-maior-secondary">
+                    <a class="font-bold py-4 lg:py-2 block" href="depilacion-laser.html">Depilación Láser</a>
+                </li>
+
+                <!-- tratamientos faciales -->
+                <li class="mx-5 lg:mx-0 border-b lg:border-b-0 hover:text-maior-secondary group/item">
+
+                    <div class="font-bold py-4 lg:py-2 flex justify-between">
+                        <a href="#">Tratamientos Faciales</a>
+                        <div class="px-2 group-hover/item:rotate-180">
+                            <i class='bx bxs-chevron-down'></i>
+                        </div>
+                    </div>
+
+                    <div class="hidden group-hover/item:block lg:absolute lg:bg-gray-50 lg:w-full lg:left-0">
+                        <ul class="lg:flex lg:container lg:px-36 justify-between text-maior-primary">
+                            <li class="group/item2 lg:py-4">
+                                <div class="flex justify-between py-2 font-semibold lg:mb-2 lg:font-bold lg:text-xs">
+                                    <a href="#">Rejuvenecimiento facial</a>
+                                    <div class="px-2 lg:hidden group-hover/item2:rotate-180">
+                                        <i class='bx bx-chevron-down'></i>
+                                    </div>
+                                </div>
+
+                                <div class="hidden group-hover/item2:block lg:block ">
+                                    <ul class="px-4 lg:px-0 capitalize text-sm">
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-faciales/a-rejuvenecimiento-facial.html">SmartLifting
+                                                Láser</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-faciales/a-mesoterapia-facial.html">Mesoterapia
+                                                Facial</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-faciales/laser-co2-fraccionado.html">Lifting Láser
+                                                CO2</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-faciales/a-toxina-botulinica.html">Toxina
+                                                Botulínica</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-faciales/a-acido-hialuronico.html">Ácido
+                                                hialurónico</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-faciales/a-radiofrecuencia-facial.html">Radiofrecuencia
+                                                facial</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="group/item2 lg:py-4">
+                                <div class="flex justify-between py-2 font-semibold lg:mb-2 lg:font-bold lg:text-xs">
+                                    <a href="#">Acné</a>
+                                    <div class="px-2 lg:hidden group-hover/item2:rotate-180">
+                                        <i class='bx bx-chevron-down'></i>
+                                    </div>
+                                </div>
+
+                                <div class="hidden group-hover/item2:block lg:block">
+                                    <ul class="px-4 lg:px-0 capitalize text-sm">
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-faciales/b-acne-activo.html">Acné activo</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-faciales/b-secuelas-de-acne.html">Secuelas de
+                                                acné</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="group/item2 lg:py-4">
+                                <div class="flex justify-between py-2 font-semibold lg:mb-2 lg:font-bold lg:text-xs">
+                                    <a href="#">Despigmentación</a>
+                                    <div class="px-2 lg:hidden group-hover/item2:rotate-180">
+                                        <i class='bx bx-chevron-down'></i>
+                                    </div>
+                                </div>
+
+                                <div class="hidden group-hover/item2:block lg:block">
+                                    <ul class="px-4 lg:px-0 capitalize text-sm">
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-faciales/tratamiento-para-manchas.html">Manchas
+                                                solares</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-faciales/tratamiento-para-cicatrices.html">cicatrices</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="group/item2 lg:py-4">
+                                <div class="flex justify-between py-2 font-semibold lg:mb-2 lg:font-bold lg:text-xs">
+                                    <a href="#">Limpieza facial</a>
+                                    <div class="px-2 lg:hidden group-hover/item2:rotate-180">
+                                        <i class='bx bx-chevron-down'></i>
+                                    </div>
+                                </div>
+
+                                <div class="hidden group-hover/item2:block lg:block">
+                                    <ul class="px-4 lg:px-0 capitalize text-sm">
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-faciales/c-hydrafacial-md.html">Hydrafacial</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-faciales/limpieza-facial.html">Limpieza facial</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="group/item2 lg:py-4">
+                                <div class="flex justify-between py-2 font-semibold lg:mb-2 lg:font-bold lg:text-xs">
+                                    <a href="#">Relleno facial</a>
+                                    <div class="px-2 lg:hidden group-hover/item2:rotate-180">
+                                        <i class='bx bx-chevron-down'></i>
+                                    </div>
+                                </div>
+
+                                <div class="hidden group-hover/item2:block lg:block">
+                                    <ul class="px-4 lg:px-0 capitalize text-sm">
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Remodelación</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Reducción de
+                                                ojeras</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Aumento de labios</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="group/item2 lg:py-4">
+                                <div class="flex justify-between py-2 font-semibold lg:mb-2 lg:font-bold lg:text-xs">
+                                    <a href="#">Enrojecimiento</a>
+                                    <div class="px-2 lg:hidden group-hover/item2:rotate-180">
+                                        <i class='bx bx-chevron-down'></i>
+                                    </div>
+                                </div>
+
+                                <div class="hidden group-hover/item2:block lg:block">
+                                    <ul class="px-4 lg:px-0 capitalize text-sm">
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-faciales/e-rosacea.html">Rosácea</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-faciales/e-telangietasis.html">Telangiectasia</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+
+                </li>
+
+                <!-- tratamientos corporales -->
+                <li class="mx-5 lg:mx-0 border-b lg:border-b-0 hover:text-maior-secondary group/item">
+
+                    <div class="font-bold py-4 lg:py-2 flex justify-between">
+                        <a href="#">Tratamientos Corporales</a>
+                        <div class="px-2 group-hover/item:rotate-180">
+                            <i class='bx bxs-chevron-down'></i>
+                        </div>
+                    </div>
+
+                    <div class="hidden group-hover/item:block lg:absolute lg:bg-gray-50 lg:w-full lg:left-0">
+                        <ul class="lg:flex lg:container lg:px-36 justify-between text-maior-primary">
+                            <li class="group/item2 lg:py-4">
+                                <div class="flex justify-between py-2 font-semibold lg:mb-2 lg:font-bold lg:text-xs">
+                                    <a href="#">Reducción de medidas</a>
+                                    <div class="px-2 lg:hidden group-hover/item2:rotate-180">
+                                        <i class='bx bx-chevron-down'></i>
+                                    </div>
+                                </div>
+
+                                <div class="hidden group-hover/item2:block lg:block ">
+                                    <ul class="px-4 lg:px-0 capitalize text-sm">
+
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/a-hidrolipoclasia.html">Hidrolipoclasia</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/a-enzimas-recombinantes.html">Enzimas
+                                                recombinantes</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/a-mesoterapia-corporal.html">Mesoterapia
+                                                Corporal</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/a-ultracavitacion.html">Ultracavitación</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/a-radiofrecuencia-corporal.html">Radiofrecuencia
+                                                corporal</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="group/item2 lg:py-4">
+                                <div class="flex justify-between py-2 font-semibold lg:mb-2 lg:font-bold lg:text-xs">
+                                    <a href="#">Celulitis y estrías</a>
+                                    <div class="px-2 lg:hidden group-hover/item2:rotate-180">
+                                        <i class='bx bx-chevron-down'></i>
+                                    </div>
+                                </div>
+
+                                <div class="hidden group-hover/item2:block lg:block">
+                                    <ul class="px-4 lg:px-0 capitalize text-sm">
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/carboxiterapia.html">Carboxiterapia</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/ondas-rusas.html">Ondas rusas (EMS)</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/a-ultracavitacion.html">Ultracavitación</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/laser-co2-fraccionado.html">Láser CO2
+                                                fraccionado</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="group/item2 lg:py-4">
+                                <div class="flex justify-between py-2 font-semibold lg:mb-2 lg:font-bold lg:text-xs">
+                                    <a href="#">Rejuvenecimiento & Flacidez</a>
+                                    <div class="px-2 lg:hidden group-hover/item2:rotate-180">
+                                        <i class='bx bx-chevron-down'></i>
+                                    </div>
+                                </div>
+
+                                <div class="hidden group-hover/item2:block lg:block">
+                                    <ul class="px-4 lg:px-0 capitalize text-sm">
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/smart-lifting.html">SmartLifting Láser</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/carboxiterapia.html">Carboxiterapia</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/a-radiofrecuencia-corporal.html">Radiofrecuencia
+                                                bipolar</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="group/item2 lg:py-4">
+                                <div class="flex justify-between py-2 font-semibold lg:mb-2 lg:font-bold lg:text-xs">
+                                    <a href="#">Despigmentación</a>
+                                    <div class="px-2 lg:hidden group-hover/item2:rotate-180">
+                                        <i class='bx bx-chevron-down'></i>
+                                    </div>
+                                </div>
+
+                                <div class="hidden group-hover/item2:block lg:block">
+                                    <ul class="px-4 lg:px-0 capitalize text-sm">
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/tratamiento-para-manchas.html">Manchas
+                                                solares</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/tratamiento-para-cicatrices.html">cicatrices</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="group/item2 lg:py-4">
+                                <div class="flex justify-between py-2 font-semibold lg:mb-2 lg:font-bold lg:text-xs">
+                                    <a href="#">Postquirúrgicos</a>
+                                    <div class="px-2 lg:hidden group-hover/item2:rotate-180">
+                                        <i class='bx bx-chevron-down'></i>
+                                    </div>
+                                </div>
+
+                                <div class="hidden group-hover/item2:block lg:block">
+                                    <ul class="px-4 lg:px-0 capitalize text-sm">
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/a-ultracavitacion.html">Ultracavitación</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/a-radiofrecuencia-corporal.html">Radiofrecuencia
+                                                corporal</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="group/item2 lg:py-4">
+                                <div class="flex justify-between py-2 font-semibold lg:mb-2 lg:font-bold lg:text-xs">
+                                    <a href="#">Uñas</a>
+                                    <div class="px-2 lg:hidden group-hover/item2:rotate-180">
+                                        <i class='bx bx-chevron-down'></i>
+                                    </div>
+                                </div>
+
+                                <div class="hidden group-hover/item2:block lg:block">
+                                    <ul class="px-4 lg:px-0 capitalize text-sm">
+                                        <li class="py-1.5 hover:text-maior-secondary"><a
+                                                href="tratamientos-corporales/omnicomicosis.html">Onicomicosis</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+
+                </li>
+
+                <!-- staff medico -->
+                <li class="mx-5 lg:mx-0 border-b lg:border-b-0 hover:text-maior-secondary group/item">
+
+                    <div class="font-bold py-4 lg:py-2 flex justify-between">
+                        <a href="#">Staff Medico</a>
+                        <div class="px-2">
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                    </div>
+
+                    <div class="lg:bg-gray-50 lg:absolute right-0 lg:top-auto  lg:w-full overflow-y-auto h-full lg:h-auto
+                    hidden group-hover/item:block
+                    ">
+                        <ul class="container lg:px-36 lg:flex justify-between lg:gap-10 text-maior-primary
+                        ">
+                            <li class="lg:py-6">
+                                <a href="#">
+                                    <div>
+                                        <div class="mb-4 hidden lg:block">
+                                            <img src="img/equipo-medico/melania.jpg" class="object-cover w-full h-full"
+                                                alt="">
+                                        </div>
+                                        <div class="py-2 font-semibold">
+                                            Dra. Melania Paredes
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="lg:py-6">
+                                <a href="#">
+                                    <div>
+                                        <div class="mb-4 hidden lg:block">
+                                            <img src="img/equipo-medico/julio.jpg" class="object-cover w-full h-full"
+                                                alt="">
+                                        </div>
+                                        <div class="py-2 font-semibold">
+                                            Dr. Julio Suca
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="lg:py-6">
+                                <a href="#">
+                                    <div>
+                                        <div class="mb-4 hidden lg:block">
+                                            <img src="img/equipo-medico/patricia.jpg" class="object-cover w-full h-full"
+                                                alt="">
+                                        </div>
+                                        <div class="py-2 font-semibold">
+                                            Dra. Patricia Bolaños
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="lg:py-6">
+                                <a href="#">
+                                    <div>
+                                        <div class="mb-4 hidden lg:block">
+                                            <img src="img/equipo-medico/alex.jpg" class="object-cover w-full h-full"
+                                                alt="">
+                                        </div>
+                                        <div class="py-2 font-semibold">
+                                            Dr. Alexander Flores
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="lg:py-6">
+                                <a href="#">
+                                    <div>
+                                        <div class="hidden lg:block mb-4">
+                                            <img src="img/equipo-medico/melania.jpg" class="object-cover w-full h-full"
+                                                alt="">
+                                        </div>
+                                        <div class="py-2 font-semibold">
+                                            Dra. Omayra
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+                <!-- nosotros -->
+                <li class="mx-5 lg:mx-0 border-b lg:border-b-0 hover:text-maior-secondary">
+                    <a class="font-bold py-4 lg:py-2 block" href="de">Nosotros</a>
+                </li>
+
+                <!-- novedades -->
+                <li class="mx-5 lg:mx-0 border-b lg:border-b-0 hover:text-maior-secondary">
+                    <a class="font-bold py-4 lg:py-2 block" href="de">Novedades</a>
+                </li>
+
+                <!-- contacto -->
+                <li class="mx-5 lg:mx-0 border-b lg:border-b-0 hover:text-maior-secondary">
+                    <a class="font-bold py-4 lg:py-2 block" href="de">Contacto</a>
+                </li>
+
+                <div class=" lg:hidden flex justify-center py-5">
+
+                    <div class="flex text-maior-primary capitalize text-base">
+
+                        <a target="_blank" rel="noreferrer noopener" href="" class="flex items-center mr-5"
+                            title="Compartir en Facebook">
+                            <i class='bx bxl-facebook'></i>
+                            <span class="inline-block ml-2" aria-hidden="true">Facebook</span>
+                        </a>
+
+                        <a target="_blank" rel="noreferrer noopener" href="#" class="flex items-center mr-5"
+                            title="Tuitear en Twitter">
+                            <i class='bx bxl-instagram'></i>
+                            <span class="inline-block ml-2" aria-hidden="true">Instagram</span>
+                        </a>
+
+                        <a target="_blank" rel="noreferrer noopener" href="" class="flex items-center mr-5"
+                            title="Pinear en Pinterest">
+                            <i class='bx bxl-tiktok'></i>
+                            <span class="inline-block ml-2" aria-hidden="true">Tik tok</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </ul>
+
+        </div>
+
+
+    </header>
+
     <main>
 
         <div class="container-general w-full block mt-28 lg:mt-48 relative">
 
             <picture>
                 <source media="(min-width:768px)"
-                    srcset="../img/bg-services/tratamiento-para-manchas/bg-manchas-main.jpg">
-                <img src="../img/bg-services/tratamiento-para-manchas/bg-manchas-main-movil.jpg" class="w-full" alt="">
+                    srcset="../img/bg-services/tratamiento-para-manchas/bg-desktop-corporal.jpg">
+                <img src="../img/bg-services/tratamiento-para-manchas/bg-movil-corporal.jpg" class="w-full" alt="">
             </picture>
 
             <div class="container md:absolute  lg:px-36 inset-x-0 bottom-10 w-full z-10">
@@ -246,7 +764,7 @@
 
         <!-- img bg blanco -->
         <div class="h-screen/50 bg-fixed bg-center bg-no-repeat bg-cover"
-            style="background-image: url(../img/slider-tratamiento-para-cicatrices.jpg);">
+            style="background-image: url(../img/bg-services/tratamiento-para-manchas/bg-center-corporal.jpg);">
         </div>
 
         <!-- preguntas frecuentes -->
@@ -318,10 +836,35 @@
             </div>
         </section>
 
-        <!-- contacto -->
-        <div class="mt-10 md:mt-48 bg-cover">
+    </main>
 
-            <div class="container relative">
+    <!-- button whatsapp -->
+    <div class="fixed bottom-24 right-10  lg:right-20 hover:animate-bounce z-10" id="btn-whatsapp">
+        <a href="https://wa.link/1tmbhc">
+            <div class="flex items-center bg-white text-whatsapp-color shadow-md px-4 rounded-lg">
+                <i class='bx bxl-whatsapp text-3xl'></i>
+                <p class=" p-2 font-semibold">
+                    Escríbenos por Whatsapp
+                </p>
+            </div>
+        </a>
+
+    </div>
+
+    <button class="fixed bottom-10 right-10 lg:right-20 z-10" onclick="scrollToTop()" id="scrollToTopBtn">
+        <div class="bg-maior-primary hover:bg-maior-secondary  text-white p-1 rounded-md leading-3">
+            <i class='bx bxs-chevron-up text-2xl'></i>
+        </div>
+    </button>
+
+
+    <!-- pie de pagina -->
+    <footer class="pt-10">
+
+        <!-- contacto -->
+        <div class="mt-10 md:mt-40 bg-cover">
+
+            <div class="container relative bg-yellow-200">
                 <div class="p-10 text-maior-primary bg-gray-50 w-fit rounded md:absolute -top-24 lg:mx-36 right-0">
 
                     <div class="mb-10 ">
@@ -388,6 +931,24 @@
                     </div>
 
                 </div>
+
+                <div class="lg:mx-28 absolute left-11 -bottom-72 lg:-bottom-96 font-NunitoSans text-maior-primary">
+                    <h3 class="py-2 font-bold ">Enlaces rápidos</h3>
+                    <ul class="font-semibold">
+                        <li class="py-1">
+                            <a class="flex items-center" href="informacion-importante.html">
+                                <p>Información importante</p>
+                                <i class='bx bxs-chevron-right'></i>
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a class="flex items-center" href="recomendaciones-y-contraindicaciones.html">
+                                <p>Recomendaciones y contraindicación</p>
+                                <i class='bx bxs-chevron-right'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="h-screen/50">
@@ -395,7 +956,22 @@
             </div>
         </div>
 
-    </main>
+        <div class="bg-gray-100 py-2 text-center">
+
+            <div class="text-sm md:flex justify-between container lg:px-36 text-gray-500">
+                <div>
+                    <p><strong>© 2023 Clínica Maior</strong> | Especialidades Estéticas Medicina Estética & Cirugía
+                        Plástica </p>
+                </div>
+
+                <div class="mt-2 md:mt-0 ">
+                    <p>Desarrollo web <strong><a href="#">nrsn</a></strong></p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
 
     <!-- script -->
     <script src="../js/main.js"></script>

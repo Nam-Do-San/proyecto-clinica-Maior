@@ -726,10 +726,35 @@
             </div>
         </section>
 
-        <!-- contacto -->
-        <div class="mt-10 md:mt-48 bg-cover">
+    </main>
 
-            <div class="container relative">
+      <!-- button whatsapp -->
+      <div class="fixed bottom-24 right-10  lg:right-20 hover:animate-bounce z-10" id="btn-whatsapp">
+        <a href="https://wa.link/1tmbhc">
+            <div class="flex items-center bg-white text-whatsapp-color shadow-md px-4 rounded-lg">
+                <i class='bx bxl-whatsapp text-3xl'></i>
+                <p class=" p-2 font-semibold">
+                    Escríbenos por Whatsapp
+                </p>
+            </div>
+        </a>
+
+    </div>
+
+    <button class="fixed bottom-10 right-10 lg:right-20 z-10" onclick="scrollToTop()" id="scrollToTopBtn">
+        <div class="bg-maior-primary hover:bg-maior-secondary  text-white p-1 rounded-md leading-3">
+            <i class='bx bxs-chevron-up text-2xl'></i>
+        </div>
+    </button>
+
+
+    <!-- pie de pagina -->
+    <footer class="pt-10">
+
+        <!-- contacto -->
+        <div class="mt-10 md:mt-40 bg-cover">
+
+            <div class="container relative bg-yellow-200">
                 <div class="p-10 text-maior-primary bg-gray-50 w-fit rounded md:absolute -top-24 lg:mx-36 right-0">
 
                     <div class="mb-10 ">
@@ -769,7 +794,7 @@
                             <p>Ubicación</p>
                         </div>
                         <div class="ml-8">
-                            <p>Urb. León XIII i-3 Av. Trinidad y Moran, Cayma, Arequipa</p>
+                            <p>Av. Trinidad Moran i-3, Urb. León XIII Cayma - Arequipa</p>
                         </div>
                     </div>
 
@@ -796,13 +821,47 @@
                     </div>
 
                 </div>
+
+                <div class="lg:mx-28 absolute left-11 -bottom-72 lg:-bottom-96 font-NunitoSans text-maior-primary">
+                    <h3 class="py-2 font-bold ">Enlaces rápidos</h3>
+                    <ul class="font-semibold">
+                        <li class="py-1">
+                            <a class="flex items-center" href="informacion-importante.html">
+                                <p>Información importante</p>
+                                <i class='bx bxs-chevron-right'></i>
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a class="flex items-center" href="recomendaciones-y-contraindicaciones.html">
+                                <p>Recomendaciones y contraindicación</p>
+                                <i class='bx bxs-chevron-right'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="h-screen/50">
                 <img src="../img/footer-contact.jpg" class="w-full h-full object-cover" alt="">
             </div>
         </div>
-    </main>
+
+        <div class="bg-gray-100 py-2 text-center">
+
+            <div class="text-sm md:flex justify-between container lg:px-36 text-gray-500">
+                <div>
+                    <p><strong>© 2023 Clínica Maior</strong> | Especialidades Estéticas Medicina Estética & Cirugía
+                        Plástica </p>
+                </div>
+
+                <div class="mt-2 md:mt-0 ">
+                    <p>Desarrollo web <strong><a href="#">nrsn</a></strong></p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
 
     <!-- script -->
     <script src="../js/main.js"></script>
