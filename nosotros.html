@@ -467,11 +467,11 @@
                         <p class="title-section-big">Sobre nosotros</p>
                     </div>
 
-                    <div class="pb-5 border-b border-b-maior-gray">
-                        <div class="flex items-center text-sm  font-bold  font-Opensans">
+                    <div class="pb-5 border-b border-b-gray-50">
+                        <div class="flex items-center text-sm  font-extrabold">
                             <p>Nosotros</p>
                         </div>
-                        <div>
+                        <div class="mt-4">
                             <p>
                                 Bienvenidos a nuestra Clínica Estética y Depilación. En nuestro centro nos preocupamos
                                 por ofrecerte los mejores tratamientos y servicios para que te sientas cómodo/a y
@@ -489,9 +489,10 @@
                         </div>
                     </div>
 
-                    <div class="py-5">
+                    <div class="py-5 font-NunitoSans">
 
-                        <h3 class="font-bold  font-Opensans">Melania Paredes</h3>
+                        <h3 class="font-extrabold">Melania Paredes</h3>
+                        <p>Fundadora</p>
 
                     </div>
 
@@ -502,33 +503,33 @@
         </section>
 
         <!-- linea para frase -->
-        <section class="bg-maior-secondary">
+        <section class="bg-maior-primary">
             <div class="container lg:px-36 ">
 
-                <div class="grid lg:grid-cols-2 items-center justify-items-start">
+                <div class="grid md:grid-cols-2 items-center justify-between">
 
-                    <div class="text-white ">
-                        <p class="font-semibold  text-lg text-left relative">Ser unica te hace <span
-                                class="absolute ml-2 -bottom-6 font-Southland font-normal text-7xl">perfecta</span></p>
+                    <div class="text-white mt-10 mb-5 ml-8 md:my-0">
+                        <p class="font-bold  text-lg text-left relative">Ser unica te hace <span
+                                class="absolute ml-3 -bottom-6 font-Southland font-normal text-7xl">perfecta</span></p>
                     </div>
 
                     <div class="px-5">
-                        <div class="flex py-5 lg:py-10 gap-5">
+                        <div class="flex py-5 lg:py-8 gap-5 justify-end">
 
-                            <div class="w-full h-full">
-                                <img src="img/cert-1.png" class="w-24" alt="">
+                            <div class="md:h-20">
+                                <img src="img/cert-1.png" class="w-full h-full" alt="">
                             </div>
 
-                            <div class="w-full h-full">
-                                <img src="img/cert-2.png" class="w-24" alt="">
+                            <div class="md:h-20">
+                                <img src="img/cert-2.png" class="w-full h-full" alt="">
                             </div>
 
-                            <div class="w-full h-full">
-                                <img src="img/cert-3.png" class="w-24" alt="">
+                            <div class="md:h-20">
+                                <img src="img/cert-3.png" class="w-full h-full" alt="">
                             </div>
 
-                            <div class="w-full h-full">
-                                <img src="img/cert-4.png" class="w-24" alt="">
+                            <div class="md:h-20">
+                                <img src="img/cert-4.png" class="w-full h-full" alt="">
                             </div>
                         </div>
                     </div>
@@ -538,14 +539,13 @@
 
         </section>
 
+        <section class="pt-20">
+            <div class="container lg:px-36 font-NunitoSans">
 
-        <section class="py-20">
-            <div class="container lg:px-36">
+                <div class="grid md:grid-cols-3 gap-5">
 
-                <div class="grid md:grid-cols-3 gap-10">
-
-                    <div class="text-maior-primary font-Manrope">
-                        <div class="mx-5">
+                    <div class="text-maior-primary">
+                        <div class="mx-5 md:mx-0">
                             <img src="img/instalacion-1.jpg" class="md:rounded" alt="">
                         </div>
                         <div class="text-center px-5">
@@ -557,8 +557,8 @@
                         </div>
                     </div>
 
-                    <div class="text-maior-primary font-Manrope">
-                        <div class="mx-5">
+                    <div class="text-maior-primary">
+                        <div class="mx-5 md:mx-0">
                             <img src="img/instalacion-2.jpg" class="md:rounded" alt="">
                         </div>
                         <div class="text-center px-5">
@@ -570,8 +570,8 @@
                         </div>
                     </div>
 
-                    <div class="text-maior-primary font-Manrope">
-                        <div class="px-5">
+                    <div class="text-maior-primary">
+                        <div class="mx-5 md:mx-0">
                             <img src="img/instalacion-1.jpg" class="md:rounded" alt="">
                         </div>
                         <div class="text-center px-5">
@@ -587,6 +587,31 @@
 
             </div>
         </section>
+
+    </main>
+
+    <!-- button whatsapp -->
+    <div class="fixed bottom-24 right-10  lg:right-20 hover:animate-bounce z-10" id="btn-whatsapp">
+        <a href="https://wa.link/1tmbhc">
+            <div class="flex items-center bg-white text-whatsapp-color shadow-md px-4 rounded-lg">
+                <i class='bx bxl-whatsapp text-3xl'></i>
+                <p class=" p-2 font-semibold">
+                    Escríbenos por Whatsapp
+                </p>
+            </div>
+        </a>
+
+    </div>
+
+    <button class="fixed bottom-10 right-10 lg:right-20 z-10" onclick="scrollToTop()" id="scrollToTopBtn">
+        <div class="bg-maior-primary hover:bg-maior-secondary  text-white p-1 rounded-md leading-3">
+            <i class='bx bxs-chevron-up text-2xl'></i>
+        </div>
+    </button>
+
+
+    <!-- pie de pagina -->
+    <footer class="pt-10">
 
         <!-- contacto -->
         <div class="mt-10 md:mt-40 bg-cover">
@@ -659,54 +684,32 @@
 
                 </div>
 
-                <div class="lg:mx-28 absolute left-11 -bottom-72 lg:-bottom-96 font-NunitoSans text-maior-primary">
-                    <h3 class="py-2 font-bold ">Enlaces rápidos</h3>
+            </div>
+
+            <div class="h-screen/50 relative -z-10">
+                <img src="img/footer-contact.jpg" class="w-full h-full object-cover" alt="">
+                <div class="container inset-x-0 lg:px-36  absolute  bottom-20 lg:bottom-9 font-NunitoSans text-maior-primary">
+                    <div class="mx-5 lg:mx-0">
+                        <h3 class="py-2 font-bold ">Enlaces rápidos</h3>
                     <ul class="font-semibold">
                         <li class="py-1">
-                            <a class="flex items-center" href="#">
+                            <a class="flex items-center" href="informacion-importante.html">
                                 <p>Información importante</p>
                                 <i class='bx bxs-chevron-right'></i>
                             </a>
                         </li>
                         <li class="py-1">
-                            <a class="flex items-center"  href="#">
-                                <p>recomendaciones y contraindicación</p>
+                            <a class="flex items-center" href="recomendaciones-y-contraindicaciones.html">
+                                <p>Recomendaciones y contraindicación</p>
                                 <i class='bx bxs-chevron-right'></i>
                             </a>
                         </li>
                     </ul>
+                    </div>
                 </div>
             </div>
 
-            <div class="h-screen/50">
-                <img src="img/footer-contact.jpg" class="w-full h-full object-cover" alt="">
-            </div>
         </div>
-
-    </main>
-
-
-    <!-- button whatsapp -->
-    <div class="fixed bottom-24 right-10  lg:right-20 hover:animate-bounce z-10">
-        <a href="https://wa.link/1tmbhc">
-            <div class="flex items-center bg-white text-whatsapp-color shadow-md px-4 rounded-lg">
-                <i class='bx bxl-whatsapp text-3xl'></i>
-                <p class=" p-2 font-semibold">
-                    Escríbenos por Whatsapp
-                </p>
-            </div>
-        </a>
-
-    </div>
-
-    <button class="fixed bottom-10 right-10 lg:right-20 z-10" onclick="scrollToTop()" id="scrollToTopBtn">
-        <div class="bg-maior-primary hover:bg-maior-secondary  text-white p-1 rounded-md leading-3">
-            <i class='bx bxs-chevron-up text-2xl'></i>
-        </div>
-    </button>
-
-    <!-- pie de pagina -->
-    <footer>
 
         <div class="bg-gray-100 py-2 text-center">
 
@@ -724,6 +727,7 @@
         </div>
 
     </footer>
+
 
     <!-- scrips -->
     <script src="js/main.js"></script>
