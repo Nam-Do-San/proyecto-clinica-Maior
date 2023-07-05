@@ -2415,4 +2415,6 @@ p{
   }
 
   .lg\:text-white\/80{
-    col
+    color: rgb(255 255 255 / 0.8);
+  }
+}

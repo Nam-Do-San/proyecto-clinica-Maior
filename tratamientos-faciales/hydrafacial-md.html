@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tratamiento efectivo para acné | Maior Estética & Láser - Cayma, Arequipa</title>
+    <title>Hydrafacial MD | Maior Estética & Láser - Cayma, Arequipa</title>
 
     <meta name="description"
-        content="Despídete de las cicatrices de acné con nuestro tratamiento de láser. Tecnología avanzada que suaviza y reduce la apariencia de las cicatrices. Tratamiento no invasivo, sin dolor y con resultados visibles en pocas sesiones. ¡Agenda tu cita y luce una piel sin imperfecciones!" />
+        content="Descubre el poder del Hydrafacial para lucir una piel radiante y saludable. Nuestro tratamiento de última generación combina limpieza, exfoliación y hidratación profunda para deshacerte de impurezas y conseguir una piel suave y rejuvenecida al instante. ¡Agenda tu cita hoy mismo y haz que tu piel brille!" />
 
     <meta name="keywords"
-        content="tratamiento con láser co2, tratamiento para acné, tratamiento con láser co2 fraccionado, tratamiento para mejorar la piel, reduce la apariencia de acné, reduciendo la apariencia de cicatrices de acné, arrugas, manchas solares, problemas de la piel, resultados duraderos y personalizados, láser co2 fraccionado es la mejore opción, mejorar la apariencia de la piel, mejorar la textura de la piel, el láser co2 fraccionado puede ayudar a mejorar la textura, reduce las cicatrices, reduce la apariencia de las cicatrices de acné, cicatrices en la piel, reduce las manchas solares, manchas oscuras en la piel, trata las arrugas, duración del tratamiento, tiempo de recuperación, duración de resultados, ubicación, Av. Trinidad Moran, Cayma, Arequipa, medicina estética, facial, tratamiento para borrar cicatrices Arequipa, clínica estética y depilación láser en Arequipa">
+        content="hydrafacial md, medicina estética, tratamiento facial, limpieza profunda y efectiva, procedimiento no invasivo, tratamientos mas populares, beneficios del hydrafacial, limpiar, exfoliar, hidratar, proteger la piel, rejuvenecimiento facial, extraer las impurezas de la piel, limpieza profunda, poros, eliminar las impurezas, exfoliacion, mejor textura y tono de la piel, hidratación, arrugas, protección, tratamiento de hidratación, protección solar, duración del tratamiento, tipo de anestesia, tiempo de recuperación, duración de resultados, ubicación, Av. Trinidad Moran, Cayma, Arequipa, medicina estética, facial, tratamiento para borrar cicatrices Arequipa, clínica estética y depilación láser en Arequipa,  Ubicación en arequipa, en cayma, arequipa, perú , medicina estética, especialidades estéticas, cirugía Plástica, Clinica Maior, medic maior, medic majoor, dr julio suca, dr melania, centro estético">
 
     <!-- tailwind -->
     <link rel="stylesheet" href="../css/tailwind.css">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
 
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -58,18 +61,8 @@
         <div class="bg-white">
             <div class="grid grid-cols-3">
 
-                <div>
-
-                </div>
-
-                <div class="flex justify-center py-5 lg:py-10">
-                    <a href="index.html">
-                        <img class="w-full h-12" src="../img/maior-logo.svg" alt="">
-                    </a>
-                </div>
-
                 <!-- btn open nav -->
-                <div class="my-auto justify-self-end px-3 text-white" id="btn-menu">
+                <div class="my-auto justify-self-start px-3 text-white" id="btn-menu">
                     <button class=" text-maior-primary lg:hidden" id="open">
                         <i class='bx bx-menu text-3xl'></i>
                     </button>
@@ -78,11 +71,23 @@
                     </button>
                 </div>
 
+                <div class="flex justify-center py-5 lg:py-10">
+                    <a href="index.html">
+                        <img class="w-full h-12" src="../img/maior-logo.svg" alt="">
+                    </a>
+
+                </div>
+
+                <div>
+
+                </div>
+
             </div>
+
         </div>
 
 
-        <div class="bg-white md:w-96 lg:w-full relative hidden lg:block" id="menu-nav">
+        <div class="bg-white md:w-96 lg:w-full relative  hidden lg:block">
 
             <ul
                 class="container text-maior-primary  lg:flex lg:px-36 lg:justify-between lg:uppercase lg:text-xs tracking-wider">
@@ -160,6 +165,10 @@
                                         <li class="py-1.5 hover:text-maior-secondary"><a href="#">Manchas solares</a>
                                         </li>
                                         <li class="py-1.5 hover:text-maior-secondary"><a href="#">Melasma</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Pecas y lunares</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Láser para tatuaje</a>
+                                        </li>
                                         <li class="py-1.5 hover:text-maior-secondary"><a href="#">cicatrices</a></li>
                                     </ul>
                                 </div>
@@ -243,7 +252,7 @@
                         <ul class="lg:flex lg:container lg:px-36 justify-between text-maior-primary">
                             <li class="group/item2 lg:py-4">
                                 <div class="flex justify-between py-2 lg:mb-2 lg:font-bold lg:text-xs">
-                                    <a href="#">Reducción de medidas</a>
+                                    <a href="#">Rejuvenecimiento facial</a>
                                     <div class="px-2 lg:hidden group-hover/item2:rotate-180">
                                         <i class='bx bx-chevron-down'></i>
                                     </div>
@@ -251,60 +260,35 @@
 
                                 <div class="hidden group-hover/item2:block lg:block ">
                                     <ul class="px-4 lg:px-0 capitalize text-sm">
-
-                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Hidrolipoclasia</a>
-                                        </li>
-                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Enzimas
-                                                recombinantes</a></li>
-                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Mesoterapia
-                                                Corporal</a>
-                                        </li>
-                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Ultracavitación</a>
-                                        </li>
-                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Radiofrecuencia
-                                                corporal</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="group/item2 lg:py-4">
-                                <div class="flex justify-between py-2 lg:mb-2 lg:font-bold lg:text-xs">
-                                    <a href="#">Celulitis y estrías</a>
-                                    <div class="px-2 lg:hidden group-hover/item2:rotate-180">
-                                        <i class='bx bx-chevron-down'></i>
-                                    </div>
-                                </div>
-
-                                <div class="hidden group-hover/item2:block lg:block">
-                                    <ul class="px-4 lg:px-0 capitalize text-sm">
-                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Carboxiterapia</a>
-                                        </li>
-                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Ondas rusas (EMS)</a>
-                                        </li>
-                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Ultracavitación</a>
-                                        </li>
-                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Láser CO2
-                                                fraccionado</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="group/item2 lg:py-4">
-                                <div class="flex justify-between py-2 lg:mb-2 lg:font-bold lg:text-xs">
-                                    <a href="#">Rejuvenecimiento & flacidez</a>
-                                    <div class="px-2 lg:hidden group-hover/item2:rotate-180">
-                                        <i class='bx bx-chevron-down'></i>
-                                    </div>
-                                </div>
-
-                                <div class="hidden group-hover/item2:block lg:block">
-                                    <ul class="px-4 lg:px-0 capitalize text-sm">
                                         <li class="py-1.5 hover:text-maior-secondary"><a href="#">SmartLifting Láser</a>
                                         </li>
-                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Carboxiterapia</a>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Mesoterapia Facial
+                                                NCTF</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Lifting Térmico
+                                                fraccionado</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Toxina Botulínica</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Ácido hialurónico</a>
                                         </li>
                                         <li class="py-1.5 hover:text-maior-secondary"><a href="#">Radiofrecuencia
-                                                bipolar</a></li>
+                                                facial</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="group/item2 lg:py-4">
+                                <div class="flex justify-between py-2 lg:mb-2 lg:font-bold lg:text-xs">
+                                    <a href="#">Acné</a>
+                                    <div class="px-2 lg:hidden group-hover/item2:rotate-180">
+                                        <i class='bx bx-chevron-down'></i>
+                                    </div>
+                                </div>
+
+                                <div class="hidden group-hover/item2:block lg:block">
+                                    <ul class="px-4 lg:px-0 capitalize text-sm">
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Acné activo</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Secuelas de acné</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -321,6 +305,9 @@
                                     <ul class="px-4 lg:px-0 capitalize text-sm">
                                         <li class="py-1.5 hover:text-maior-secondary"><a href="#">Manchas solares</a>
                                         </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Melasma</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Pecas y lunares</a>
+                                        </li>
                                         <li class="py-1.5 hover:text-maior-secondary"><a href="#">Láser para tatuaje</a>
                                         </li>
                                         <li class="py-1.5 hover:text-maior-secondary"><a href="#">cicatrices</a></li>
@@ -330,7 +317,7 @@
 
                             <li class="group/item2 lg:py-4">
                                 <div class="flex justify-between py-2 lg:mb-2 lg:font-bold lg:text-xs">
-                                    <a href="#">Postquirúrgicos</a>
+                                    <a href="#">Limpieza facial</a>
                                     <div class="px-2 lg:hidden group-hover/item2:rotate-180">
                                         <i class='bx bx-chevron-down'></i>
                                     </div>
@@ -338,12 +325,31 @@
 
                                 <div class="hidden group-hover/item2:block lg:block">
                                     <ul class="px-4 lg:px-0 capitalize text-sm">
-                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Ultracavitación</a>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Hydrafacial</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Limpieza facial
+                                                profunda</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="group/item2 lg:py-4">
+                                <div class="flex justify-between py-2 lg:mb-2 lg:font-bold lg:text-xs">
+                                    <a href="#">Relleno facial</a>
+                                    <div class="px-2 lg:hidden group-hover/item2:rotate-180">
+                                        <i class='bx bx-chevron-down'></i>
+                                    </div>
+                                </div>
+
+                                <div class="hidden group-hover/item2:block lg:block">
+                                    <ul class="px-4 lg:px-0 capitalize text-sm">
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Remodelación</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Reducción de
+                                                ojeras</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Aumento de labios</a>
                                         </li>
-                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Radiofrecuencia
-                                                corporal</a></li>
-                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Masajes
-                                                terapéuticos</a>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Lipoenzimática</a>
+                                        </li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Tensado enzimático</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -351,7 +357,7 @@
 
                             <li class="group/item2 lg:py-4">
                                 <div class="flex justify-between py-2 lg:mb-2 lg:font-bold lg:text-xs">
-                                    <a href="#">Uñas</a>
+                                    <a href="#">Enrojecimiento</a>
                                     <div class="px-2 lg:hidden group-hover/item2:rotate-180">
                                         <i class='bx bx-chevron-down'></i>
                                     </div>
@@ -359,7 +365,8 @@
 
                                 <div class="hidden group-hover/item2:block lg:block">
                                     <ul class="px-4 lg:px-0 capitalize text-sm">
-                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Onicomicosis</a>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Rosácea</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Telangiectasia</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -448,20 +455,20 @@
         <div class="container-general w-full block mt-28 lg:mt-48 relative">
 
             <picture>
-                <source media="(min-width:768px )" srcset="../img/bg-services/cicatrices-acne/bg-desktop.jpg">
-                <img src="../img/bg-services/cicatrices-acne/bg-movil.jpg" class="w-full" alt="">
+                <source media="(min-width:768px)" srcset="../img/bg-services/hydrafacial/bg-hydrafacial-main.jpg">
+                <img src="../img/bg-services/hydrafacial/bg-hydrafacial-movil.jpg" class="w-full" alt="">
             </picture>
 
             <div class="container md:absolute  lg:px-36 inset-x-0 bottom-10 w-full z-10">
 
-                <div class="px-10 lg:px-0 pt-5 text-maior-primary md:text-white">
-                    <p class="font-bold font-Manrope tracking-wide">Medicina Estética - Corporal
+                <div class="px-10 lg:px-0 pt-5 text-maior-primary lg:text-white/80">
+                    <p class="font-bold font-Manrope tracking-wide">Medicina Estética - Facial
                     </p>
-                    <h1 class="font-Manrope font-extrabold  text-3xl lg:text-5xl py-2.5">Tratamiento para <br> secuelas
-                        de acné</h1>
+                    <h1 class="font-Manrope font-extrabold  text-3xl lg:text-5xl py-2.5">Hydrafacial MD</h1>
                 </div>
 
             </div>
+
         </div>
 
         <!-- hook -->
@@ -475,15 +482,15 @@
                         <article class="text-justify">
 
                             <p class="font-bold">
-                                El tratamiento con láser de CO2 fraccionado es considerado uno de los tratamientos más
-                                avanzados y efectivos para mejorar la piel, reduciendo la apariencia de cicatrices de
-                                acné, arrugas y manchas solares.
+                                Hydrafacial es un tratamiento facial avanzado que utiliza tecnología patentada para
+                                proporcionar una limpieza profunda y efectiva en la piel, mejorando su apariencia y
+                                suavidad en una sola sesión.
                             </p>
                             <br>
                             <p>
-                                Se utiliza para tratar una variedad de problemas de la piel, es menos invasivo que otros
-                                tratamientos con láser, lo que significa que requiere menos tiempo de recuperación con
-                                resultados duraderos y personalizados.
+                                Este tratamiento es un procedimiento no invasivo y es uno de los tratamientos más
+                                populares en la actualidad, utilizado tanto por celebridades como también por nuestros
+                                pacientes pacientes.
                             </p>
 
                         </article>
@@ -528,33 +535,41 @@
 
                     <h2 class="title-section text-white mb-6">descripción del tratamiento </h2>
                     <p>
-                        El tratamiento de acné activo con láser de diodo es un procedimiento altamente efectivo que
-                        combate el acné desde la raíz. A través de la emisión controlada de luz láser de alta potencia,
-                        se dirige a las glándulas sebáceas y a las bacterias responsables del acné. Esta energía láser
-                        destruye las bacterias y reduce la producción de sebo, disminuyendo la inflamación y la
-                        aparición de nuevas lesiones. Además, estimula la regeneración celular y la producción de
-                        colágeno, ayudando a mejorar la apariencia general de la piel. Con el tratamiento de láser de
-                        diodo, podrás disfrutar de una piel más limpia, suave y libre de acné.
+                        El Hydrafacial MD es un tratamiento facial que utiliza tecnología patentada para limpiar,
+                        exfoliar, hidratar y proteger la piel. Es un procedimiento de rejuvenecimiento facial que
+                        utiliza tecnología de succión y una serie de puntas especializadas para exfoliar y extraer las
+                        impurezas de la piel.
                     </p>
 
 
                     <ul class="mt-5 font-NunitoSans">
 
                         <li class="mb-2">
-                            <strong>Eliminación de bacterias:</strong> El láser de diodo destruye las bacterias
-                            causantes del acné, reduciendo la inflamación y previniendo la formación de nuevas lesiones.
+                            <strong>Limpieza profunda:</strong> Hydrafacial utiliza tecnología de succión para limpiar
+                            profundamente los poros y eliminar las impurezas, incluyendo células muertas, aceite y
+                            maquillaje.
                         </li>
 
                         <li class="mb-2">
-                            <strong>Reducción de la producción de sebo:</strong> El tratamiento regula la producción de
-                            sebo en las glándulas sebáceas, disminuyendo el exceso de grasa en la piel y evitando la
-                            obstrucción de los poros.
+                            <strong>Exfoliación:</strong> Hydrafacial exfolia suavemente la piel para eliminar la capa
+                            superior de células muertas y mejorar la textura y el tono de la piel.
+                        </li>
+
+                        <li class="mb-2">
+                            <strong>Hidratación:</strong> Hydrafacial utiliza un suero hidratante patentado para
+                            hidratar y nutrir la piel, lo que puede ayudar a mejorar la apariencia de líneas finas y
+                            arrugas.
+                        </li>
+
+                        <li class="mb-2">
+                            <strong>Protección:</strong> El tratamiento de Hydrafacial también puede proteger la piel de
+                            los daños futuros mediante la aplicación de antioxidantes y protección solar.
                         </li>
 
                         <li>
-                            <strong>Mejora de la textura de la piel:</strong> El láser de diodo estimula la regeneración
-                            celular y la producción de colágeno, lo que resulta en una piel más suave, firme y con una
-                            apariencia más juvenil.
+                            <strong>Sin tiempo de inactividad:</strong> El tratamiento de Hydrafacial también puede
+                            proteger la piel de los daños futuros mediante la aplicación de antioxidantes y protección
+                            solar.
                         </li>
 
                     </ul>
@@ -563,7 +578,7 @@
             </div>
         </section>
 
-        <!-- información tratamiento -->
+        <!-- información del procedimiento -->
         <div class="py-10">
             <div class="container lg:px-36">
 
@@ -587,7 +602,7 @@
 
                             <div class="mt-2.5 text-right md:text-center">
                                 <p>Duración del tratamiento</p>
-                                <p><strong>varía según el area</strong></p>
+                                <p><strong>35 - 60 minutos*</strong></p>
                             </div>
                         </div>
 
@@ -608,7 +623,7 @@
                             </svg>
                             <div class="mt-2.5 text-right md:text-center">
                                 <p>Tipo de anestesia</p>
-                                <p><strong>no requiere necesariamente</strong></p>
+                                <p><strong>no requiere</strong></p>
                             </div>
                         </div>
 
@@ -647,7 +662,7 @@
                             </svg>
                             <div class="mt-2.5 text-right md:text-center">
                                 <p>Duración de resultados</p>
-                                <p><strong>permanente</strong></p>
+                                <p><strong>1 - 2 semanas*</strong></p>
                             </div>
                         </div>
 
@@ -659,8 +674,9 @@
 
         </div>
 
+        <!-- img bg blanco -->
         <div class="h-screen/50 bg-fixed bg-center bg-no-repeat bg-cover"
-            style="background-image: url(../img/bg-services/tratamiento-para-acne/bg-acne.jpg);">
+            style="background-image: url(../img/hydra-01.jpg);">
         </div>
 
         <!-- preguntas frecuentes -->
@@ -673,53 +689,47 @@
                 </div>
 
                 <div>
-                    <div class="accordion mx-5">
+                    <div class="accordion mx-5 lg:mx-0">
                         <div class="accordion-content overflow-hidden text-maior-primary hover:bg-gray-50 rounded">
                             <div class="faq p-5 lg:p-5 flex justify-between items-center">
-                                <h2>¿Cómo funciona el tratamiento de cicatrices de acné con láser de CO2?</h2>
+                                <h2>¿Cómo funciona el HydraFacial?</h2>
                                 <i class='bx bx-plus'></i>
                             </div>
 
                             <div class="description h-auto bg-gray-50">
                                 <p class="p-5">
-                                    El tratamiento de cicatrices de acné con láser de CO2 funciona mediante la
-                                    eliminación de las capas superficiales de la piel para estimular la regeneración
-                                    celular y promover la producción de colágeno. La energía del láser de CO2 penetra en
-                                    la piel para eliminar las capas dañadas y estimular la producción de nuevas células
-                                    de piel y colágeno.
+                                    El tratamiento Hydrafacial MD utiliza una máquina especial que aplica diferentes
+                                    soluciones en la piel en ciclos cortos de tiempo. Estas soluciones incluyen ácidos
+                                    suaves para exfoliar la piel, antioxidantes para protegerla y péptidos e hidratantes
+                                    para nutrirla.
                                 </p>
                             </div>
                         </div>
 
                         <div class="accordion-content overflow-hidden text-maior-primary hover:bg-gray-50">
                             <div class="faq p-5 lg:p-5 flex justify-between items-center">
-                                <h2>¿Cuántas sesiones de tratamiento de cicatrices de acné con láser de CO2 son
-                                    necesarias?
-                                </h2>
+                                <h2>¿Es el tratamiento HydraFacial doloroso?</h2>
                                 <i class='bx bx-plus'></i>
                             </div>
 
                             <div class="description h-0 bg-gray-50">
                                 <p class="p-5">
-                                    El número de sesiones necesarias para el tratamiento de cicatrices de acné con láser
-                                    de CO2 depende de la gravedad de la afección y de la respuesta individual del
-                                    paciente al tratamiento. Por lo general, se necesitan de 3 a 6 sesiones de
-                                    tratamiento, con intervalos de 4 a 6 semanas entre cada sesión.
+                                    No, el tratamiento Hydrafacial no es doloroso. De hecho, muchos pacientes describen
+                                    la sensación como una ligera succión y un masaje suave en la piel.
                                 </p>
                             </div>
                         </div>
 
                         <div class="accordion-content overflow-hidden text-maior-primary hover:bg-gray-50">
                             <div class="faq p-5 lg:p-5 flex justify-between items-center">
-                                <h2>¿Es doloroso el tratamiento con láser diodo para el acné activo?</h2>
+                                <h2>¿Puedo combinar el HydraFacial con otros tratamientos estéticos?</h2>
                                 <i class='bx bx-plus'></i>
                             </div>
 
                             <div class="description h-0 bg-gray-50">
                                 <p class="p-5">
-                                    El tratamiento de cicatrices de acné con láser de CO2 puede ser un poco doloroso, ya
-                                    que el láser penetra en las capas de la piel. Sin embargo, se puede aplicar una
-                                    crema anestésica tópica antes del tratamiento para reducir el malestar.
+                                    Sí, el Hydrafacial se puede combinar con otros tratamientos estéticos, como los
+                                    rellenos dérmicos o los tratamientos con láser, para obtener resultados aún mejores.
                                 </p>
                             </div>
                         </div>
@@ -732,10 +742,64 @@
             </div>
         </section>
 
+        <!-- resultados reales antes y después -->
+        <section class="py-10 bg-gray-50">
+            <div class="container lg:px-36">
+                <!-- title seccion -->
+                <div class="px-10 lg:px-0">
+                    <p class="title-section pb-10">Resultados reales</p>
+
+                    <div class="swiper swiper-3">
+                        <div class="swiper-wrapper pb-14">
+                            <div class="swiper-slide">
+                                <img class="w-full h-full object-cover cursor-pointer rounded"
+                                    src="../img/bg-services/hydrafacial/hydrafacial.jpg" alt="Flower"
+                                    onclick="showModal('../img/bg-services/hydrafacial/hydrafacial.jpg')" />
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img class="w-full h-full object-cover cursor-pointer rounded"
+                                    src="../img/bg-services/hydrafacial/hydrafacial-2.jpg" alt="Flower"
+                                    onclick="showModal('../img/bg-services/hydrafacial/hydrafacial-2.jpg')" />
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img class="w-full h-full object-cover cursor-pointer rounded"
+                                    src="../img/bg-services/hydrafacial/hydrafacial-3.jpg" alt="Flower"
+                                    onclick="showModal('../img/bg-services/hydrafacial/hydrafacial-3.jpg')" />
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img class="w-full h-full object-cover cursor-pointer rounded"
+                                    src="../img/bg-services/hydrafacial/hydrafacial-4.jpg" alt="Flower"
+                                    onclick="showModal('../img/bg-services/hydrafacial/hydrafacial-3.jpg')" />
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="modal"
+                class="invisible fixed top-0 left-0 z-80 w-screen h-screen bg-black/70 flex justify-center items-center z-50">
+
+                <!-- The close button -->
+                <a class="fixed z-90 top-6 right-8 text-white text-5xl font-bold" href="javascript:void(0)"
+                    onclick="closeModal()">&times;</a>
+
+                <!-- A big image will be displayed here -->
+                <img id="modal-img" class=" md:max-w-[800px] md:max-h-[600px] object-cover" />
+            </div>
+
+        </section>
+
     </main>
 
-      <!-- button whatsapp -->
-      <div class="fixed bottom-24 right-10  lg:right-20 hover:animate-bounce z-10" id="btn-whatsapp">
+    <!-- button whatsapp -->
+    <div class="fixed bottom-24 right-10  lg:right-20 hover:animate-bounce z-10" id="btn-whatsapp">
         <a href="https://wa.link/1tmbhc">
             <div class="flex items-center bg-white text-whatsapp-color shadow-md px-4 rounded-lg">
                 <i class='bx bxl-whatsapp text-3xl'></i>
@@ -869,8 +933,11 @@
 
     </footer>
 
-    <!-- script  -->
+    <!-- script -->
     <script src="../js/main.js"></script>
+
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/main-swiper.js"></script>
 
 </body>
 
