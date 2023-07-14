@@ -1500,16 +1500,6 @@ video {
   padding-right: 1.25rem;
 }
 
-.py-0{
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.py-0\.5{
-  padding-top: 0.125rem;
-  padding-bottom: 0.125rem;
-}
-
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1983,9 +1973,11 @@ p{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.dark .dark\:text-neutral-100{
-  --tw-text-opacity: 1;
-  color: rgb(245 245 245 / var(--tw-text-opacity));
+@media (prefers-color-scheme: dark){
+  .dark\:text-neutral-100{
+    --tw-text-opacity: 1;
+    color: rgb(245 245 245 / var(--tw-text-opacity));
+  }
 }
 
 @media (min-width: 640px){
