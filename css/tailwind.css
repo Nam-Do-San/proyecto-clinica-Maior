@@ -1163,9 +1163,19 @@ video {
   cursor: pointer;
 }
 
+.cursor-zoom-in{
+  cursor: zoom-in;
+}
+
 .touch-pan-y{
   --tw-pan-y: pan-y;
   touch-action: var(--tw-pan-x) var(--tw-pan-y) var(--tw-pinch-zoom);
+}
+
+.select-none{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .resize{
