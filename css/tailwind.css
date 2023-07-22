@@ -964,10 +964,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mb-60{
-  margin-bottom: 15rem;
-}
-
 .ml-11{
   margin-left: 2.75rem;
 }
@@ -1114,11 +1110,6 @@ video {
 
 .h-screen\/90{
   height: 90vh;
-}
-
-.h-fit{
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .w-1{
@@ -1301,16 +1292,8 @@ video {
   overflow: hidden;
 }
 
-.overflow-scroll{
-  overflow: scroll;
-}
-
 .overflow-y-auto{
   overflow-y: auto;
-}
-
-.overflow-y-scroll{
-  overflow-y: scroll;
 }
 
 .scroll-smooth{
@@ -1319,6 +1302,10 @@ video {
 
 .rounded{
   border-radius: 0.25rem;
+}
+
+.rounded-3xl{
+  border-radius: 1.5rem;
 }
 
 .rounded-full{
@@ -1570,11 +1557,6 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-1{
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .pb-10{
@@ -1927,10 +1909,6 @@ p{
 
 .hover\:animate-bounce:hover{
   animation: bounce 1s infinite;
-}
-
-.hover\:overflow-y-scroll:hover{
-  overflow-y: scroll;
 }
 
 .hover\:bg-gray-50:hover{
