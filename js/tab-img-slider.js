@@ -14,8 +14,8 @@ depil_btn.addEventListener('click', function (params) {
 
 hydra_btn.addEventListener('click', function (params) {
 
-        document.getElementById('matrix-after').src="img/bg-services/hydrafacial/bg-hydrafacial-after.jpg";
-        document.getElementById('matrix-before').src="img/bg-services/hydrafacial/bg-hydrafacial-before.jpg";
+        document.getElementById('matrix-after').src="img/bg-services/hydrafacial/bg-before.jpg";
+        document.getElementById('matrix-before').src="img/bg-services/hydrafacial/bg-after.jpg";
         
 })
 
