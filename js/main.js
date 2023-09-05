@@ -1,4 +1,5 @@
 // archivo de js vanilla
+//  AQUÍ ESTA EL CÓDIGO DEL NAV BTM CLOSE SCROLL PROMO Y ACORDES DE FAQ PREGUNTAS Y ACTIVACIÓN DE MODAL RESULTADOS
 
 ////////////////////////////////////////
 // navbar hidden

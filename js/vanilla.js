@@ -1,3 +1,5 @@
+// ESTE ARCHIVO ES PARA CAMBIAR RECOMENDACIONES DE LAS ZONAS DE DEPILACIÓN LASER
+
 function openTab(event, tabName) {
     var i, tabContent, tab;
   

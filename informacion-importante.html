@@ -57,9 +57,13 @@
 
                 </div>
 
-                <div class="flex justify-center py-5 lg:py-10">
+                <div class="flex justify-center py-5 lg:py-8">
                     <a href="index.html">
-                        <img class="w-full h-12" src="img/maior-logo.svg" alt="">
+                        <picture>
+                            <source media="(min-width:1024px )" srcset="img/maior-logo.svg">
+                            <source media="(min-width:768px )" srcset="img/maior-logo-md.svg">
+                            <img class="w-full h-12 lg:h-28" src="img/maior-logo-movil.svg" alt="logo medic maior, medic majoor arequipa">
+                        </picture>
                     </a>
                 </div>
 
@@ -204,7 +208,7 @@
 
                                 <div class="hidden group-hover/item2:block lg:block">
                                     <ul class="px-4 lg:px-0 capitalize text-sm">
-                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Remodelación</a></li>
+                                        <li class="py-1.5 hover:text-maior-secondary"><a href="#">Rinomodelación</a></li>
                                         <li class="py-1.5 hover:text-maior-secondary"><a href="#">Reducción de
                                                 ojeras</a></li>
                                         <li class="py-1.5 hover:text-maior-secondary"><a href="#">Aumento de labios</a>
@@ -532,10 +536,9 @@
 
         </div>
 
-
     </header>
 
-    <main class="mt-60">
+    <main>
 
         <div class="container-general w-full block mt-28 lg:mt-48 relative">
 
@@ -637,6 +640,23 @@
 
     </main>
 
+    <!-- button whatsapp -->
+    <div class="fixed bottom-24 right-10  lg:right-20 hover:animate-bounce z-10" id="btn-whatsapp">
+        <a href="https://wa.link/1tmbhc">
+            <div class="flex items-center bg-white text-whatsapp-color shadow-md px-4 rounded-lg">
+                <i class='bx bxl-whatsapp text-3xl'></i>
+                <p class=" p-2 font-semibold">
+                    Escríbenos por Whatsapp</p>
+            </div>
+        </a>
+    </div>
+
+    <button class="fixed bottom-10 right-10 lg:right-20 z-10" onclick="scrollToTop()" id="scrollToTopBtn">
+        <div class="bg-maior-primary hover:bg-maior-secondary  text-white p-1 rounded-md leading-3">
+            <i class='bx bxs-chevron-up text-2xl'></i>
+        </div>
+    </button>
+
     <!-- pie de pagina -->
     <footer class="pt-10">
 
@@ -652,7 +672,7 @@
 
                     <div class="pb-5 border-b border-b-maior-gray">
 
-                        <div class="flex items-center font-extrabold font-Manrope">
+                        <div class="flex items-center font-bold">
                             <i class='bx bx-calendar text-xl mr-3'></i>
                             <p>Nuestro horario de atención</p>
                         </div>
@@ -678,7 +698,7 @@
                     </div>
 
                     <div class="py-5 border-b border-b-maior-gray">
-                        <div class="flex items-center font-extrabold font-Manrope">
+                        <div class="flex items-center font-bold">
                             <i class='bx bx-map text-xl mr-3'></i>
                             <p>Ubicación</p>
                         </div>
@@ -688,7 +708,7 @@
                     </div>
 
                     <div class="py-5 border-b border-b-maior-gray">
-                        <div class="flex items-center font-extrabold font-Manrope">
+                        <div class="flex items-center font-bold">
                             <i class='bx bx-phone-call text-xl mr-3'></i>
                             <p>Teléfono fijo</p>
                         </div>
@@ -699,7 +719,7 @@
                     </div>
 
                     <div class="pt-5">
-                        <div class="flex items-center font-extrabold font-Manrope">
+                        <div class="flex items-center font-bold">
                             <i class='bx bxl-whatsapp text-xl mr-3'></i>
                             <p>WhatsApp</p>
                         </div>
@@ -711,9 +731,9 @@
 
                 </div>
 
-                <div class="lg:mx-28 absolute left-11 -bottom-72 lg:-bottom-96 font-NunitoSans text-maior-primary">
+                <div class="lg:mx-28 absolute left-11 -bottom-72 lg:-bottom-96 font-Roboto text-maior-primary">
                     <h3 class="py-2 font-bold ">Enlaces rápidos</h3>
-                    <ul class="font-semibold">
+                    <ul class="font-normal text-sm">
                         <li class="py-1">
                             <a class="flex items-center" href="informacion-importante.html">
                                 <p>Información importante</p>
@@ -722,7 +742,7 @@
                         </li>
                         <li class="py-1">
                             <a class="flex items-center" href="recomendaciones-y-contraindicaciones.html">
-                                <p>Recomendaciones y contraindicación</p>
+                                <p>Recomendaciones y <br> contraindicación</p>
                                 <i class='bx bxs-chevron-right'></i>
                             </a>
                         </li>
@@ -735,12 +755,11 @@
             </div>
         </div>
 
-        <div class="bg-gray-100 py-2 text-center">
+        <div class="bg-gray-100 py-2 text-center px-5 lg:px-0">
 
             <div class="text-sm md:flex justify-between container lg:px-36 text-gray-500">
                 <div>
-                    <p><strong>© 2023 Clínica Maior</strong> | Especialidades Estéticas Medicina Estética & Cirugía
-                        Plástica </p>
+                    <p><strong>© 2023 Clínica Medic Maior</strong> | Especialidades Estéticas & Depilación Láser</p>
                 </div>
 
                 <div class="mt-2 md:mt-0 ">

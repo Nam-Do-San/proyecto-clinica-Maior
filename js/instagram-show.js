@@ -1,3 +1,5 @@
+// ESTE ARCHIVO ES PARA LA ZONA DE INSTAGRAM, PERMITE MOSTRAR MAS FOTOS, SOLO ESTA EN EL INDEX
+
 const btnMostrarMas = document.querySelector('#btn-mostrar-mas');
 const divsOcultos = document.querySelectorAll('.contenedor-divs div:nth-child(n+10)');
 

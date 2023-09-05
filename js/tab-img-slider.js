@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////
-// SWAP IMG TO TRATAMIENTOS 
+// SWAP IMG TO TRATAMIENTOS , ESTE ARCHIVO CAMBIAR LOS ANTES Y DESPUÉS DEL INDEX
 ////////////////////////////////////////////////////
 let depil_btn = document.getElementById('btn-depilacion');
 let botox_btn = document.getElementById('btn-toxina');
