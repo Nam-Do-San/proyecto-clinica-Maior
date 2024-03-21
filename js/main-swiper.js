@@ -54,40 +54,6 @@ var swiper = new Swiper(".swiper-3", {
     },
 });
 
-
-// zonas de depilación no vale
-var swiper = new Swiper(".swiper-por-5", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: true,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    breakpoints: {
-        640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-        },
-        768: {
-            slidesPerView: 5,
-            spaceBetween: 25,
-        },
-    },
-});
-
-
-
-
-
 // TESTIMONIOS DE PERSONAS ( X3 )
 
 var swiper = new Swiper(".swiper-testimonio", {

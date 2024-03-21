@@ -1,4 +1,5 @@
 // ESTE ARCHIVO ES PARA ANTES Y DESPUES DE CADA TRATAMIENTO EN EL BG, SOLO TIENE EL BOTOX Y EL INDEX
+//afecta site index, depilación y botox
 
 const slider = document.getElementById('before-after-slider');
 const before = document.getElementById('before-image');
